@@ -1,0 +1,8 @@
+gate,name,status,detail
+G1,Generator is deterministic (SHA-256 identical on re-run),PASS,all 6 raw files byte-identical; billing_raw.csv = 42cccf30bc0aa082...
+G2,ARR bridge ties to the cent in all 36 months,PASS,max |residual| = $0.0000 across 36 months
+G3,Cohort triangle foots to total MRR every month,PASS,36/36 months tie; max variance $0.0000
+G4,ETL audit accounts for every source row,PASS,"13 rules logged, 17,310 billing rows in, 176 quarantined with a reason"
+G5,Excel recalculates with zero formula errors,PASS,290 rows scanned across 11 sheets
+G6,Excel reconciles to SQL on every check,PASS,24/24 checks PASS
+G7,Scenario switch moves the model and stays reconciled,PASS,"3 distinct cash paths; max |cash diff| vs Python $0.41; failing checks per scenario: [0.0, 0.0, 0.0]"
