@@ -566,7 +566,6 @@ def build():
     q02 = pd.read_csv(TAB / "Q02_arr_bridge.csv")
     ss = d["scenario_summary"].set_index("scenario")
     sens = d["sensitivity"].set_index("scenario")
-    cash = d["cash_paths"].set_index("month")
     checks = [
         ("arr_latest", float(unrounded.arr.iloc[-1]), 0.005,
          "SQL v_pnl_month, full precision"),

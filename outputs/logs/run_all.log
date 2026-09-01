@@ -11,7 +11,7 @@ legacy acv scale   : 0.5431
 defects            : {'duplicate_rows_injected': 157, 'credit_memo_rows_injected': 239, 'orphan_rows_injected': 12, 'negative_seat_rows_injected': 7, 'missing_acquisition_channel': 17, 'missing_segment': 11, 'missing_plan_code': 7}
 
 [1m=== 2/8  Build the SQLite star schema and ETL audit ===[0m
-ETL run 20260901T161211Z
+ETL run 20260901T175924Z
   R01  Load raw billing extract                   in= 17,310 out= 17,310 affected=     0
   R02  Quarantine orphan billing rows             in= 17,310 out= 17,298 affected=    12
   R03  Separate credit memos from recurring       in= 17,298 out= 17,059 affected=   239
@@ -48,6 +48,8 @@ Q13_etl_audit_and_data_quality.sql         ->    13 rows
 
 GATE 1  ARR bridge max |residual| = $0.0000  -> PASS
 GATE 2  Cohort-to-total reconciliation: 36/36 months PASS -> PASS
+
+cohort triangles written: 37 monthly cohorts (median size 9) and 13 quarterly cohorts (median size 29)
 
 --- Q01 Executive summary (last 6 months) -------------------------------------
   month        arr  net_new_arr  arr_yoy_pct  recognised_revenue  gross_margin_pct  sales_and_marketing  sm_pct_of_revenue  net_burn  burn_3m_avg  runway_months

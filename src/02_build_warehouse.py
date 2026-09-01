@@ -372,7 +372,6 @@ def build():
     ckey = dict(zip(dim_customer.customer_id, dim_customer.customer_key))
     mkey = dict(zip(dim_date.month, dim_date.month_key))
     chkey = dict(zip(dim_channel.channel_code, dim_channel.channel_key))
-    skey = dict(zip(dim_segment.segment_code, dim_segment.segment_key))
 
     # fact_subscription_month
     f = fact.copy()
