@@ -1,0 +1,7 @@
+list_overlap,meetings_per_added_rep,wins_per_month,incremental_cac,cac_payback_months,verdict
+0.0,11.59,2.64,33541,8.2,PASS
+0.2,9.84,2.24,39513,9.7,PASS
+0.4,8.51,1.94,45671,11.2,PASS
+0.6,7.44,1.69,52226,12.8,PASS
+0.8,6.55,1.49,59347,14.5,PASS
+1.0,5.78,1.32,67210,16.4,PASS

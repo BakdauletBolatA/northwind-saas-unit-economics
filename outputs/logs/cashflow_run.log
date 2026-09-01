@@ -1,0 +1,106 @@
+==============================================================================
+PART 1  Forecast model selection — rolling-origin backtest
+==============================================================================
+    policy     method  n           mae          rmse  mape_pct           bias
+ expanding       holt 93  26171.614441  33379.557674  3.459816  -14145.847429
+ expanding driver_nrr 93  28142.757125  36603.447235  3.783042  -20849.556479
+ expanding      drift 93  57255.283137  67610.029302  7.326567  -57227.854647
+ expanding log_linear 93  84932.016496  89594.804934 10.799014  -84932.016496
+ expanding      naive 93 103669.021290 118696.407136 13.151790 -103669.021290
+rolling_24       holt 93  25789.495745  33252.417471  3.419826  -12698.612523
+rolling_24 driver_nrr 93  28142.757125  36603.447235  3.783042  -20849.556479
+rolling_24      drift 93  53820.248175  64340.053256  6.963666  -53720.020835
+rolling_24 log_linear 93  68916.669233  76244.877473  9.107933  -68400.401086
+rolling_24      naive 93 103669.021290 118696.407136 13.151790 -103669.021290
+
+MAPE % by horizon (both policies pooled):
+horizon        1     2      3      4      5      6
+method                                            
+drift       2.09  4.18   6.56   8.65  10.77  13.10
+driver_nrr  1.69  2.78   3.40   3.94   5.22   6.73
+holt        1.82  2.84   2.99   3.31   4.70   5.81
+log_linear  6.66  7.99   9.52  10.88  12.33  13.98
+naive       4.16  8.20  12.30  15.96  19.49  23.06
+
+WINNER: holt  (pooled out-of-sample MAPE 3.44%)
+Ranking: holt 3.44%, driver_nrr 3.78%, drift 7.15%, log_linear 9.95%, naive 13.15%
+
+==============================================================================
+PART 2  18-month cash and runway model
+==============================================================================
+Observed forward parameters (all measured from the warehouse):
+  outbound meeting->SQL         0.300
+  outbound SQL->win             0.152
+  outbound meeting->win         0.0455
+  outbound ACV by segment       {'Enterprise': 93486, 'MidMarket': 26764, 'SMB': 8556}
+  monthly net rev retention     {'Enterprise': 1.0125, 'MidMarket': 1.0014, 'SMB': 0.9827}
+  current SDR heads             9
+  paid social spend / month     $75,500
+  paid social new MRR / month   $1,170  (9 logos in the last 3 months)
+
+Forward cost policy (trailing-3-month basis):
+  COGS 21.7% of revenue (variable)
+  S&M  65.1% of revenue — the current spending policy
+       held constant, i.e. $649,700/mo today growing with revenue
+  R&D  $325,360/mo and G&A $138,526/mo, headcount
+       flat, inflated at 2.5%/yr
+
+Scenario summary:
+      scenario  incremental_sm_per_month  net_incremental_burn_month6  arr_month18  delta_arr_month18  burn_month18  cash_month18  runway_months  incremental_gp_month18
+          base                       0.0                          0.0   19723412.0                0.0      264308.0      805627.0           21.0                     0.0
+sales_proposal                  180000.0                     186987.0   20963205.0          1239793.0      373435.0    -1704336.0           14.0                 80879.0
+     selective                   88500.0                      26770.0   21039842.0          1316430.0      202640.0     1073224.0           23.0                 85878.0
+
+Cash balance by month ($):
+scenario       base  sales_proposal  selective
+month                                         
+2026-09   5775953.0       5775953.0  5852857.0
+2026-10   5455437.0       5455437.0  5608621.0
+2026-11   5138448.0       4954670.0  5273269.0
+2026-12   4824985.0       4454001.0  4936338.0
+2027-01   4515047.0       3955121.0  4599468.0
+2027-02   4208630.0       3461718.0  4266281.0
+2027-03   3905734.0       2975965.0  3939972.0
+2027-04   3606356.0       2499213.0  3622878.0
+2027-05   3310493.0       2032563.0  3316787.0
+2027-06   3018145.0       1576066.0  3021795.0
+2027-07   2729309.0       1129770.0  2738000.0
+2027-08   2443984.0        693726.0  2465497.0
+2027-09   2162166.0        267985.0  2204386.0
+2027-10   1883854.0       -147401.0  1954766.0
+2027-11   1609046.0       -552379.0  1716738.0
+2027-12   1337741.0       -946897.0  1490403.0
+2028-01   1069935.0      -1330901.0  1275864.0
+2028-02    805627.0      -1704336.0  1073224.0
+
+==============================================================================
+PART 3  Sensitivity — how good would the new reps have to be?
+==============================================================================
+      scenario  added_heads  list_overlap  monthly_cost  incremental_meetings_per_month  meetings_per_added_rep  wins_per_month  blended_acv  incremental_cac  cac_payback_months  breakeven_meetings_per_added_rep_for_18m  productivity_headroom_pct
+sales_proposal            9           1.0        180000                            49.5                    5.50            2.26        44354            79788                28.0                                      8.57                      -35.8
+     selective            5           0.4         88500                            42.5                    8.51            1.94        65099            45671                11.2                                      5.27                       61.4
+
+Read the last column as: how far the new reps' productivity could
+fall short of assumption before the 18-month payback test fails.
+
+Stress test A — territory overlap of the selective pod.
+list_overlap = 1.00 is the worst case: the new reps add nothing but
+more people working the SAME account list the current team works.
+ list_overlap  meetings_per_added_rep  wins_per_month  incremental_cac  cac_payback_months verdict
+          0.0                   11.59            2.64            33541                 8.2    PASS
+          0.2                    9.84            2.24            39513                 9.7    PASS
+          0.4                    8.51            1.94            45671                11.2    PASS
+          0.6                    7.44            1.69            52226                12.8    PASS
+          0.8                    6.55            1.49            59347                14.5    PASS
+          1.0                    5.78            1.32            67210                16.4    PASS
+
+Stress test B — Enterprise share of the pod's won mix.
+The pod is priced on selling Enterprise. If it drifts back to the
+Mid-Market mix the current team sells, does it still clear 18 months?
+ enterprise_share  blended_acv  incremental_cac  cac_payback_months verdict
+             0.10        33072            45671                21.3    FAIL
+             0.20        39744            45671                17.9    PASS
+             0.28        45082            45671                15.8    PASS
+             0.40        53089            45671                13.5    PASS
+             0.58        65099            45671                11.2    PASS
+             0.70        73106            45671                10.0    PASS
