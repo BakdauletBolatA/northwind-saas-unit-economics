@@ -105,9 +105,17 @@ def main() -> int:
                "ltv_cac_b", "ltv_cac_c"],
          title="Q07 Channel unit economics, trailing 12m")
 
+    q8 = results["Q08_channel_economics_cuts"]
+    show(q8[q8.cut_type == "by_segment"],
+         cols=["channel", "segment", "n_wins", "caveat", "avg_acv", "cac_equal_split",
+               "payback_months", "payback_months_effort_wtd"],
+         title="Q08 Channel x segment payback, trailing 12m")
+
     show(results["Q09_unit_economics_by_segment"],
          cols=["segment", "live_logos", "book_arr", "pct_of_arr", "new_logos_12m",
-               "avg_new_acv", "cac", "cac_payback_months", "monthly_nrr_pct", "ltv_cac"],
+               "avg_new_acv", "cac_equal_split", "cac_effort_weighted",
+               "payback_months_entry", "payback_months_effort_wtd",
+               "monthly_nrr_pct", "ltv_cac"],
          title="Q09 Unit economics by segment")
 
     q10 = results["Q10_channel_cohort_quality"]

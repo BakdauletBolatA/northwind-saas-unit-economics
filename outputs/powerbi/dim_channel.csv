@@ -1,0 +1,8 @@
+ChannelKey,Channel,ChannelLabel,ChannelGroup,SalesTouchWeight,IsAttributable
+1,paid_search,Paid Search,Paid,0.35,1
+2,paid_social,Paid Social,Paid,0.3,1
+3,inbound_content,Inbound / Content,Inbound,0.55,1
+4,outbound_sdr,Outbound SDR,Outbound,1.0,1
+5,partner,Partner / Reseller,Partner,0.45,1
+6,events,Events / Field,Inbound,0.85,1
+7,unattributed,Unattributed,Unknown,0.0,0

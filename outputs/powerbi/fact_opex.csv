@@ -1,0 +1,721 @@
+MonthKey,CostCategory,CostCenter,GlAccount,Amount
+202309,COGS,cs_am,Personnel,36000.0
+202309,COGS,infrastructure,Hosting,21519.48
+202309,COGS,infrastructure,Third-party licences,12974.98
+202309,GA,corporate,"Facilities, insurance, professional fees",40000.0
+202309,GA,ga,Personnel,46500.0
+202309,RD,engineering,Personnel,140000.0
+202309,RD,engineering,R&D tooling,21000.0
+202309,SM,ae,Personnel,45000.0
+202309,SM,events,Marketing programmes,5100.0
+202309,SM,inbound_content,Marketing programmes,7650.0
+202309,SM,marketing,Marketing operations,12000.0
+202309,SM,marketing,Personnel,28000.0
+202309,SM,outbound_sdr,Marketing programmes,4000.0
+202309,SM,paid_search,Marketing programmes,17000.0
+202309,SM,paid_social,Marketing programmes,6000.0
+202309,SM,partner,Marketing programmes,3400.0
+202309,SM,sales,Sales commission,12806.4
+202309,SM,sales_engineer,Personnel,16500.0
+202309,SM,sdr,Personnel,22000.0
+202309,SM,sdr_manager,Personnel,16000.0
+202310,COGS,cs_am,Personnel,36000.0
+202310,COGS,infrastructure,Hosting,21662.9
+202310,COGS,infrastructure,Third-party licences,13061.45
+202310,GA,corporate,"Facilities, insurance, professional fees",40500.0
+202310,GA,ga,Personnel,46500.0
+202310,RD,engineering,Personnel,140000.0
+202310,RD,engineering,R&D tooling,21294.0
+202310,SM,ae,Personnel,45000.0
+202310,SM,events,Marketing programmes,5700.0
+202310,SM,inbound_content,Marketing programmes,8200.0
+202310,SM,marketing,Marketing operations,12138.0
+202310,SM,marketing,Personnel,28000.0
+202310,SM,outbound_sdr,Marketing programmes,4333.33
+202310,SM,paid_search,Marketing programmes,17772.73
+202310,SM,paid_social,Marketing programmes,6384.62
+202310,SM,partner,Marketing programmes,3777.78
+202310,SM,sales,Sales commission,5845.8
+202310,SM,sales_engineer,Personnel,16500.0
+202310,SM,sdr,Personnel,22000.0
+202310,SM,sdr_manager,Personnel,16000.0
+202311,COGS,cs_am,Personnel,36000.0
+202311,COGS,infrastructure,Hosting,22238.45
+202311,COGS,infrastructure,Third-party licences,13408.48
+202311,GA,corporate,"Facilities, insurance, professional fees",41006.25
+202311,GA,ga,Personnel,46500.0
+202311,RD,engineering,Personnel,140000.0
+202311,RD,engineering,R&D tooling,21592.12
+202311,SM,ae,Personnel,45000.0
+202311,SM,events,Marketing programmes,6300.0
+202311,SM,inbound_content,Marketing programmes,8750.0
+202311,SM,marketing,Marketing operations,12277.59
+202311,SM,marketing,Personnel,28000.0
+202311,SM,outbound_sdr,Marketing programmes,4666.67
+202311,SM,paid_search,Marketing programmes,18545.45
+202311,SM,paid_social,Marketing programmes,6769.23
+202311,SM,partner,Marketing programmes,4155.56
+202311,SM,sales,Sales commission,13015.2
+202311,SM,sales_engineer,Personnel,16500.0
+202311,SM,sdr,Personnel,22000.0
+202311,SM,sdr_manager,Personnel,16000.0
+202312,COGS,cs_am,Personnel,48000.0
+202312,COGS,infrastructure,Hosting,22346.09
+202312,COGS,infrastructure,Third-party licences,13473.38
+202312,GA,corporate,"Facilities, insurance, professional fees",41518.83
+202312,GA,ga,Personnel,46500.0
+202312,RD,engineering,Personnel,157500.0
+202312,RD,engineering,R&D tooling,21894.41
+202312,SM,ae,Personnel,60000.0
+202312,SM,events,Marketing programmes,6900.0
+202312,SM,inbound_content,Marketing programmes,9300.0
+202312,SM,marketing,Marketing operations,12418.78
+202312,SM,marketing,Personnel,28000.0
+202312,SM,outbound_sdr,Marketing programmes,5000.0
+202312,SM,paid_search,Marketing programmes,19318.18
+202312,SM,paid_social,Marketing programmes,7153.85
+202312,SM,partner,Marketing programmes,4533.33
+202312,SM,sales,Sales commission,3911.4
+202312,SM,sales_engineer,Personnel,16500.0
+202312,SM,sdr,Personnel,22000.0
+202312,SM,sdr_manager,Personnel,16000.0
+202401,COGS,cs_am,Personnel,48000.0
+202401,COGS,infrastructure,Hosting,23141.76
+202401,COGS,infrastructure,Third-party licences,13953.12
+202401,GA,corporate,"Facilities, insurance, professional fees",42037.81
+202401,GA,ga,Personnel,46500.0
+202401,RD,engineering,Personnel,157500.0
+202401,RD,engineering,R&D tooling,22200.93
+202401,SM,ae,Personnel,60000.0
+202401,SM,events,Marketing programmes,7500.0
+202401,SM,inbound_content,Marketing programmes,9850.0
+202401,SM,marketing,Marketing operations,12561.6
+202401,SM,marketing,Personnel,28000.0
+202401,SM,outbound_sdr,Marketing programmes,5333.33
+202401,SM,paid_search,Marketing programmes,20090.91
+202401,SM,paid_social,Marketing programmes,7538.46
+202401,SM,partner,Marketing programmes,4911.11
+202401,SM,sales,Sales commission,14831.4
+202401,SM,sales_engineer,Personnel,16500.0
+202401,SM,sdr,Personnel,22000.0
+202401,SM,sdr_manager,Personnel,16000.0
+202402,COGS,cs_am,Personnel,48000.0
+202402,COGS,infrastructure,Hosting,23617.69
+202402,COGS,infrastructure,Third-party licences,14240.08
+202402,GA,corporate,"Facilities, insurance, professional fees",42563.29
+202402,GA,ga,Personnel,46500.0
+202402,RD,engineering,Personnel,157500.0
+202402,RD,engineering,R&D tooling,22511.74
+202402,SM,ae,Personnel,60000.0
+202402,SM,events,Marketing programmes,8100.0
+202402,SM,inbound_content,Marketing programmes,10400.0
+202402,SM,marketing,Marketing operations,12706.05
+202402,SM,marketing,Personnel,42000.0
+202402,SM,outbound_sdr,Marketing programmes,5666.67
+202402,SM,paid_search,Marketing programmes,20863.64
+202402,SM,paid_social,Marketing programmes,7923.08
+202402,SM,partner,Marketing programmes,5288.89
+202402,SM,sales,Sales commission,12918.0
+202402,SM,sales_engineer,Personnel,16500.0
+202402,SM,sdr,Personnel,33000.0
+202402,SM,sdr_manager,Personnel,16000.0
+202403,COGS,cs_am,Personnel,48000.0
+202403,COGS,infrastructure,Hosting,24913.43
+202403,COGS,infrastructure,Third-party licences,15021.33
+202403,GA,corporate,"Facilities, insurance, professional fees",43095.33
+202403,GA,ga,Personnel,46500.0
+202403,RD,engineering,Personnel,157500.0
+202403,RD,engineering,R&D tooling,22826.9
+202403,SM,ae,Personnel,60000.0
+202403,SM,events,Marketing programmes,8700.0
+202403,SM,inbound_content,Marketing programmes,10950.0
+202403,SM,marketing,Marketing operations,12852.17
+202403,SM,marketing,Personnel,42000.0
+202403,SM,outbound_sdr,Marketing programmes,6000.0
+202403,SM,paid_search,Marketing programmes,21636.36
+202403,SM,paid_social,Marketing programmes,8307.69
+202403,SM,partner,Marketing programmes,5666.67
+202403,SM,sales,Sales commission,26028.0
+202403,SM,sales_engineer,Personnel,16500.0
+202403,SM,sdr,Personnel,33000.0
+202403,SM,sdr_manager,Personnel,16000.0
+202404,COGS,cs_am,Personnel,48000.0
+202404,COGS,infrastructure,Hosting,25683.94
+202404,COGS,infrastructure,Third-party licences,15485.91
+202404,GA,corporate,"Facilities, insurance, professional fees",43634.02
+202404,GA,ga,Personnel,46500.0
+202404,RD,engineering,Personnel,175000.0
+202404,RD,engineering,R&D tooling,23146.48
+202404,SM,ae,Personnel,60000.0
+202404,SM,events,Marketing programmes,9300.0
+202404,SM,inbound_content,Marketing programmes,11500.0
+202404,SM,marketing,Marketing operations,12999.97
+202404,SM,marketing,Personnel,42000.0
+202404,SM,outbound_sdr,Marketing programmes,6333.33
+202404,SM,paid_search,Marketing programmes,22409.09
+202404,SM,paid_social,Marketing programmes,8692.31
+202404,SM,partner,Marketing programmes,6044.44
+202404,SM,sales,Sales commission,19027.2
+202404,SM,sales_engineer,Personnel,16500.0
+202404,SM,sdr,Personnel,33000.0
+202404,SM,sdr_manager,Personnel,16000.0
+202405,COGS,cs_am,Personnel,48000.0
+202405,COGS,infrastructure,Hosting,25845.03
+202405,COGS,infrastructure,Third-party licences,15583.03
+202405,GA,corporate,"Facilities, insurance, professional fees",44179.44
+202405,GA,ga,Personnel,46500.0
+202405,RD,engineering,Personnel,175000.0
+202405,RD,engineering,R&D tooling,23470.53
+202405,SM,ae,Personnel,60000.0
+202405,SM,events,Marketing programmes,9900.0
+202405,SM,inbound_content,Marketing programmes,12050.0
+202405,SM,marketing,Marketing operations,13149.47
+202405,SM,marketing,Personnel,42000.0
+202405,SM,outbound_sdr,Marketing programmes,6666.67
+202405,SM,paid_search,Marketing programmes,23181.82
+202405,SM,paid_social,Marketing programmes,9076.92
+202405,SM,partner,Marketing programmes,6422.22
+202405,SM,sales,Sales commission,12329.4
+202405,SM,sales_engineer,Personnel,16500.0
+202405,SM,sdr,Personnel,33000.0
+202405,SM,sdr_manager,Personnel,16000.0
+202406,COGS,cs_am,Personnel,60000.0
+202406,COGS,infrastructure,Hosting,26049.37
+202406,COGS,infrastructure,Third-party licences,15706.24
+202406,GA,corporate,"Facilities, insurance, professional fees",44731.69
+202406,GA,ga,Personnel,62000.0
+202406,RD,engineering,Personnel,175000.0
+202406,RD,engineering,R&D tooling,23799.12
+202406,SM,ae,Personnel,75000.0
+202406,SM,events,Marketing programmes,10500.0
+202406,SM,inbound_content,Marketing programmes,12600.0
+202406,SM,marketing,Marketing operations,13300.69
+202406,SM,marketing,Personnel,42000.0
+202406,SM,outbound_sdr,Marketing programmes,7000.0
+202406,SM,paid_search,Marketing programmes,23954.55
+202406,SM,paid_social,Marketing programmes,9461.54
+202406,SM,partner,Marketing programmes,6800.0
+202406,SM,sales,Sales commission,6301.2
+202406,SM,sales_engineer,Personnel,33000.0
+202406,SM,sdr,Personnel,33000.0
+202406,SM,sdr_manager,Personnel,16000.0
+202407,COGS,cs_am,Personnel,60000.0
+202407,COGS,infrastructure,Hosting,26877.75
+202407,COGS,infrastructure,Third-party licences,16205.7
+202407,GA,corporate,"Facilities, insurance, professional fees",45290.83
+202407,GA,ga,Personnel,62000.0
+202407,RD,engineering,Personnel,175000.0
+202407,RD,engineering,R&D tooling,24132.31
+202407,SM,ae,Personnel,75000.0
+202407,SM,events,Marketing programmes,11100.0
+202407,SM,inbound_content,Marketing programmes,13150.0
+202407,SM,marketing,Marketing operations,13453.65
+202407,SM,marketing,Personnel,42000.0
+202407,SM,outbound_sdr,Marketing programmes,7333.33
+202407,SM,paid_search,Marketing programmes,24727.27
+202407,SM,paid_social,Marketing programmes,9846.15
+202407,SM,partner,Marketing programmes,7177.78
+202407,SM,sales,Sales commission,19783.2
+202407,SM,sales_engineer,Personnel,33000.0
+202407,SM,sdr,Personnel,33000.0
+202407,SM,sdr_manager,Personnel,16000.0
+202408,COGS,cs_am,Personnel,60000.0
+202408,COGS,infrastructure,Hosting,27163.69
+202408,COGS,infrastructure,Third-party licences,16378.11
+202408,GA,corporate,"Facilities, insurance, professional fees",45856.97
+202408,GA,ga,Personnel,62000.0
+202408,RD,engineering,Personnel,192500.0
+202408,RD,engineering,R&D tooling,24470.16
+202408,SM,ae,Personnel,75000.0
+202408,SM,events,Marketing programmes,11700.0
+202408,SM,inbound_content,Marketing programmes,13700.0
+202408,SM,marketing,Marketing operations,13608.37
+202408,SM,marketing,Personnel,42000.0
+202408,SM,outbound_sdr,Marketing programmes,7666.67
+202408,SM,paid_search,Marketing programmes,25500.0
+202408,SM,paid_social,Marketing programmes,10230.77
+202408,SM,partner,Marketing programmes,7555.56
+202408,SM,sales,Sales commission,9458.4
+202408,SM,sales_engineer,Personnel,33000.0
+202408,SM,sdr,Personnel,33000.0
+202408,SM,sdr_manager,Personnel,16000.0
+202409,COGS,cs_am,Personnel,60000.0
+202409,COGS,infrastructure,Hosting,27892.72
+202409,COGS,infrastructure,Third-party licences,16817.67
+202409,GA,corporate,"Facilities, insurance, professional fees",46430.18
+202409,GA,ga,Personnel,62000.0
+202409,RD,engineering,Personnel,192500.0
+202409,RD,engineering,R&D tooling,24812.74
+202409,SM,ae,Personnel,75000.0
+202409,SM,events,Marketing programmes,12300.0
+202409,SM,inbound_content,Marketing programmes,14250.0
+202409,SM,marketing,Marketing operations,13764.86
+202409,SM,marketing,Personnel,42000.0
+202409,SM,outbound_sdr,Marketing programmes,8000.0
+202409,SM,paid_search,Marketing programmes,26491.67
+202409,SM,paid_social,Marketing programmes,10615.38
+202409,SM,partner,Marketing programmes,7933.33
+202409,SM,sales,Sales commission,17591.4
+202409,SM,sales_engineer,Personnel,33000.0
+202409,SM,sdr,Personnel,44000.0
+202409,SM,sdr_manager,Personnel,32000.0
+202410,COGS,cs_am,Personnel,60000.0
+202410,COGS,infrastructure,Hosting,28823.02
+202410,COGS,infrastructure,Third-party licences,17378.59
+202410,GA,corporate,"Facilities, insurance, professional fees",47010.56
+202410,GA,ga,Personnel,62000.0
+202410,RD,engineering,Personnel,192500.0
+202410,RD,engineering,R&D tooling,25160.12
+202410,SM,ae,Personnel,75000.0
+202410,SM,events,Marketing programmes,12900.0
+202410,SM,inbound_content,Marketing programmes,14800.0
+202410,SM,marketing,Marketing operations,13923.16
+202410,SM,marketing,Personnel,56000.0
+202410,SM,outbound_sdr,Marketing programmes,8333.33
+202410,SM,paid_search,Marketing programmes,27483.33
+202410,SM,paid_social,Marketing programmes,11000.0
+202410,SM,partner,Marketing programmes,8311.11
+202410,SM,sales,Sales commission,19785.0
+202410,SM,sales_engineer,Personnel,33000.0
+202410,SM,sdr,Personnel,44000.0
+202410,SM,sdr_manager,Personnel,32000.0
+202411,COGS,cs_am,Personnel,60000.0
+202411,COGS,infrastructure,Hosting,29502.28
+202411,COGS,infrastructure,Third-party licences,17788.14
+202411,GA,corporate,"Facilities, insurance, professional fees",47598.19
+202411,GA,ga,Personnel,62000.0
+202411,RD,engineering,Personnel,192500.0
+202411,RD,engineering,R&D tooling,25512.36
+202411,SM,ae,Personnel,75000.0
+202411,SM,events,Marketing programmes,13500.0
+202411,SM,inbound_content,Marketing programmes,15350.0
+202411,SM,marketing,Marketing operations,14083.28
+202411,SM,marketing,Personnel,56000.0
+202411,SM,outbound_sdr,Marketing programmes,8666.67
+202411,SM,paid_search,Marketing programmes,28475.0
+202411,SM,paid_social,Marketing programmes,18000.0
+202411,SM,partner,Marketing programmes,8688.89
+202411,SM,sales,Sales commission,13768.8
+202411,SM,sales_engineer,Personnel,33000.0
+202411,SM,sdr,Personnel,44000.0
+202411,SM,sdr_manager,Personnel,32000.0
+202412,COGS,cs_am,Personnel,72000.0
+202412,COGS,infrastructure,Hosting,29939.72
+202412,COGS,infrastructure,Third-party licences,18051.89
+202412,GA,corporate,"Facilities, insurance, professional fees",48193.17
+202412,GA,ga,Personnel,62000.0
+202412,RD,engineering,Personnel,210000.0
+202412,RD,engineering,R&D tooling,25869.53
+202412,SM,ae,Personnel,75000.0
+202412,SM,events,Marketing programmes,14100.0
+202412,SM,inbound_content,Marketing programmes,15900.0
+202412,SM,marketing,Marketing operations,14245.23
+202412,SM,marketing,Personnel,56000.0
+202412,SM,outbound_sdr,Marketing programmes,9000.0
+202412,SM,paid_search,Marketing programmes,29466.67
+202412,SM,paid_social,Marketing programmes,21200.0
+202412,SM,partner,Marketing programmes,9066.67
+202412,SM,sales,Sales commission,9151.2
+202412,SM,sales_engineer,Personnel,33000.0
+202412,SM,sdr,Personnel,44000.0
+202412,SM,sdr_manager,Personnel,32000.0
+202501,COGS,cs_am,Personnel,72000.0
+202501,COGS,infrastructure,Hosting,30983.79
+202501,COGS,infrastructure,Third-party licences,18681.4
+202501,GA,corporate,"Facilities, insurance, professional fees",48795.58
+202501,GA,ga,Personnel,62000.0
+202501,RD,engineering,Personnel,210000.0
+202501,RD,engineering,R&D tooling,26231.71
+202501,SM,ae,Personnel,75000.0
+202501,SM,events,Marketing programmes,14700.0
+202501,SM,inbound_content,Marketing programmes,16450.0
+202501,SM,marketing,Marketing operations,14409.05
+202501,SM,marketing,Personnel,56000.0
+202501,SM,outbound_sdr,Marketing programmes,9333.33
+202501,SM,paid_search,Marketing programmes,30458.33
+202501,SM,paid_social,Marketing programmes,24400.0
+202501,SM,partner,Marketing programmes,9444.44
+202501,SM,sales,Sales commission,17960.4
+202501,SM,sales_engineer,Personnel,33000.0
+202501,SM,sdr,Personnel,44000.0
+202501,SM,sdr_manager,Personnel,32000.0
+202502,COGS,cs_am,Personnel,72000.0
+202502,COGS,infrastructure,Hosting,32529.85
+202502,COGS,infrastructure,Third-party licences,19613.58
+202502,GA,corporate,"Facilities, insurance, professional fees",49405.53
+202502,GA,ga,Personnel,62000.0
+202502,RD,engineering,Personnel,210000.0
+202502,RD,engineering,R&D tooling,26598.95
+202502,SM,ae,Personnel,90000.0
+202502,SM,events,Marketing programmes,15300.0
+202502,SM,inbound_content,Marketing programmes,17000.0
+202502,SM,marketing,Marketing operations,14574.76
+202502,SM,marketing,Personnel,56000.0
+202502,SM,outbound_sdr,Marketing programmes,9666.67
+202502,SM,paid_search,Marketing programmes,31450.0
+202502,SM,paid_social,Marketing programmes,27600.0
+202502,SM,partner,Marketing programmes,9822.22
+202502,SM,sales,Sales commission,34275.06
+202502,SM,sales_engineer,Personnel,33000.0
+202502,SM,sdr,Personnel,44000.0
+202502,SM,sdr_manager,Personnel,32000.0
+202503,COGS,cs_am,Personnel,72000.0
+202503,COGS,infrastructure,Hosting,33896.32
+202503,COGS,infrastructure,Third-party licences,20437.49
+202503,GA,corporate,"Facilities, insurance, professional fees",50023.1
+202503,GA,ga,Personnel,62000.0
+202503,RD,engineering,Personnel,210000.0
+202503,RD,engineering,R&D tooling,26971.34
+202503,SM,ae,Personnel,90000.0
+202503,SM,events,Marketing programmes,16008.33
+202503,SM,inbound_content,Marketing programmes,17661.11
+202503,SM,marketing,Marketing operations,14742.37
+202503,SM,marketing,Personnel,56000.0
+202503,SM,outbound_sdr,Marketing programmes,10000.0
+202503,SM,paid_search,Marketing programmes,32441.67
+202503,SM,paid_social,Marketing programmes,30800.0
+202503,SM,partner,Marketing programmes,10200.0
+202503,SM,sales,Sales commission,27840.28
+202503,SM,sales_engineer,Personnel,33000.0
+202503,SM,sdr,Personnel,44000.0
+202503,SM,sdr_manager,Personnel,32000.0
+202504,COGS,cs_am,Personnel,72000.0
+202504,COGS,infrastructure,Hosting,34624.22
+202504,COGS,infrastructure,Third-party licences,20876.37
+202504,GA,corporate,"Facilities, insurance, professional fees",50648.38
+202504,GA,ga,Personnel,62000.0
+202504,RD,engineering,Personnel,227500.0
+202504,RD,engineering,R&D tooling,27348.94
+202504,SM,ae,Personnel,90000.0
+202504,SM,events,Marketing programmes,16716.67
+202504,SM,inbound_content,Marketing programmes,18322.22
+202504,SM,marketing,Marketing operations,14911.9
+202504,SM,marketing,Personnel,56000.0
+202504,SM,outbound_sdr,Marketing programmes,10333.33
+202504,SM,paid_search,Marketing programmes,33433.33
+202504,SM,paid_social,Marketing programmes,34000.0
+202504,SM,partner,Marketing programmes,10800.0
+202504,SM,sales,Sales commission,14381.24
+202504,SM,sales_engineer,Personnel,33000.0
+202504,SM,sdr,Personnel,55000.0
+202504,SM,sdr_manager,Personnel,32000.0
+202505,COGS,cs_am,Personnel,72000.0
+202505,COGS,infrastructure,Hosting,37976.93
+202505,COGS,infrastructure,Third-party licences,22897.85
+202505,GA,corporate,"Facilities, insurance, professional fees",51281.49
+202505,GA,ga,Personnel,62000.0
+202505,RD,engineering,Personnel,227500.0
+202505,RD,engineering,R&D tooling,27731.82
+202505,SM,ae,Personnel,90000.0
+202505,SM,events,Marketing programmes,17425.0
+202505,SM,inbound_content,Marketing programmes,18983.33
+202505,SM,marketing,Marketing operations,15083.39
+202505,SM,marketing,Personnel,56000.0
+202505,SM,outbound_sdr,Marketing programmes,10666.67
+202505,SM,paid_search,Marketing programmes,34425.0
+202505,SM,paid_social,Marketing programmes,37000.0
+202505,SM,partner,Marketing programmes,11400.0
+202505,SM,sales,Sales commission,65221.26
+202505,SM,sales_engineer,Personnel,33000.0
+202505,SM,sdr,Personnel,55000.0
+202505,SM,sdr_manager,Personnel,32000.0
+202506,COGS,cs_am,Personnel,84000.0
+202506,COGS,infrastructure,Hosting,39348.82
+202506,COGS,infrastructure,Third-party licences,23725.02
+202506,GA,corporate,"Facilities, insurance, professional fees",51922.51
+202506,GA,ga,Personnel,62000.0
+202506,RD,engineering,Personnel,227500.0
+202506,RD,engineering,R&D tooling,28120.07
+202506,SM,ae,Personnel,90000.0
+202506,SM,events,Marketing programmes,18133.33
+202506,SM,inbound_content,Marketing programmes,19644.44
+202506,SM,marketing,Marketing operations,15256.85
+202506,SM,marketing,Personnel,56000.0
+202506,SM,outbound_sdr,Marketing programmes,11000.0
+202506,SM,paid_search,Marketing programmes,35416.67
+202506,SM,paid_social,Marketing programmes,40000.0
+202506,SM,partner,Marketing programmes,12000.0
+202506,SM,sales,Sales commission,25191.85
+202506,SM,sales_engineer,Personnel,33000.0
+202506,SM,sdr,Personnel,55000.0
+202506,SM,sdr_manager,Personnel,32000.0
+202507,COGS,cs_am,Personnel,84000.0
+202507,COGS,infrastructure,Hosting,40350.52
+202507,COGS,infrastructure,Third-party licences,24328.99
+202507,GA,corporate,"Facilities, insurance, professional fees",52571.54
+202507,GA,ga,Personnel,62000.0
+202507,RD,engineering,Personnel,227500.0
+202507,RD,engineering,R&D tooling,28513.75
+202507,SM,ae,Personnel,90000.0
+202507,SM,events,Marketing programmes,18841.67
+202507,SM,inbound_content,Marketing programmes,20305.56
+202507,SM,marketing,Marketing operations,15432.3
+202507,SM,marketing,Personnel,56000.0
+202507,SM,outbound_sdr,Marketing programmes,11333.33
+202507,SM,paid_search,Marketing programmes,36408.33
+202507,SM,paid_social,Marketing programmes,43000.0
+202507,SM,partner,Marketing programmes,12600.0
+202507,SM,sales,Sales commission,25839.17
+202507,SM,sales_engineer,Personnel,33000.0
+202507,SM,sdr,Personnel,66000.0
+202507,SM,sdr_manager,Personnel,32000.0
+202508,COGS,cs_am,Personnel,84000.0
+202508,COGS,infrastructure,Hosting,41590.24
+202508,COGS,infrastructure,Third-party licences,25076.47
+202508,GA,corporate,"Facilities, insurance, professional fees",53228.68
+202508,GA,ga,Personnel,62000.0
+202508,RD,engineering,Personnel,245000.0
+202508,RD,engineering,R&D tooling,28912.94
+202508,SM,ae,Personnel,90000.0
+202508,SM,events,Marketing programmes,19550.0
+202508,SM,inbound_content,Marketing programmes,20966.67
+202508,SM,marketing,Marketing operations,15609.78
+202508,SM,marketing,Personnel,56000.0
+202508,SM,outbound_sdr,Marketing programmes,11666.67
+202508,SM,paid_search,Marketing programmes,37400.0
+202508,SM,paid_social,Marketing programmes,46000.0
+202508,SM,partner,Marketing programmes,13200.0
+202508,SM,sales,Sales commission,20341.93
+202508,SM,sales_engineer,Personnel,33000.0
+202508,SM,sdr,Personnel,88000.0
+202508,SM,sdr_manager,Personnel,32000.0
+202509,COGS,cs_am,Personnel,84000.0
+202509,COGS,infrastructure,Hosting,45425.49
+202509,COGS,infrastructure,Third-party licences,27388.9
+202509,GA,corporate,"Facilities, insurance, professional fees",53894.04
+202509,GA,ga,Personnel,62000.0
+202509,RD,engineering,Personnel,245000.0
+202509,RD,engineering,R&D tooling,29317.72
+202509,SM,ae,Personnel,90000.0
+202509,SM,events,Marketing programmes,20258.33
+202509,SM,inbound_content,Marketing programmes,21627.78
+202509,SM,marketing,Marketing operations,15789.29
+202509,SM,marketing,Personnel,56000.0
+202509,SM,outbound_sdr,Marketing programmes,12000.0
+202509,SM,paid_search,Marketing programmes,38533.33
+202509,SM,paid_social,Marketing programmes,49000.0
+202509,SM,partner,Marketing programmes,13800.0
+202509,SM,sales,Sales commission,69808.82
+202509,SM,sales_engineer,Personnel,33000.0
+202509,SM,sdr,Personnel,99000.0
+202509,SM,sdr_manager,Personnel,32000.0
+202510,COGS,cs_am,Personnel,84000.0
+202510,COGS,infrastructure,Hosting,46751.24
+202510,COGS,infrastructure,Third-party licences,28188.25
+202510,GA,corporate,"Facilities, insurance, professional fees",54567.72
+202510,GA,ga,Personnel,62000.0
+202510,RD,engineering,Personnel,245000.0
+202510,RD,engineering,R&D tooling,29728.17
+202510,SM,ae,Personnel,105000.0
+202510,SM,events,Marketing programmes,20966.67
+202510,SM,inbound_content,Marketing programmes,22288.89
+202510,SM,marketing,Marketing operations,15970.86
+202510,SM,marketing,Personnel,56000.0
+202510,SM,outbound_sdr,Marketing programmes,12636.36
+202510,SM,paid_search,Marketing programmes,39666.67
+202510,SM,paid_social,Marketing programmes,52000.0
+202510,SM,partner,Marketing programmes,14400.0
+202510,SM,sales,Sales commission,24515.51
+202510,SM,sales_engineer,Personnel,33000.0
+202510,SM,sdr,Personnel,99000.0
+202510,SM,sdr_manager,Personnel,32000.0
+202511,COGS,cs_am,Personnel,96000.0
+202511,COGS,infrastructure,Hosting,47715.16
+202511,COGS,infrastructure,Third-party licences,28769.44
+202511,GA,corporate,"Facilities, insurance, professional fees",55249.81
+202511,GA,ga,Personnel,62000.0
+202511,RD,engineering,Personnel,245000.0
+202511,RD,engineering,R&D tooling,30144.36
+202511,SM,ae,Personnel,105000.0
+202511,SM,events,Marketing programmes,21675.0
+202511,SM,inbound_content,Marketing programmes,22950.0
+202511,SM,marketing,Marketing operations,16154.53
+202511,SM,marketing,Personnel,56000.0
+202511,SM,outbound_sdr,Marketing programmes,13272.73
+202511,SM,paid_search,Marketing programmes,40800.0
+202511,SM,paid_social,Marketing programmes,55000.0
+202511,SM,partner,Marketing programmes,15000.0
+202511,SM,sales,Sales commission,26126.59
+202511,SM,sales_engineer,Personnel,33000.0
+202511,SM,sdr,Personnel,99000.0
+202511,SM,sdr_manager,Personnel,32000.0
+202512,COGS,cs_am,Personnel,96000.0
+202512,COGS,infrastructure,Hosting,50444.59
+202512,COGS,infrastructure,Third-party licences,30415.12
+202512,GA,corporate,"Facilities, insurance, professional fees",55940.44
+202512,GA,ga,Personnel,77500.0
+202512,RD,engineering,Personnel,262500.0
+202512,RD,engineering,R&D tooling,30566.39
+202512,SM,ae,Personnel,105000.0
+202512,SM,events,Marketing programmes,22383.33
+202512,SM,inbound_content,Marketing programmes,23611.11
+202512,SM,marketing,Marketing operations,16340.31
+202512,SM,marketing,Personnel,70000.0
+202512,SM,outbound_sdr,Marketing programmes,13909.09
+202512,SM,paid_search,Marketing programmes,41933.33
+202512,SM,paid_social,Marketing programmes,58000.0
+202512,SM,partner,Marketing programmes,15600.0
+202512,SM,sales,Sales commission,48114.56
+202512,SM,sales_engineer,Personnel,49500.0
+202512,SM,sdr,Personnel,99000.0
+202512,SM,sdr_manager,Personnel,32000.0
+202601,COGS,cs_am,Personnel,96000.0
+202601,COGS,infrastructure,Hosting,53794.91
+202601,COGS,infrastructure,Third-party licences,32435.17
+202601,GA,corporate,"Facilities, insurance, professional fees",56639.69
+202601,GA,ga,Personnel,77500.0
+202601,RD,engineering,Personnel,262500.0
+202601,RD,engineering,R&D tooling,30994.31
+202601,SM,ae,Personnel,120000.0
+202601,SM,events,Marketing programmes,23091.67
+202601,SM,inbound_content,Marketing programmes,24272.22
+202601,SM,marketing,Marketing operations,16528.22
+202601,SM,marketing,Personnel,70000.0
+202601,SM,outbound_sdr,Marketing programmes,14545.45
+202601,SM,paid_search,Marketing programmes,43066.67
+202601,SM,paid_social,Marketing programmes,60500.0
+202601,SM,partner,Marketing programmes,16200.0
+202601,SM,sales,Sales commission,56404.27
+202601,SM,sales_engineer,Personnel,49500.0
+202601,SM,sdr,Personnel,99000.0
+202601,SM,sdr_manager,Personnel,32000.0
+202602,COGS,cs_am,Personnel,96000.0
+202602,COGS,infrastructure,Hosting,57248.03
+202602,COGS,infrastructure,Third-party licences,34517.2
+202602,GA,corporate,"Facilities, insurance, professional fees",57347.69
+202602,GA,ga,Personnel,77500.0
+202602,RD,engineering,Personnel,262500.0
+202602,RD,engineering,R&D tooling,31428.23
+202602,SM,ae,Personnel,120000.0
+202602,SM,events,Marketing programmes,23800.0
+202602,SM,inbound_content,Marketing programmes,24933.33
+202602,SM,marketing,Marketing operations,16718.29
+202602,SM,marketing,Personnel,70000.0
+202602,SM,outbound_sdr,Marketing programmes,15181.82
+202602,SM,paid_search,Marketing programmes,44200.0
+202602,SM,paid_social,Marketing programmes,63000.0
+202602,SM,partner,Marketing programmes,16800.0
+202602,SM,sales,Sales commission,67230.89
+202602,SM,sales_engineer,Personnel,49500.0
+202602,SM,sdr,Personnel,99000.0
+202602,SM,sdr_manager,Personnel,32000.0
+202603,COGS,cs_am,Personnel,96000.0
+202603,COGS,infrastructure,Hosting,58421.66
+202603,COGS,infrastructure,Third-party licences,35224.82
+202603,GA,corporate,"Facilities, insurance, professional fees",58064.53
+202603,GA,ga,Personnel,77500.0
+202603,RD,engineering,Personnel,280000.0
+202603,RD,engineering,R&D tooling,31868.23
+202603,SM,ae,Personnel,120000.0
+202603,SM,events,Marketing programmes,24508.33
+202603,SM,inbound_content,Marketing programmes,25594.44
+202603,SM,marketing,Marketing operations,16910.55
+202603,SM,marketing,Personnel,70000.0
+202603,SM,outbound_sdr,Marketing programmes,15818.18
+202603,SM,paid_search,Marketing programmes,45333.33
+202603,SM,paid_social,Marketing programmes,65500.0
+202603,SM,partner,Marketing programmes,17400.0
+202603,SM,sales,Sales commission,27218.03
+202603,SM,sales_engineer,Personnel,49500.0
+202603,SM,sdr,Personnel,99000.0
+202603,SM,sdr_manager,Personnel,32000.0
+202604,COGS,cs_am,Personnel,96000.0
+202604,COGS,infrastructure,Hosting,60611.56
+202604,COGS,infrastructure,Third-party licences,36545.2
+202604,GA,corporate,"Facilities, insurance, professional fees",58790.34
+202604,GA,ga,Personnel,77500.0
+202604,RD,engineering,Personnel,280000.0
+202604,RD,engineering,R&D tooling,32314.39
+202604,SM,ae,Personnel,120000.0
+202604,SM,events,Marketing programmes,25216.67
+202604,SM,inbound_content,Marketing programmes,26255.56
+202604,SM,marketing,Marketing operations,17105.03
+202604,SM,marketing,Personnel,70000.0
+202604,SM,outbound_sdr,Marketing programmes,16454.55
+202604,SM,paid_search,Marketing programmes,46466.67
+202604,SM,paid_social,Marketing programmes,68000.0
+202604,SM,partner,Marketing programmes,18000.0
+202604,SM,sales,Sales commission,46200.44
+202604,SM,sales_engineer,Personnel,49500.0
+202604,SM,sdr,Personnel,99000.0
+202604,SM,sdr_manager,Personnel,32000.0
+202605,COGS,cs_am,Personnel,96000.0
+202605,COGS,infrastructure,Hosting,62941.35
+202605,COGS,infrastructure,Third-party licences,37949.93
+202605,GA,corporate,"Facilities, insurance, professional fees",59525.22
+202605,GA,ga,Personnel,77500.0
+202605,RD,engineering,Personnel,280000.0
+202605,RD,engineering,R&D tooling,32766.79
+202605,SM,ae,Personnel,120000.0
+202605,SM,events,Marketing programmes,25925.0
+202605,SM,inbound_content,Marketing programmes,26916.67
+202605,SM,marketing,Marketing operations,17301.73
+202605,SM,marketing,Personnel,70000.0
+202605,SM,outbound_sdr,Marketing programmes,17090.91
+202605,SM,paid_search,Marketing programmes,47600.0
+202605,SM,paid_social,Marketing programmes,70500.0
+202605,SM,partner,Marketing programmes,18600.0
+202605,SM,sales,Sales commission,43285.55
+202605,SM,sales_engineer,Personnel,49500.0
+202605,SM,sdr,Personnel,99000.0
+202605,SM,sdr_manager,Personnel,32000.0
+202606,COGS,cs_am,Personnel,108000.0
+202606,COGS,infrastructure,Hosting,65878.52
+202606,COGS,infrastructure,Third-party licences,39720.87
+202606,GA,corporate,"Facilities, insurance, professional fees",60269.29
+202606,GA,ga,Personnel,77500.0
+202606,RD,engineering,Personnel,280000.0
+202606,RD,engineering,R&D tooling,33225.52
+202606,SM,ae,Personnel,120000.0
+202606,SM,events,Marketing programmes,26633.33
+202606,SM,inbound_content,Marketing programmes,27577.78
+202606,SM,marketing,Marketing operations,17500.7
+202606,SM,marketing,Personnel,70000.0
+202606,SM,outbound_sdr,Marketing programmes,17727.27
+202606,SM,paid_search,Marketing programmes,48733.33
+202606,SM,paid_social,Marketing programmes,73000.0
+202606,SM,partner,Marketing programmes,19200.0
+202606,SM,sales,Sales commission,56413.32
+202606,SM,sales_engineer,Personnel,49500.0
+202606,SM,sdr,Personnel,99000.0
+202606,SM,sdr_manager,Personnel,32000.0
+202607,COGS,cs_am,Personnel,108000.0
+202607,COGS,infrastructure,Hosting,67808.36
+202607,COGS,infrastructure,Third-party licences,40884.45
+202607,GA,corporate,"Facilities, insurance, professional fees",61022.65
+202607,GA,ga,Personnel,77500.0
+202607,RD,engineering,Personnel,297500.0
+202607,RD,engineering,R&D tooling,33690.68
+202607,SM,ae,Personnel,120000.0
+202607,SM,events,Marketing programmes,27341.67
+202607,SM,inbound_content,Marketing programmes,28238.89
+202607,SM,marketing,Marketing operations,17701.96
+202607,SM,marketing,Personnel,70000.0
+202607,SM,outbound_sdr,Marketing programmes,18363.64
+202607,SM,paid_search,Marketing programmes,49866.67
+202607,SM,paid_social,Marketing programmes,75500.0
+202607,SM,partner,Marketing programmes,19800.0
+202607,SM,sales,Sales commission,29634.53
+202607,SM,sales_engineer,Personnel,49500.0
+202607,SM,sdr,Personnel,99000.0
+202607,SM,sdr_manager,Personnel,32000.0
+202608,COGS,cs_am,Personnel,108000.0
+202608,COGS,infrastructure,Hosting,70121.11
+202608,COGS,infrastructure,Third-party licences,42278.9
+202608,GA,corporate,"Facilities, insurance, professional fees",61785.43
+202608,GA,ga,Personnel,77500.0
+202608,RD,engineering,Personnel,297500.0
+202608,RD,engineering,R&D tooling,34162.35
+202608,SM,ae,Personnel,120000.0
+202608,SM,events,Marketing programmes,28050.0
+202608,SM,inbound_content,Marketing programmes,28900.0
+202608,SM,marketing,Marketing operations,17905.53
+202608,SM,marketing,Personnel,70000.0
+202608,SM,outbound_sdr,Marketing programmes,19000.0
+202608,SM,paid_search,Marketing programmes,51000.0
+202608,SM,paid_social,Marketing programmes,78000.0
+202608,SM,partner,Marketing programmes,20400.0
+202608,SM,sales,Sales commission,41111.52
+202608,SM,sales_engineer,Personnel,49500.0
+202608,SM,sdr,Personnel,99000.0
+202608,SM,sdr_manager,Personnel,32000.0
