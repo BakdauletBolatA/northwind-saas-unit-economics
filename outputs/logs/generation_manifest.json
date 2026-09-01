@@ -1,0 +1,31 @@
+{
+  "seed": 20260901,
+  "generated_rows": {
+    "customers.csv": 826,
+    "billing_raw.csv": 17310,
+    "marketing_spend.csv": 216,
+    "headcount.csv": 288,
+    "opex_ledger.csv": 720,
+    "events_calendar.csv": 6
+  },
+  "sha256": {
+    "customers.csv": "ab49c61558dc4d9640cd9c9ca3145367ef7049d45bb8ad2992a1eb1424fd41c6",
+    "billing_raw.csv": "42cccf30bc0aa0820cb6484b94fd44193c098eaa620a1d82cce9bb7f980c7e86",
+    "marketing_spend.csv": "ae72b8df3e30ed94901fbcadf640b3d5a0b6aebf296fa1d6ca00af20f2a4bfe9",
+    "headcount.csv": "5b57f257c4a0ce353219c742f1573e6eb8e04c7ad00f7d89b721c92195152696",
+    "opex_ledger.csv": "e97a9aee4c0bd5a81300cb85bb3f7a3b9d768ab2875c0d71c3aa0c5ff62c8fe2",
+    "events_calendar.csv": "eeecef896c7577fd0f3db6121d403a445ba2fd028a1c2c7698e5b9d0c4b0a8e4"
+  },
+  "diagnostics": {
+    "legacy_acv_scale": 0.5431,
+    "defects": {
+      "duplicate_rows_injected": 157,
+      "credit_memo_rows_injected": 239,
+      "orphan_rows_injected": 12,
+      "negative_seat_rows_injected": 7,
+      "missing_acquisition_channel": 17,
+      "missing_segment": 11,
+      "missing_plan_code": 7
+    }
+  }
+}

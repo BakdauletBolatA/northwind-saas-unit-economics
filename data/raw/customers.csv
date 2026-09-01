@@ -1,0 +1,827 @@
+customer_id,company_name,signup_month,acquisition_channel,segment,plan_code,seat_price,initial_seats,country,industry,is_pre_window,churn_month
+CUST-00001,Orchard Medical Supply Holdings,2021-10,partner,SMB,Growth,62.0,6,US,Food & Beverage,1,2024-10
+CUST-00002,Meridian Paper Ltd,2022-03,paid_search,SMB,Growth,62.0,7,US,Medical Devices,1,
+CUST-00003,Dune Medical Supply Inc,2023-06,outbound_sdr,SMB,Starter,39.0,7,US,Medical Devices,1,2025-08
+CUST-00004,Orchard Automotive Works,2023-04,inbound_content,SMB,Starter,39.0,8,US,Retail,1,
+CUST-00005,Ridge Industrial LLC,2021-12,events,SMB,Starter,39.0,7,US,Automotive Parts,1,
+CUST-00006,Bluff Wholesale Works,2021-07,paid_search,SMB,Starter,39.0,6,US,Food & Beverage,1,2024-04
+CUST-00007,Bluff Materials LLC,2022-09,partner,SMB,Growth,62.0,6,DE,Medical Devices,1,2024-08
+CUST-00008,Halcyon Packaging LLC,2021-12,paid_social,SMB,Growth,62.0,6,AU,Automotive Parts,1,2025-11
+CUST-00009,Lakeshore Components Group,2021-11,inbound_content,SMB,Growth,62.0,9,US,Apparel,1,2026-05
+CUST-00010,Granite Hardware Group,2023-08,paid_search,Enterprise,Enterprise,121.0,25,SE,Automotive Parts,1,
+CUST-00011,Pioneer Materials LLC,2023-05,paid_search,SMB,Growth,62.0,6,CA,3PL,1,
+CUST-00012,Dune Packaging Ltd,2022-02,paid_search,MidMarket,Scale,88.0,10,SE,Retail,1,
+CUST-00013,Halcyon Supply LLC,2023-04,inbound_content,SMB,Starter,39.0,7,US,Retail,1,2024-07
+CUST-00014,Halcyon Hardware Co,2022-09,inbound_content,SMB,Growth,62.0,7,CA,Chemicals,1,
+CUST-00015,Sterling Automotive Ltd,2021-07,paid_search,SMB,Growth,62.0,9,US,Industrial Distribution,1,2023-12
+CUST-00016,Cedar Apparel Holdings,2021-07,partner,SMB,Growth,62.0,8,US,Chemicals,1,
+CUST-00017,Meridian Hardware Works,2023-06,paid_search,SMB,Growth,62.0,6,US,Food & Beverage,1,
+CUST-00018,Orchard Chemicals Partners,2021-03,paid_social,SMB,Growth,62.0,8,CA,3PL,1,2024-01
+CUST-00019,Iron Supply Inc,2023-06,inbound_content,SMB,Starter,39.0,7,CA,3PL,1,2026-07
+CUST-00020,Iron Materials Works,2021-07,inbound_content,SMB,Starter,39.0,8,AU,Apparel,1,
+CUST-00021,Ridge Components Ltd,2022-08,paid_search,MidMarket,Scale,88.0,23,DE,Medical Devices,1,
+CUST-00022,Northgate Industrial Works,2023-07,events,SMB,Starter,39.0,9,NL,Food & Beverage,1,
+CUST-00023,Anchor Hardware Co,2023-07,partner,SMB,Starter,39.0,8,US,Automotive Parts,1,
+CUST-00024,Copper Logistics Partners,2023-06,paid_social,SMB,Starter,39.0,7,NL,Automotive Parts,1,2025-09
+CUST-00025,Ember Materials Holdings,2021-09,outbound_sdr,SMB,Growth,62.0,8,US,Automotive Parts,1,2023-11
+CUST-00026,Halcyon Distribution Co,2021-06,partner,SMB,Growth,62.0,6,US,Automotive Parts,1,2025-06
+CUST-00027,Kestrel Medical Supply LLC,2021-09,paid_search,SMB,Starter,39.0,4,AU,Food & Beverage,1,
+CUST-00028,Granite Components LLC,2021-11,paid_social,SMB,Starter,39.0,6,SE,3PL,1,
+CUST-00029,Vantage Materials Ltd,2023-04,inbound_content,MidMarket,Scale,88.0,19,AU,Industrial Distribution,1,
+CUST-00030,Iron Fulfilment Works,2021-06,paid_search,MidMarket,Scale,88.0,10,CA,Food & Beverage,1,
+CUST-00031,Dune Industrial Inc,2022-04,events,Enterprise,Enterprise,121.0,25,SE,Medical Devices,1,
+CUST-00032,Bright Automotive Works,2021-09,inbound_content,SMB,,39.0,8,GB,Automotive Parts,1,
+CUST-00033,Quarry Apparel Ltd,2021-04,partner,SMB,Starter,39.0,7,US,Automotive Parts,1,2025-04
+CUST-00034,Northgate Freight Co,2022-04,partner,SMB,Starter,39.0,3,US,Apparel,1,2023-11
+CUST-00035,Foundry Automotive Holdings,2023-03,inbound_content,MidMarket,Scale,88.0,16,DE,Chemicals,1,
+CUST-00036,Harbor Distribution Group,2022-04,paid_search,SMB,Growth,62.0,8,US,Retail,1,2025-02
+CUST-00037,Ember Fulfilment Co,2022-09,inbound_content,MidMarket,Scale,88.0,12,SE,Food & Beverage,1,
+CUST-00038,Prairie Industrial Works,2022-02,inbound_content,Enterprise,Enterprise,121.0,17,US,Apparel,1,
+CUST-00039,Prairie Industrial Inc,2022-06,paid_search,SMB,Starter,39.0,7,SE,Automotive Parts,1,
+CUST-00040,Beacon Medical Supply LLC,2021-06,partner,SMB,Growth,62.0,9,CA,Medical Devices,1,2024-05
+CUST-00041,Willow Beverage Co,2023-06,paid_search,SMB,Starter,39.0,8,GB,Medical Devices,1,2025-07
+CUST-00042,Beacon Medical Supply Inc,2022-10,paid_search,SMB,Starter,39.0,5,US,Retail,1,2025-01
+CUST-00043,Copper Freight LLC,2021-10,outbound_sdr,SMB,Starter,39.0,9,US,Retail,1,
+CUST-00044,Cedar Freight LLC,2021-12,partner,SMB,Starter,39.0,8,SE,Medical Devices,1,2025-02
+CUST-00045,Summit Automotive Ltd,2022-05,inbound_content,SMB,Starter,39.0,8,US,Apparel,1,
+CUST-00046,Orchard Fulfilment LLC,2022-03,paid_search,MidMarket,Scale,88.0,10,NL,Food & Beverage,1,
+CUST-00047,Prairie Medical Supply Co,2023-04,partner,SMB,Starter,39.0,5,US,Medical Devices,1,2023-10
+CUST-00048,Northgate Fulfilment Co,2022-10,outbound_sdr,SMB,Growth,62.0,7,US,Automotive Parts,1,
+CUST-00049,Pioneer Supply LLC,2021-07,paid_search,SMB,Growth,62.0,9,US,3PL,1,2025-05
+CUST-00050,Kestrel Components LLC,2023-06,inbound_content,MidMarket,Scale,88.0,19,GB,Chemicals,1,
+CUST-00051,Lakeshore Chemicals Holdings,2022-08,paid_social,MidMarket,Scale,88.0,23,NL,Automotive Parts,1,
+CUST-00052,Harbor Freight Inc,2022-09,,SMB,Growth,62.0,6,GB,3PL,1,
+CUST-00053,Willow Components Inc,2023-02,outbound_sdr,Enterprise,Enterprise,121.0,27,CA,Automotive Parts,1,2025-11
+CUST-00054,Orchard Beverage Group,2023-03,paid_search,SMB,Starter,39.0,7,GB,Automotive Parts,1,2023-11
+CUST-00055,Meridian Logistics Co,2021-11,outbound_sdr,SMB,Growth,62.0,7,SE,Automotive Parts,1,
+CUST-00056,Prairie Apparel Ltd,2021-10,inbound_content,SMB,Starter,39.0,7,US,Medical Devices,1,2026-03
+CUST-00057,Vantage Fulfilment Group,2023-01,paid_search,SMB,Growth,62.0,8,NL,Apparel,1,
+CUST-00058,Vantage Automotive Co,2021-07,paid_search,SMB,Starter,39.0,5,US,3PL,1,2025-01
+CUST-00059,Copper Packaging Co,2022-01,paid_search,MidMarket,Scale,88.0,16,US,Retail,1,
+CUST-00060,Beacon Freight Works,2023-01,paid_social,MidMarket,Scale,88.0,15,SE,Automotive Parts,1,2024-09
+CUST-00061,Prairie Logistics LLC,2022-07,paid_search,SMB,Starter,39.0,8,GB,Automotive Parts,1,
+CUST-00062,Anchor Industrial Group,2022-01,inbound_content,SMB,Starter,39.0,8,US,Food & Beverage,1,
+CUST-00063,Vantage Hardware Group,2022-12,inbound_content,Enterprise,Enterprise,121.0,35,US,Medical Devices,1,
+CUST-00064,Orchard Paper Inc,2021-05,events,SMB,Starter,39.0,6,SE,Chemicals,1,
+CUST-00065,Cedar Beverage Holdings,2022-08,outbound_sdr,SMB,Starter,39.0,7,DE,Industrial Distribution,1,
+CUST-00066,Trident Packaging Ltd,2022-07,paid_search,SMB,Starter,39.0,7,DE,Apparel,1,2025-04
+CUST-00067,Prairie Materials Inc,2022-07,,MidMarket,Scale,88.0,11,DE,Chemicals,1,
+CUST-00068,Granite Beverage Partners,2022-12,events,SMB,Growth,62.0,7,DE,Industrial Distribution,1,2024-01
+CUST-00069,Cedar Paper Holdings,2022-09,paid_social,SMB,Growth,62.0,6,NL,3PL,1,
+CUST-00070,Foundry Beverage LLC,2022-10,outbound_sdr,SMB,Starter,39.0,9,SE,Food & Beverage,1,2023-12
+CUST-00071,Bright Distribution LLC,2022-03,partner,SMB,Growth,62.0,8,NL,Medical Devices,1,2025-05
+CUST-00072,Anchor Packaging Partners,2022-12,paid_search,SMB,,39.0,9,US,Apparel,1,
+CUST-00073,Pioneer Fulfilment Inc,2023-04,partner,Enterprise,Enterprise,121.0,24,CA,Food & Beverage,1,
+CUST-00074,Cedar Components LLC,2022-10,paid_social,MidMarket,Scale,88.0,11,DE,Food & Beverage,1,
+CUST-00075,Meridian Automotive Ltd,2022-02,paid_social,SMB,Starter,39.0,9,SE,Industrial Distribution,1,2025-03
+CUST-00076,Northgate Wholesale Partners,2021-04,inbound_content,MidMarket,Scale,88.0,20,NL,Retail,1,
+CUST-00077,Foundry Materials Holdings,2022-12,paid_search,Enterprise,Enterprise,121.0,15,GB,Automotive Parts,1,
+CUST-00078,Lakeshore Beverage Holdings,2022-04,inbound_content,SMB,Growth,62.0,8,AU,Apparel,1,2025-02
+CUST-00079,Iron Wholesale Co,2022-08,paid_search,SMB,Starter,39.0,7,US,Food & Beverage,1,
+CUST-00080,Bright Fulfilment Ltd,2021-12,inbound_content,SMB,Growth,62.0,6,US,Retail,1,
+CUST-00081,Pioneer Logistics Holdings,2022-07,inbound_content,SMB,Growth,62.0,9,AU,Food & Beverage,1,
+CUST-00082,Harbor Beverage Works,2021-07,partner,SMB,Starter,39.0,8,US,Chemicals,1,2026-02
+CUST-00083,Vantage Chemicals Holdings,2023-01,paid_social,SMB,Starter,39.0,8,NL,Automotive Parts,1,2025-02
+CUST-00084,Foundry Logistics Ltd,2022-08,paid_search,SMB,Starter,39.0,7,DE,Chemicals,1,
+CUST-00085,Granite Packaging Holdings,2021-09,inbound_content,SMB,Growth,62.0,7,GB,3PL,1,
+CUST-00086,Dune Chemicals Group,2022-12,paid_search,MidMarket,Scale,88.0,11,US,3PL,1,
+CUST-00087,Quarry Medical Supply Group,2023-08,events,SMB,Starter,39.0,6,US,Industrial Distribution,1,2025-09
+CUST-00088,Granite Packaging Inc,2023-06,inbound_content,MidMarket,Scale,88.0,12,US,Food & Beverage,1,
+CUST-00089,Ridge Distribution Group,2021-06,events,SMB,Starter,39.0,5,GB,Chemicals,1,
+CUST-00090,Beacon Materials Holdings,2021-12,partner,SMB,Growth,62.0,6,US,Retail,1,2025-01
+CUST-00091,Vantage Distribution Ltd,2023-03,paid_social,Enterprise,Enterprise,121.0,25,NL,Apparel,1,
+CUST-00092,Ridge Logistics Holdings,2023-01,paid_search,SMB,Starter,39.0,7,SE,Food & Beverage,1,2025-11
+CUST-00093,Pioneer Paper LLC,2021-12,partner,SMB,,39.0,8,US,Food & Beverage,1,2024-04
+CUST-00094,Prairie Materials Group,2022-12,inbound_content,MidMarket,Scale,88.0,10,DE,Apparel,1,2026-06
+CUST-00095,Iron Wholesale Works,2021-12,inbound_content,SMB,Starter,39.0,8,US,Automotive Parts,1,
+CUST-00096,Kestrel Materials Holdings,2021-10,outbound_sdr,SMB,Starter,39.0,8,US,Automotive Parts,1,
+CUST-00097,Quarry Hardware Co,2021-05,inbound_content,SMB,Growth,62.0,8,NL,Food & Beverage,1,2025-02
+CUST-00098,Foundry Wholesale Ltd,2021-07,outbound_sdr,MidMarket,Scale,88.0,11,SE,Food & Beverage,1,
+CUST-00099,Sterling Distribution Ltd,2023-06,inbound_content,Enterprise,Enterprise,121.0,36,CA,Chemicals,1,
+CUST-00100,Sterling Chemicals Group,2022-01,paid_search,SMB,Starter,39.0,8,NL,Food & Beverage,1,
+CUST-00101,Summit Components Co,2022-11,events,SMB,Growth,62.0,7,GB,Industrial Distribution,1,
+CUST-00102,Ember Foods Works,2021-11,inbound_content,MidMarket,Scale,88.0,10,AU,Apparel,1,
+CUST-00103,Orchard Distribution Group,2021-06,paid_search,SMB,Starter,39.0,6,AU,Retail,1,
+CUST-00104,Granite Fulfilment Co,2021-11,outbound_sdr,SMB,Starter,39.0,9,US,Retail,1,
+CUST-00105,Willow Wholesale Co,2021-11,partner,MidMarket,Scale,88.0,11,SE,Automotive Parts,1,
+CUST-00106,Falcon Packaging Ltd,2021-05,paid_search,SMB,Starter,39.0,8,US,3PL,1,2024-09
+CUST-00107,Bright Medical Supply Co,2021-12,inbound_content,SMB,Growth,62.0,7,NL,Food & Beverage,1,
+CUST-00108,Dune Industrial Group,2022-06,paid_search,SMB,Growth,62.0,6,US,Apparel,1,2024-08
+CUST-00109,Orchard Beverage Works,2021-03,inbound_content,SMB,Starter,39.0,6,US,Apparel,1,
+CUST-00110,Cedar Hardware Co,2022-10,outbound_sdr,SMB,Starter,39.0,8,US,3PL,1,2024-03
+CUST-00111,Bright Distribution Holdings,2021-03,,SMB,Starter,39.0,6,GB,Medical Devices,1,2024-04
+CUST-00112,Kestrel Beverage Ltd,2023-08,inbound_content,MidMarket,Scale,88.0,10,GB,Retail,1,2026-01
+CUST-00113,Halcyon Packaging LLC,2023-05,inbound_content,SMB,Growth,62.0,6,DE,Chemicals,1,
+CUST-00114,Trident Medical Supply Holdings,2022-10,inbound_content,SMB,Starter,39.0,6,US,Industrial Distribution,1,
+CUST-00115,Quarry Wholesale Co,2022-05,partner,MidMarket,Scale,88.0,10,CA,Apparel,1,
+CUST-00116,Vantage Paper Works,2021-04,paid_search,SMB,Growth,62.0,7,US,Food & Beverage,1,
+CUST-00117,Foundry Apparel Co,2021-04,inbound_content,SMB,Starter,39.0,9,US,3PL,1,
+CUST-00118,Cedar Freight LLC,2022-12,paid_search,SMB,Starter,39.0,6,NL,Food & Beverage,1,
+CUST-00119,Northgate Packaging Ltd,2023-08,inbound_content,MidMarket,Scale,88.0,10,CA,Food & Beverage,1,
+CUST-00120,Cedar Beverage Holdings,2023-01,outbound_sdr,SMB,Starter,39.0,9,US,Retail,1,2025-05
+CUST-00121,Ember Automotive LLC,2021-06,paid_search,Enterprise,Enterprise,121.0,15,CA,Industrial Distribution,1,
+CUST-00122,Dune Materials Co,2023-03,outbound_sdr,SMB,Starter,39.0,6,GB,3PL,1,
+CUST-00123,Bluff Medical Supply Works,2022-04,inbound_content,MidMarket,Scale,88.0,17,AU,Automotive Parts,1,
+CUST-00124,Harbor Industrial Co,2023-04,paid_search,SMB,Starter,39.0,6,AU,Automotive Parts,1,2024-08
+CUST-00125,Ember Logistics Works,2023-05,partner,SMB,Starter,39.0,9,US,Automotive Parts,1,
+CUST-00126,Anchor Packaging Works,2021-04,outbound_sdr,SMB,Growth,62.0,9,US,Automotive Parts,1,
+CUST-00127,Bright Packaging Ltd,2022-10,paid_search,SMB,Growth,62.0,7,DE,Chemicals,1,
+CUST-00128,Sterling Industrial Group,2022-05,partner,SMB,Growth,62.0,7,US,Automotive Parts,1,
+CUST-00129,Iron Beverage LLC,2021-10,paid_search,SMB,Starter,39.0,3,US,Automotive Parts,1,
+CUST-00130,Ember Hardware LLC,2023-04,outbound_sdr,SMB,Starter,39.0,8,US,Chemicals,1,
+CUST-00131,Granite Fulfilment LLC,2021-11,inbound_content,SMB,Starter,39.0,7,NL,Apparel,1,
+CUST-00132,Prairie Chemicals Group,2022-07,events,SMB,Starter,39.0,8,DE,Food & Beverage,1,2024-01
+CUST-00133,Halcyon Automotive Holdings,2021-03,outbound_sdr,SMB,Growth,62.0,7,US,Industrial Distribution,1,
+CUST-00134,Foundry Apparel Inc,2021-12,partner,SMB,Growth,62.0,9,US,Industrial Distribution,1,2023-10
+CUST-00135,Dune Distribution LLC,2022-05,events,SMB,Starter,39.0,9,GB,Industrial Distribution,1,
+CUST-00136,Harbor Wholesale Works,2022-04,paid_social,SMB,Starter,39.0,7,NL,Food & Beverage,1,
+CUST-00137,Anchor Fulfilment Co,2021-12,outbound_sdr,SMB,Starter,39.0,6,CA,Retail,1,
+CUST-00138,Anchor Apparel Inc,2023-01,paid_social,SMB,Starter,39.0,5,US,Medical Devices,1,2025-03
+CUST-00139,Foundry Packaging Holdings,2021-11,paid_social,SMB,Starter,39.0,7,US,3PL,1,2026-06
+CUST-00140,Foundry Freight Ltd,2021-06,paid_social,SMB,Starter,39.0,6,US,Medical Devices,1,
+CUST-00141,Foundry Packaging LLC,2022-04,paid_search,MidMarket,Scale,88.0,10,US,Food & Beverage,1,
+CUST-00142,Northgate Chemicals Co,2022-10,partner,SMB,Growth,62.0,6,US,3PL,1,2025-08
+CUST-00143,Iron Hardware Holdings,2022-11,paid_search,SMB,Starter,39.0,5,DE,Chemicals,1,
+CUST-00144,Ridge Supply Works,2021-06,paid_search,SMB,Growth,62.0,7,DE,3PL,1,
+CUST-00145,Pioneer Logistics Co,2022-03,inbound_content,SMB,Growth,62.0,7,GB,Food & Beverage,1,2024-07
+CUST-00146,Foundry Freight Group,2022-01,inbound_content,MidMarket,Scale,88.0,13,US,Medical Devices,1,
+CUST-00147,Anchor Freight Works,2022-07,inbound_content,SMB,Starter,39.0,8,CA,Medical Devices,1,
+CUST-00148,Foundry Apparel Inc,2023-08,paid_search,SMB,Starter,39.0,9,NL,Apparel,1,
+CUST-00149,Iron Distribution Works,2022-08,events,SMB,Starter,39.0,8,US,Apparel,1,
+CUST-00150,Willow Hardware Ltd,2022-05,outbound_sdr,Enterprise,Enterprise,121.0,61,DE,Chemicals,1,
+CUST-00151,Ridge Materials Inc,2022-02,paid_search,MidMarket,Scale,88.0,23,US,Industrial Distribution,1,
+CUST-00152,Bright Foods Ltd,2023-05,partner,SMB,Starter,39.0,3,US,Retail,1,
+CUST-00153,Harbor Components Partners,2021-12,paid_search,SMB,Starter,39.0,7,GB,Apparel,1,2026-08
+CUST-00154,Lakeshore Components Works,2022-08,inbound_content,MidMarket,Scale,88.0,10,US,Industrial Distribution,1,2024-12
+CUST-00155,Orchard Hardware Works,2021-08,paid_social,SMB,Growth,62.0,8,DE,Apparel,1,2024-05
+CUST-00156,Lakeshore Paper Ltd,2023-07,events,SMB,Starter,39.0,4,US,Medical Devices,1,2026-02
+CUST-00157,Foundry Components Works,2022-09,paid_social,MidMarket,Scale,88.0,15,DE,Food & Beverage,1,
+CUST-00158,Halcyon Fulfilment Co,2022-10,outbound_sdr,SMB,Growth,62.0,6,US,Chemicals,1,
+CUST-00159,Anchor Packaging Ltd,2022-07,paid_search,SMB,Starter,39.0,7,SE,3PL,1,2025-02
+CUST-00160,Dune Packaging Works,2021-05,inbound_content,MidMarket,Scale,88.0,14,DE,Industrial Distribution,1,2024-05
+CUST-00161,Sterling Paper Partners,2021-05,paid_search,SMB,Starter,39.0,5,GB,Medical Devices,1,
+CUST-00162,Sterling Medical Supply Holdings,2021-05,,SMB,Growth,62.0,6,US,Medical Devices,1,
+CUST-00163,Meridian Freight LLC,2023-01,,SMB,Growth,62.0,6,AU,Retail,1,2025-02
+CUST-00164,Vantage Hardware Works,2023-08,paid_search,SMB,Starter,39.0,9,US,Industrial Distribution,1,
+CUST-00165,Vantage Beverage Group,2022-02,paid_search,SMB,Starter,39.0,9,US,Apparel,1,
+CUST-00166,Prairie Components Partners,2021-04,outbound_sdr,SMB,Starter,39.0,6,AU,Food & Beverage,1,2024-03
+CUST-00167,Foundry Industrial Works,2022-08,outbound_sdr,SMB,Growth,62.0,7,DE,3PL,1,2025-02
+CUST-00168,Foundry Automotive Group,2021-12,paid_search,SMB,Starter,39.0,9,SE,Retail,1,2025-12
+CUST-00169,Bluff Logistics Works,2022-03,inbound_content,Enterprise,Enterprise,121.0,17,US,Retail,1,
+CUST-00170,Bluff Automotive Ltd,2021-03,paid_search,SMB,Starter,39.0,4,AU,Food & Beverage,1,2025-04
+CUST-00171,Northgate Components Holdings,2021-11,events,SMB,Starter,39.0,9,US,Chemicals,1,
+CUST-00172,Kestrel Logistics Inc,2021-08,paid_social,SMB,Starter,39.0,6,US,Retail,1,2024-12
+CUST-00173,Harbor Wholesale Inc,2023-03,paid_social,SMB,Starter,39.0,5,AU,Apparel,1,
+CUST-00174,Anchor Medical Supply Works,2022-04,partner,SMB,Starter,39.0,7,AU,Industrial Distribution,1,2026-08
+CUST-00175,Quarry Hardware Inc,2021-04,paid_social,SMB,Growth,62.0,6,US,Retail,1,
+CUST-00176,Halcyon Supply Partners,2022-02,events,SMB,Starter,39.0,5,GB,Retail,1,
+CUST-00177,Halcyon Industrial Ltd,2022-11,partner,SMB,Starter,39.0,8,GB,Chemicals,1,2024-04
+CUST-00178,Beacon Hardware Co,2021-07,partner,SMB,Starter,39.0,6,US,Apparel,1,
+CUST-00179,Meridian Logistics Group,2023-07,,SMB,Starter,39.0,5,US,Industrial Distribution,1,2025-06
+CUST-00180,Iron Logistics Partners,2022-10,partner,SMB,Starter,39.0,7,DE,Automotive Parts,1,
+CUST-00181,Cedar Foods Works,2022-05,inbound_content,SMB,Starter,39.0,4,US,Apparel,1,2024-10
+CUST-00182,Vantage Hardware Works,2023-03,outbound_sdr,SMB,Starter,39.0,7,SE,Automotive Parts,1,
+CUST-00183,Ridge Foods Inc,2023-01,paid_search,SMB,Starter,39.0,8,US,Medical Devices,1,
+CUST-00184,Falcon Industrial Works,2022-01,paid_search,MidMarket,Scale,88.0,28,US,Apparel,1,
+CUST-00185,Iron Foods Ltd,2022-10,inbound_content,SMB,Starter,39.0,6,GB,3PL,1,
+CUST-00186,Ember Apparel Works,2022-03,inbound_content,MidMarket,Scale,88.0,15,US,Industrial Distribution,1,
+CUST-00187,Willow Materials Ltd,2023-06,paid_social,SMB,Growth,62.0,6,US,Chemicals,1,2025-07
+CUST-00188,Foundry Apparel Holdings,2023-08,paid_social,SMB,Starter,39.0,8,US,Chemicals,1,2023-10
+CUST-00189,Prairie Apparel Co,2021-04,inbound_content,SMB,Starter,39.0,6,DE,Apparel,1,
+CUST-00190,Falcon Industrial Holdings,2022-09,inbound_content,SMB,Starter,39.0,7,US,Chemicals,1,
+CUST-00191,Prairie Automotive Inc,2022-09,paid_search,MidMarket,Scale,88.0,13,US,Chemicals,1,
+CUST-00192,Vantage Beverage LLC,2022-04,inbound_content,SMB,Starter,39.0,4,AU,Chemicals,1,
+CUST-00193,Sterling Automotive Ltd,2021-12,paid_search,SMB,Growth,62.0,6,CA,Chemicals,1,
+CUST-00194,Meridian Chemicals Co,2022-01,outbound_sdr,MidMarket,Scale,88.0,19,CA,Retail,1,2026-06
+CUST-00195,Trident Logistics Works,2022-10,partner,,Growth,62.0,7,US,Food & Beverage,1,
+CUST-00196,Sterling Wholesale Holdings,2021-11,events,SMB,Starter,39.0,6,SE,Automotive Parts,1,2023-11
+CUST-00197,Falcon Foods Group,2021-11,paid_search,MidMarket,Scale,88.0,22,CA,Industrial Distribution,1,
+CUST-00198,Ember Apparel Holdings,2022-07,paid_search,SMB,Starter,39.0,7,GB,Chemicals,1,2024-08
+CUST-00199,Halcyon Foods Co,2022-09,paid_search,MidMarket,Scale,88.0,10,CA,Chemicals,1,2026-03
+CUST-00200,Trident Packaging Holdings,2023-04,inbound_content,MidMarket,Scale,88.0,15,NL,Chemicals,1,2025-11
+CUST-00201,Falcon Chemicals Inc,2021-05,outbound_sdr,SMB,Starter,39.0,7,NL,Medical Devices,1,
+CUST-00202,Foundry Packaging Works,2022-05,,SMB,Starter,39.0,9,NL,Medical Devices,1,2025-05
+CUST-00203,Orchard Freight Group,2021-03,partner,SMB,Growth,62.0,10,CA,Industrial Distribution,1,
+CUST-00204,Ember Wholesale Inc,2022-05,outbound_sdr,SMB,Starter,39.0,6,NL,Industrial Distribution,1,
+CUST-00205,Bluff Supply LLC,2021-03,inbound_content,SMB,Growth,62.0,7,US,Medical Devices,1,2024-02
+CUST-00206,Falcon Distribution Partners,2021-08,paid_search,SMB,Growth,62.0,7,US,3PL,1,2024-12
+CUST-00207,Ember Components Works,2022-05,partner,SMB,Growth,62.0,7,SE,Medical Devices,1,
+CUST-00208,Copper Foods Partners,2021-03,inbound_content,MidMarket,Scale,88.0,16,US,Apparel,1,
+CUST-00209,Falcon Fulfilment Co,2021-10,paid_search,SMB,Starter,39.0,5,US,Industrial Distribution,1,
+CUST-00210,Pioneer Materials Group,2023-05,partner,MidMarket,Scale,88.0,10,US,3PL,1,
+CUST-00211,Bluff Medical Supply Partners,2023-06,inbound_content,SMB,Starter,39.0,5,CA,Chemicals,1,
+CUST-00212,Northgate Wholesale Works,2022-01,events,SMB,Starter,39.0,4,US,Retail,1,
+CUST-00213,Harbor Fulfilment Co,2022-01,partner,Enterprise,Enterprise,121.0,21,CA,Automotive Parts,1,
+CUST-00214,Prairie Packaging Holdings,2021-08,inbound_content,SMB,Starter,39.0,7,SE,Automotive Parts,1,
+CUST-00215,Harbor Automotive Group,2022-02,outbound_sdr,SMB,Starter,39.0,8,AU,Apparel,1,
+CUST-00216,Granite Materials Inc,2021-07,paid_social,SMB,Growth,62.0,6,US,Industrial Distribution,1,2024-06
+CUST-00217,Granite Wholesale Group,2022-07,partner,MidMarket,Scale,88.0,13,CA,3PL,1,
+CUST-00218,Anchor Industrial Co,2023-07,paid_search,SMB,Growth,62.0,8,US,Automotive Parts,1,2023-12
+CUST-00219,Prairie Chemicals Partners,2021-04,inbound_content,SMB,Starter,39.0,8,AU,3PL,1,
+CUST-00220,Granite Industrial Holdings,2022-01,inbound_content,SMB,Starter,39.0,5,AU,Chemicals,1,2023-12
+CUST-00221,Summit Beverage Ltd,2022-08,paid_search,MidMarket,Scale,88.0,14,US,Medical Devices,1,2024-10
+CUST-00222,Ridge Freight Inc,2021-11,paid_search,SMB,Starter,39.0,6,US,Medical Devices,1,
+CUST-00223,Anchor Supply Holdings,2023-01,paid_search,SMB,Starter,39.0,7,CA,Industrial Distribution,1,
+CUST-00224,Foundry Chemicals LLC,2022-01,paid_search,MidMarket,Scale,88.0,14,US,Apparel,1,
+CUST-00225,Quarry Hardware LLC,2022-11,inbound_content,SMB,Growth,62.0,7,NL,Apparel,1,2024-07
+CUST-00226,Summit Foods Co,2022-02,inbound_content,SMB,Starter,39.0,8,US,Chemicals,1,2026-01
+CUST-00227,Foundry Fulfilment Group,2021-11,inbound_content,SMB,Starter,39.0,8,AU,Automotive Parts,1,
+CUST-00228,Willow Foods Partners,2021-04,events,MidMarket,Scale,88.0,13,SE,Automotive Parts,1,2023-10
+CUST-00229,Falcon Foods Works,2021-03,paid_search,SMB,Growth,62.0,6,US,Retail,1,2024-09
+CUST-00230,Foundry Distribution Ltd,2021-06,paid_search,SMB,Starter,39.0,7,SE,Automotive Parts,1,
+CUST-00231,Willow Supply Holdings,2023-05,partner,SMB,Starter,39.0,5,AU,Automotive Parts,1,
+CUST-00232,Prairie Automotive Inc,2021-11,,SMB,Starter,39.0,5,US,Retail,1,2023-10
+CUST-00233,Cedar Packaging LLC,2022-09,events,MidMarket,Scale,88.0,19,DE,Industrial Distribution,1,2024-06
+CUST-00234,Falcon Components Partners,2021-09,inbound_content,SMB,Growth,62.0,6,GB,Food & Beverage,1,2026-05
+CUST-00235,Ridge Medical Supply Inc,2021-04,partner,SMB,Growth,62.0,6,CA,Automotive Parts,1,2026-07
+CUST-00236,Halcyon Packaging LLC,2021-10,outbound_sdr,SMB,Growth,62.0,7,US,Food & Beverage,1,2024-10
+CUST-00237,Ember Industrial LLC,2022-10,paid_search,MidMarket,Scale,88.0,12,US,Food & Beverage,1,
+CUST-00238,Ember Foods LLC,2022-05,partner,SMB,Starter,39.0,9,AU,Medical Devices,1,
+CUST-00239,Beacon Medical Supply LLC,2023-05,partner,SMB,Growth,62.0,6,US,Retail,1,2023-12
+CUST-00240,Bluff Logistics Inc,2021-04,paid_search,MidMarket,Scale,88.0,10,DE,Chemicals,1,
+CUST-00241,Copper Freight Partners,2023-08,paid_social,SMB,Growth,62.0,9,GB,Apparel,1,2025-06
+CUST-00242,Summit Industrial Co,2023-04,inbound_content,SMB,Growth,62.0,7,DE,Automotive Parts,1,2024-09
+CUST-00243,Copper Materials Group,2023-03,events,SMB,Growth,62.0,8,SE,Industrial Distribution,1,2025-04
+CUST-00244,Copper Wholesale LLC,2022-03,inbound_content,SMB,Starter,39.0,8,CA,Automotive Parts,1,
+CUST-00245,Copper Wholesale Ltd,2021-05,events,SMB,Starter,39.0,6,NL,Medical Devices,1,
+CUST-00246,Sterling Industrial Works,2021-06,paid_search,MidMarket,Scale,88.0,11,US,Retail,1,
+CUST-00247,Beacon Medical Supply Co,2023-03,paid_search,SMB,Growth,62.0,6,GB,Food & Beverage,1,
+CUST-00248,Willow Automotive Group,2023-07,paid_search,SMB,Starter,39.0,5,NL,Apparel,1,2024-10
+CUST-00249,Anchor Beverage Holdings,2023-07,paid_search,SMB,Growth,62.0,7,AU,Apparel,1,2025-03
+CUST-00250,Bright Supply LLC,2022-01,paid_social,MidMarket,Scale,88.0,16,CA,Medical Devices,1,
+CUST-00251,Pioneer Fulfilment Works,2023-07,paid_search,SMB,Growth,62.0,6,GB,Food & Beverage,1,
+CUST-00252,Sterling Beverage Co,2022-10,outbound_sdr,SMB,Starter,39.0,8,US,Medical Devices,1,2026-04
+CUST-00253,Falcon Foods Partners,2023-08,inbound_content,SMB,Starter,39.0,8,SE,Food & Beverage,1,2024-09
+CUST-00254,Iron Industrial Partners,2023-04,events,SMB,Starter,39.0,5,GB,Industrial Distribution,1,
+CUST-00255,Ridge Fulfilment Holdings,2021-08,outbound_sdr,MidMarket,Scale,88.0,10,DE,Food & Beverage,1,
+CUST-00256,Bluff Apparel Holdings,2022-04,outbound_sdr,SMB,Growth,62.0,7,US,Medical Devices,1,
+CUST-00257,Bluff Hardware LLC,2021-09,paid_search,SMB,Starter,39.0,6,CA,Medical Devices,1,2024-05
+CUST-00258,Kestrel Materials LLC,2021-03,partner,SMB,Starter,39.0,5,SE,Food & Beverage,1,2025-10
+CUST-00259,Pioneer Paper Works,2022-09,outbound_sdr,SMB,Growth,62.0,7,GB,Food & Beverage,1,
+CUST-00260,Prairie Supply LLC,2021-06,inbound_content,SMB,Growth,62.0,6,DE,Industrial Distribution,1,2024-10
+CUST-00261,Beacon Logistics Group,2023-04,inbound_content,SMB,Starter,39.0,7,US,Automotive Parts,1,2024-02
+CUST-00262,Orchard Freight Ltd,2022-01,partner,SMB,Starter,39.0,7,US,Apparel,1,
+CUST-00263,Anchor Supply Partners,2022-04,paid_search,SMB,Growth,62.0,6,NL,3PL,1,2025-07
+CUST-00264,Lakeshore Distribution LLC,2021-04,inbound_content,SMB,Growth,62.0,6,AU,Medical Devices,1,2026-03
+CUST-00265,Quarry Medical Supply Co,2023-01,inbound_content,MidMarket,Scale,88.0,13,SE,Apparel,1,2024-09
+CUST-00266,Willow Apparel Partners,2021-05,paid_search,MidMarket,Scale,88.0,15,US,Industrial Distribution,1,
+CUST-00267,Meridian Supply Co,2023-02,paid_search,SMB,Growth,62.0,7,DE,Automotive Parts,1,
+CUST-00268,Trident Supply Holdings,2021-09,outbound_sdr,SMB,Growth,62.0,6,DE,Food & Beverage,1,2025-09
+CUST-00269,Prairie Supply Inc,2023-07,paid_social,SMB,Starter,39.0,5,GB,Chemicals,1,2024-10
+CUST-00270,Summit Foods Partners,2022-01,outbound_sdr,Enterprise,Enterprise,121.0,26,US,Retail,1,
+CUST-00271,Lakeshore Apparel Partners,2023-07,outbound_sdr,SMB,Growth,62.0,7,AU,Industrial Distribution,1,2026-05
+CUST-00272,Pioneer Industrial Ltd,2023-03,paid_social,MidMarket,Scale,88.0,14,SE,Apparel,1,
+CUST-00273,Summit Wholesale LLC,2023-06,paid_search,SMB,Growth,62.0,8,SE,Retail,1,2024-03
+CUST-00274,Sterling Apparel Partners,2021-06,outbound_sdr,MidMarket,Scale,88.0,10,US,Apparel,1,
+CUST-00275,Pioneer Wholesale Holdings,2022-08,inbound_content,SMB,Starter,39.0,8,AU,Automotive Parts,1,2025-06
+CUST-00276,Granite Apparel Inc,2022-05,paid_search,MidMarket,Scale,88.0,13,DE,Automotive Parts,1,
+CUST-00277,Kestrel Materials Inc,2021-03,paid_search,SMB,Growth,62.0,6,US,Chemicals,1,
+CUST-00278,Pioneer Paper Ltd,2021-09,paid_search,SMB,Growth,62.0,7,US,Industrial Distribution,1,2024-03
+CUST-00279,Harbor Freight Group,2022-03,outbound_sdr,MidMarket,Scale,88.0,15,CA,Automotive Parts,1,
+CUST-00280,Northgate Logistics Works,2021-09,outbound_sdr,,Starter,39.0,7,US,Food & Beverage,1,
+CUST-00281,Meridian Components Co,2023-03,paid_search,MidMarket,Scale,88.0,10,US,Retail,1,
+CUST-00282,Copper Distribution Holdings,2023-06,outbound_sdr,SMB,Starter,39.0,7,US,3PL,1,
+CUST-00283,Dune Apparel Holdings,2022-08,outbound_sdr,SMB,Starter,39.0,8,US,3PL,1,
+CUST-00284,Falcon Supply Group,2021-06,paid_search,SMB,Starter,39.0,8,DE,Medical Devices,1,2024-02
+CUST-00285,Harbor Fulfilment Holdings,2023-04,events,SMB,Starter,39.0,4,US,Industrial Distribution,1,
+CUST-00286,Sterling Wholesale Inc,2023-08,paid_search,SMB,Starter,39.0,4,US,Industrial Distribution,1,
+CUST-00287,Cedar Packaging Partners,2021-10,inbound_content,SMB,Starter,39.0,6,CA,3PL,1,
+CUST-00288,Granite Hardware Partners,2021-07,paid_search,MidMarket,Scale,88.0,16,SE,Medical Devices,1,2023-11
+CUST-00289,Granite Industrial Partners,2023-07,outbound_sdr,MidMarket,Scale,88.0,10,SE,Apparel,1,
+CUST-00290,Iron Fulfilment LLC,2023-05,inbound_content,,Starter,39.0,5,US,Food & Beverage,1,2024-06
+CUST-00291,Meridian Foods Co,2021-03,partner,MidMarket,Scale,88.0,14,SE,3PL,1,
+CUST-00292,Beacon Apparel Partners,2021-11,inbound_content,SMB,Growth,62.0,6,US,Medical Devices,1,2025-01
+CUST-00293,Trident Components LLC,2022-06,outbound_sdr,SMB,Starter,39.0,8,SE,Food & Beverage,1,2025-11
+CUST-00294,Granite Medical Supply Inc,2023-01,paid_social,MidMarket,Scale,88.0,10,US,Chemicals,1,
+CUST-00295,Falcon Automotive Ltd,2023-07,paid_social,SMB,Growth,62.0,12,NL,Medical Devices,1,
+CUST-00296,Iron Materials Group,2022-06,inbound_content,SMB,Starter,39.0,7,US,Industrial Distribution,1,2024-03
+CUST-00297,Dune Beverage Works,2021-05,outbound_sdr,SMB,Starter,39.0,8,SE,Apparel,1,
+CUST-00298,Copper Components Group,2022-06,inbound_content,Enterprise,Enterprise,121.0,39,US,Automotive Parts,1,
+CUST-00299,Bright Chemicals LLC,2022-01,events,MidMarket,Scale,88.0,12,DE,3PL,1,
+CUST-00300,Quarry Materials LLC,2023-03,outbound_sdr,MidMarket,Scale,88.0,19,DE,Retail,1,
+CUST-00301,Harbor Distribution Ltd,2021-11,paid_search,SMB,Growth,62.0,11,SE,Medical Devices,1,2025-06
+CUST-00302,Halcyon Chemicals Group,2022-07,paid_search,SMB,Starter,39.0,7,CA,Automotive Parts,1,
+CUST-00303,Kestrel Freight Group,2021-07,paid_search,SMB,Growth,62.0,7,CA,Automotive Parts,1,2026-04
+CUST-00304,Foundry Packaging Ltd,2022-12,paid_search,Enterprise,Enterprise,121.0,26,US,Retail,1,
+CUST-00305,Dune Logistics Works,2023-01,partner,SMB,Starter,39.0,8,AU,Chemicals,1,
+CUST-00306,Anchor Packaging Ltd,2022-04,outbound_sdr,SMB,Starter,39.0,8,DE,3PL,1,2025-12
+CUST-00307,Beacon Medical Supply Holdings,2022-03,inbound_content,MidMarket,Scale,88.0,10,NL,Automotive Parts,1,2024-02
+CUST-00308,Summit Beverage Ltd,2021-12,inbound_content,SMB,Starter,39.0,5,AU,Apparel,1,
+CUST-00309,Trident Fulfilment Holdings,2021-12,inbound_content,MidMarket,Scale,88.0,10,GB,Medical Devices,1,
+CUST-00310,Cedar Paper LLC,2022-01,partner,MidMarket,Scale,88.0,17,NL,Apparel,1,
+CUST-00311,Northgate Distribution LLC,2022-02,paid_social,SMB,Starter,39.0,6,US,Apparel,1,
+CUST-00312,Pioneer Logistics LLC,2022-07,paid_search,MidMarket,Scale,88.0,12,AU,Retail,1,
+CUST-00313,Falcon Hardware Group,2023-05,inbound_content,SMB,Starter,39.0,5,US,Industrial Distribution,1,
+CUST-00314,Trident Logistics Co,2022-02,paid_search,SMB,Starter,39.0,7,SE,Chemicals,1,
+CUST-00315,Willow Distribution Co,2022-01,paid_search,MidMarket,Scale,88.0,10,AU,Automotive Parts,1,
+CUST-00316,Granite Components Works,2022-01,paid_search,SMB,Starter,39.0,7,AU,Medical Devices,1,
+CUST-00317,Dune Automotive Partners,2021-06,paid_search,SMB,Growth,62.0,9,SE,Automotive Parts,1,
+CUST-00318,Sterling Materials Holdings,2022-03,inbound_content,SMB,Growth,62.0,7,AU,Industrial Distribution,1,2026-01
+CUST-00319,Kestrel Hardware Inc,2022-01,paid_social,SMB,Growth,62.0,7,US,Retail,1,2026-03
+CUST-00320,Anchor Hardware Holdings,2023-05,paid_social,SMB,Starter,39.0,5,NL,3PL,1,
+CUST-00321,Copper Wholesale Ltd,2021-08,partner,SMB,Starter,39.0,4,US,Chemicals,1,
+CUST-00322,Dune Materials Partners,2023-07,outbound_sdr,SMB,Growth,62.0,8,CA,Food & Beverage,1,2024-03
+CUST-00323,Quarry Materials Partners,2023-02,events,SMB,Growth,62.0,9,CA,Chemicals,1,2026-07
+CUST-00324,Summit Fulfilment LLC,2021-09,inbound_content,SMB,Starter,39.0,4,CA,Retail,1,2025-04
+CUST-00325,Pioneer Automotive Ltd,2021-08,partner,SMB,Growth,62.0,7,US,Medical Devices,1,2024-09
+CUST-00326,Falcon Distribution Co,2023-07,paid_social,SMB,Starter,39.0,7,AU,Food & Beverage,1,2024-09
+CUST-00327,Lakeshore Packaging LLC,2022-03,partner,SMB,Starter,39.0,8,NL,Retail,1,
+CUST-00328,Harbor Materials Works,2021-07,outbound_sdr,SMB,Starter,39.0,6,NL,Food & Beverage,1,
+CUST-00329,Orchard Packaging Holdings,2021-08,inbound_content,SMB,Starter,39.0,8,GB,Automotive Parts,1,2025-12
+CUST-00330,Falcon Wholesale Ltd,2022-09,outbound_sdr,SMB,Growth,62.0,8,US,Automotive Parts,1,2025-09
+CUST-00331,Cedar Components LLC,2021-08,outbound_sdr,SMB,Starter,39.0,7,US,Medical Devices,1,2026-04
+CUST-00332,Bluff Supply Inc,2021-12,outbound_sdr,SMB,Starter,39.0,8,DE,Medical Devices,1,2025-12
+CUST-00333,Lakeshore Foods Ltd,2023-03,inbound_content,SMB,Starter,39.0,8,US,Medical Devices,1,2025-02
+CUST-00334,Bright Materials Partners,2023-01,inbound_content,SMB,Starter,39.0,7,US,Apparel,1,
+CUST-00335,Willow Distribution Holdings,2023-03,inbound_content,Enterprise,Enterprise,121.0,28,GB,Automotive Parts,1,2024-04
+CUST-00336,Willow Automotive Works,2021-12,partner,SMB,Growth,62.0,6,US,Retail,1,2025-02
+CUST-00337,Meridian Automotive Partners,2021-08,partner,SMB,Starter,39.0,8,GB,Industrial Distribution,1,
+CUST-00338,Bluff Chemicals LLC,2022-05,outbound_sdr,SMB,Growth,62.0,9,US,Medical Devices,1,
+CUST-00339,Sterling Components Works,2022-06,paid_social,MidMarket,Scale,88.0,33,DE,Apparel,1,
+CUST-00340,Harbor Logistics LLC,2023-03,outbound_sdr,SMB,Starter,39.0,8,SE,Retail,1,2024-03
+CUST-00341,Willow Wholesale Inc,2023-06,partner,SMB,Starter,39.0,7,CA,Medical Devices,1,2025-10
+CUST-00342,Meridian Distribution Partners,2022-05,inbound_content,,Scale,88.0,14,US,3PL,1,2025-05
+CUST-00343,Trident Wholesale LLC,2021-09,outbound_sdr,SMB,Starter,39.0,8,US,Industrial Distribution,1,2025-05
+CUST-00344,Ridge Automotive LLC,2021-09,paid_social,SMB,Starter,39.0,6,DE,Industrial Distribution,1,2025-06
+CUST-00345,Ridge Freight Co,2021-06,inbound_content,SMB,Growth,62.0,7,CA,Automotive Parts,1,
+CUST-00346,Cedar Fulfilment Inc,2022-01,paid_search,SMB,Growth,62.0,6,GB,Medical Devices,1,
+CUST-00347,Dune Fulfilment Co,2021-11,events,MidMarket,Scale,88.0,10,GB,Industrial Distribution,1,
+CUST-00348,Harbor Distribution Inc,2021-08,paid_social,SMB,Starter,39.0,8,US,Apparel,1,
+CUST-00349,Orchard Industrial Partners,2023-04,outbound_sdr,MidMarket,Scale,88.0,10,AU,3PL,1,2024-11
+CUST-00350,Harbor Fulfilment Works,2022-12,outbound_sdr,SMB,Starter,39.0,4,CA,Industrial Distribution,1,2023-10
+CUST-00351,Northgate Medical Supply Works,2022-04,outbound_sdr,SMB,Starter,39.0,5,US,3PL,1,
+CUST-00352,Willow Wholesale Co,2022-02,outbound_sdr,SMB,Growth,62.0,6,DE,Chemicals,1,2026-04
+CUST-00353,Summit Distribution LLC,2021-03,inbound_content,SMB,Growth,62.0,8,AU,Food & Beverage,1,2024-05
+CUST-00354,Prairie Hardware Inc,2023-03,outbound_sdr,MidMarket,Scale,88.0,15,NL,3PL,1,
+CUST-00355,Beacon Logistics Inc,2022-07,inbound_content,MidMarket,Scale,88.0,18,US,Medical Devices,1,
+CUST-00356,Sterling Medical Supply Partners,2022-08,paid_social,SMB,Growth,62.0,7,US,Apparel,1,2025-11
+CUST-00357,Anchor Hardware Holdings,2022-04,partner,SMB,Growth,62.0,6,US,3PL,1,
+CUST-00358,Summit Paper Group,2022-11,paid_search,SMB,Starter,39.0,7,AU,Industrial Distribution,1,
+CUST-00359,Summit Medical Supply Partners,2022-12,paid_search,MidMarket,Scale,88.0,10,GB,Medical Devices,1,
+CUST-00360,Trident Wholesale LLC,2022-07,events,SMB,Starter,39.0,8,CA,Food & Beverage,1,2023-10
+CUST-00361,Prairie Industrial Ltd,2023-08,events,SMB,Starter,39.0,7,SE,Food & Beverage,1,2024-06
+CUST-00362,Trident Foods Co,2023-01,outbound_sdr,SMB,Starter,39.0,9,AU,Retail,1,
+CUST-00363,Quarry Freight Ltd,2023-02,outbound_sdr,MidMarket,Scale,88.0,21,US,3PL,1,
+CUST-00364,Falcon Supply Co,2022-06,paid_search,MidMarket,Scale,88.0,13,NL,Automotive Parts,1,
+CUST-00365,Lakeshore Medical Supply Works,2022-10,paid_search,SMB,Starter,39.0,9,US,Retail,1,
+CUST-00366,Quarry Apparel Ltd,2021-05,paid_search,SMB,Growth,62.0,10,US,Apparel,1,2024-04
+CUST-00367,Quarry Logistics Works,2022-07,partner,SMB,Growth,62.0,7,AU,Industrial Distribution,1,2025-08
+CUST-00368,Summit Distribution Ltd,2022-03,paid_social,,Scale,88.0,11,US,Automotive Parts,1,
+CUST-00369,Prairie Chemicals Group,2022-07,inbound_content,SMB,Growth,62.0,6,US,3PL,1,2025-12
+CUST-00370,Halcyon Chemicals Ltd,2021-06,paid_search,MidMarket,Scale,88.0,27,DE,Chemicals,1,
+CUST-00371,Northgate Apparel Holdings,2022-09,paid_search,SMB,Growth,62.0,6,AU,Food & Beverage,1,
+CUST-00372,Iron Medical Supply LLC,2022-02,partner,SMB,Starter,39.0,6,US,Apparel,1,2025-12
+CUST-00373,Sterling Industrial LLC,2021-05,events,MidMarket,Scale,88.0,12,CA,Automotive Parts,1,
+CUST-00374,Trident Beverage Inc,2023-01,paid_search,MidMarket,Scale,88.0,16,CA,Food & Beverage,1,
+CUST-00375,Falcon Logistics Group,2022-05,paid_search,Enterprise,Enterprise,121.0,30,AU,Medical Devices,1,
+CUST-00376,Northgate Hardware Partners,2022-09,paid_search,SMB,Growth,62.0,10,DE,Industrial Distribution,1,2026-02
+CUST-00377,Bluff Distribution Partners,2022-11,outbound_sdr,SMB,Growth,62.0,6,US,Chemicals,1,
+CUST-00378,Summit Automotive Ltd,2023-05,inbound_content,SMB,Starter,39.0,5,NL,Food & Beverage,1,2026-07
+CUST-00379,Trident Chemicals Holdings,2022-09,inbound_content,MidMarket,Scale,88.0,10,US,Retail,1,
+CUST-00380,Anchor Materials Partners,2021-08,inbound_content,SMB,Starter,39.0,4,US,Medical Devices,1,2023-10
+CUST-00381,Prairie Supply Partners,2023-05,outbound_sdr,,Starter,39.0,7,US,Food & Beverage,1,2025-03
+CUST-00382,Beacon Foods Co,2023-01,paid_search,MidMarket,Scale,88.0,19,AU,Retail,1,
+CUST-00383,Orchard Supply Inc,2022-07,outbound_sdr,SMB,Starter,39.0,6,CA,Apparel,1,2024-12
+CUST-00384,Vantage Apparel Ltd,2021-06,inbound_content,SMB,Starter,39.0,9,SE,Chemicals,1,2024-11
+CUST-00385,Ember Paper Partners,2023-01,inbound_content,MidMarket,Scale,88.0,10,AU,Medical Devices,1,
+CUST-00386,Northgate Components Works,2023-04,,SMB,Starter,39.0,9,US,3PL,1,2025-12
+CUST-00387,Harbor Packaging Ltd,2022-06,paid_search,SMB,Starter,39.0,5,US,Chemicals,1,2024-06
+CUST-00388,Foundry Automotive Partners,2022-02,inbound_content,SMB,Starter,39.0,6,US,Retail,1,
+CUST-00389,Sterling Medical Supply LLC,2021-07,inbound_content,MidMarket,Scale,88.0,14,DE,Apparel,1,
+CUST-00390,Falcon Industrial Group,2022-09,paid_social,SMB,Starter,39.0,7,US,3PL,1,2025-08
+CUST-00391,Ember Logistics Group,2021-11,paid_search,SMB,Starter,39.0,7,CA,Medical Devices,1,2026-08
+CUST-00392,Trident Freight LLC,2022-07,partner,Enterprise,Enterprise,121.0,52,US,Automotive Parts,1,
+CUST-00393,Copper Foods Inc,2022-03,paid_search,SMB,Growth,62.0,10,US,Retail,1,
+CUST-00394,Kestrel Logistics LLC,2021-05,partner,SMB,,62.0,6,US,Automotive Parts,1,2024-11
+CUST-00395,Iron Logistics Inc,2021-05,paid_search,SMB,Starter,39.0,6,DE,Medical Devices,1,
+CUST-00396,Cedar Industrial Holdings,2023-07,paid_search,MidMarket,Scale,88.0,31,US,Retail,1,
+CUST-00397,Copper Industrial Works,2023-02,paid_search,SMB,Growth,62.0,6,US,Medical Devices,1,2024-07
+CUST-00398,Vantage Chemicals Inc,2021-04,paid_search,SMB,Starter,39.0,8,DE,Medical Devices,1,
+CUST-00399,Kestrel Apparel Co,2022-12,events,SMB,Growth,62.0,8,CA,Food & Beverage,1,2025-02
+CUST-00400,Orchard Materials Co,2022-06,paid_search,SMB,Growth,62.0,10,DE,Chemicals,1,2024-11
+CUST-00401,Falcon Chemicals Inc,2022-09,paid_search,SMB,Growth,62.0,7,DE,Apparel,1,
+CUST-00402,Copper Automotive LLC,2022-12,outbound_sdr,SMB,Starter,39.0,9,DE,Industrial Distribution,1,
+CUST-00403,Pioneer Automotive Works,2023-07,partner,SMB,Growth,62.0,6,US,Automotive Parts,1,2025-08
+CUST-00404,Quarry Chemicals Group,2021-11,inbound_content,SMB,Growth,62.0,6,US,Industrial Distribution,1,
+CUST-00405,Orchard Supply Works,2022-02,paid_search,MidMarket,Scale,88.0,15,US,Retail,1,
+CUST-00406,Ember Apparel Ltd,2021-05,,SMB,Starter,39.0,5,NL,Food & Beverage,1,2025-11
+CUST-00407,Pioneer Beverage Co,2023-08,paid_search,SMB,Starter,39.0,9,NL,Medical Devices,1,
+CUST-00408,Northgate Beverage Group,2021-08,inbound_content,SMB,Growth,62.0,7,US,Apparel,1,2024-05
+CUST-00409,Anchor Fulfilment LLC,2021-12,paid_search,MidMarket,Scale,88.0,10,NL,Food & Beverage,1,2024-08
+CUST-00410,Summit Beverage Co,2022-08,paid_social,SMB,Starter,39.0,6,US,Food & Beverage,1,2023-10
+CUST-00411,Orchard Fulfilment Group,2022-07,paid_search,SMB,Growth,62.0,7,CA,Medical Devices,1,2026-01
+CUST-00412,Lakeshore Industrial Inc,2022-02,partner,,Starter,39.0,5,NL,Apparel,1,2024-05
+CUST-00413,Ember Medical Supply Ltd,2021-12,paid_search,SMB,Starter,39.0,7,SE,Chemicals,1,2024-02
+CUST-00414,Bright Packaging Works,2023-08,paid_search,MidMarket,Scale,88.0,12,CA,Industrial Distribution,1,
+CUST-00415,Vantage Automotive Ltd,2021-08,events,SMB,Growth,62.0,7,US,Food & Beverage,1,
+CUST-00416,Willow Packaging Partners,2021-10,inbound_content,SMB,Growth,62.0,8,US,Medical Devices,1,2024-12
+CUST-00417,Meridian Packaging LLC,2022-02,partner,SMB,Growth,62.0,6,US,Retail,1,2023-12
+CUST-00418,Ridge Beverage Partners,2021-11,paid_search,MidMarket,Scale,88.0,10,US,Food & Beverage,1,2025-12
+CUST-00419,Orchard Supply Co,2023-04,paid_search,SMB,Starter,39.0,7,CA,Industrial Distribution,1,2024-03
+CUST-00420,Bright Medical Supply Works,2022-01,paid_search,SMB,Starter,39.0,7,US,Industrial Distribution,1,2024-06
+CUST-00421,Bright Apparel LLC,2023-04,paid_search,SMB,Growth,62.0,6,NL,Food & Beverage,1,
+CUST-00422,Anchor Medical Supply Holdings,2022-10,partner,,Starter,39.0,9,CA,Industrial Distribution,1,
+CUST-00423,Willow Fulfilment Partners,2023-05,paid_search,SMB,Starter,39.0,8,NL,Retail,1,
+CUST-00424,Granite Materials Co,2023-05,paid_search,SMB,Growth,62.0,6,CA,Chemicals,1,
+CUST-00425,Quarry Medical Supply Group,2023-07,inbound_content,Enterprise,Enterprise,121.0,47,US,3PL,1,
+CUST-00426,Orchard Packaging LLC,2023-08,events,SMB,Growth,62.0,9,US,Automotive Parts,1,2026-08
+CUST-00427,Willow Packaging Holdings,2023-04,paid_social,MidMarket,Scale,88.0,10,US,Retail,1,
+CUST-00428,Ridge Apparel Holdings,2023-06,inbound_content,SMB,Starter,39.0,7,AU,3PL,1,2026-06
+CUST-00429,Bluff Foods Inc,2023-05,inbound_content,SMB,Starter,39.0,4,GB,Retail,1,2024-11
+CUST-00430,Anchor Foods Inc,2022-02,events,MidMarket,Scale,88.0,11,AU,Chemicals,1,2024-07
+CUST-00431,Falcon Components Ltd,2022-04,inbound_content,SMB,Growth,62.0,6,CA,Industrial Distribution,1,2026-01
+CUST-00432,Sterling Hardware Ltd,2023-06,inbound_content,SMB,Growth,62.0,8,GB,Automotive Parts,1,2024-09
+CUST-00433,Ridge Beverage LLC,2022-08,paid_social,SMB,Growth,62.0,8,US,Retail,1,2025-03
+CUST-00434,Granite Components Works,2021-04,outbound_sdr,MidMarket,Scale,88.0,17,AU,Food & Beverage,1,
+CUST-00435,Kestrel Fulfilment Partners,2021-12,outbound_sdr,SMB,Starter,39.0,6,US,Retail,1,2025-04
+CUST-00436,Ember Wholesale LLC,2021-09,paid_search,SMB,Growth,62.0,6,NL,Retail,1,2026-05
+CUST-00437,Sterling Freight LLC,2022-07,partner,,Enterprise,121.0,27,US,Apparel,1,
+CUST-00438,Northgate Automotive Inc,2021-06,paid_search,SMB,Starter,39.0,4,CA,Apparel,1,
+CUST-00439,Trident Foods LLC,2022-06,outbound_sdr,SMB,Starter,39.0,6,US,Medical Devices,1,
+CUST-00440,Lakeshore Hardware Holdings,2021-09,partner,,Starter,39.0,7,US,Industrial Distribution,1,2023-12
+CUST-00441,Harbor Supply Ltd,2023-08,inbound_content,SMB,Starter,39.0,4,AU,Retail,1,2023-10
+CUST-00442,Prairie Medical Supply Ltd,2022-01,inbound_content,SMB,Starter,39.0,4,GB,3PL,1,
+CUST-00443,Willow Materials Ltd,2023-03,inbound_content,MidMarket,Scale,88.0,16,AU,Apparel,1,2024-02
+CUST-00444,Kestrel Packaging LLC,2021-05,paid_search,SMB,Starter,39.0,7,AU,Food & Beverage,1,
+CUST-00445,Northgate Freight Group,2021-08,paid_search,SMB,Starter,39.0,7,US,Industrial Distribution,1,
+CUST-00446,Beacon Foods Inc,2021-03,partner,MidMarket,Scale,88.0,10,AU,3PL,1,
+CUST-00447,Lakeshore Logistics Group,2023-08,inbound_content,SMB,Growth,62.0,12,NL,Medical Devices,1,2025-08
+CUST-00448,Orchard Freight Holdings,2021-03,paid_search,SMB,Growth,62.0,7,SE,Automotive Parts,1,2025-03
+CUST-00449,Meridian Medical Supply Ltd,2021-03,events,,Starter,39.0,6,GB,Chemicals,1,2024-09
+CUST-00450,Halcyon Fulfilment Group,2022-12,paid_search,SMB,Growth,62.0,7,GB,Apparel,1,
+CUST-00451,Anchor Distribution Holdings,2022-12,outbound_sdr,Enterprise,Enterprise,121.0,20,GB,3PL,1,
+CUST-00452,Halcyon Beverage Inc,2022-10,paid_social,SMB,Growth,62.0,6,NL,Industrial Distribution,1,
+CUST-00453,Anchor Logistics Co,2023-09,paid_search,MidMarket,Scale,88.0,25,SE,Apparel,0,2026-04
+CUST-00454,Trident Medical Supply Partners,2023-09,paid_search,SMB,Growth,62.0,6,US,Chemicals,0,
+CUST-00455,Northgate Paper Group,2023-09,paid_search,MidMarket,Scale,88.0,39,US,Medical Devices,0,
+CUST-00456,Granite Wholesale Works,2023-09,outbound_sdr,MidMarket,Scale,88.0,21,US,Food & Beverage,0,
+CUST-00457,Sterling Chemicals Holdings,2023-09,outbound_sdr,MidMarket,Scale,88.0,25,US,Chemicals,0,2024-08
+CUST-00458,Copper Fulfilment Inc,2023-09,outbound_sdr,SMB,Growth,62.0,10,SE,Apparel,0,
+CUST-00459,Foundry Components Co,2023-10,paid_search,SMB,Growth,62.0,6,AU,Apparel,0,2024-02
+CUST-00460,Sterling Supply Works,2023-10,paid_search,SMB,Growth,62.0,7,US,Medical Devices,0,2025-04
+CUST-00461,Pioneer Medical Supply Ltd,2023-10,paid_search,SMB,Growth,62.0,12,US,Automotive Parts,0,
+CUST-00462,Harbor Hardware Holdings,2023-10,partner,MidMarket,Scale,88.0,25,US,Food & Beverage,0,
+CUST-00463,Orchard Logistics Partners,2023-11,paid_search,SMB,Growth,62.0,9,US,3PL,0,2024-02
+CUST-00464,Kestrel Beverage Co,2023-11,paid_search,MidMarket,Scale,88.0,44,US,3PL,0,
+CUST-00465,Cedar Logistics Group,2023-11,paid_search,MidMarket,Scale,88.0,22,NL,Automotive Parts,0,
+CUST-00466,Orchard Distribution Works,2023-11,paid_search,MidMarket,,88.0,25,GB,Automotive Parts,0,
+CUST-00467,Bright Materials Inc,2023-11,paid_search,SMB,Growth,62.0,10,SE,Apparel,0,2025-07
+CUST-00468,Beacon Materials Inc,2023-11,,SMB,Growth,62.0,10,GB,Automotive Parts,0,
+CUST-00469,Sterling Packaging Holdings,2023-12,paid_search,SMB,Growth,62.0,8,AU,3PL,0,2026-04
+CUST-00470,Granite Logistics Ltd,2023-12,paid_social,SMB,Growth,62.0,8,US,Chemicals,0,2025-03
+CUST-00471,Prairie Distribution Ltd,2023-12,paid_social,SMB,Growth,62.0,11,SE,Food & Beverage,0,2025-03
+CUST-00472,Prairie Materials Works,2024-01,paid_search,SMB,Growth,62.0,7,NL,3PL,0,2024-10
+CUST-00473,Orchard Materials Ltd,2024-01,paid_search,SMB,Growth,62.0,8,US,Automotive Parts,0,
+CUST-00474,Prairie Automotive Works,2024-01,paid_search,SMB,Growth,62.0,8,NL,Medical Devices,0,2024-03
+CUST-00475,Harbor Distribution LLC,2024-01,paid_search,MidMarket,Scale,88.0,27,CA,Industrial Distribution,0,
+CUST-00476,Trident Freight Holdings,2024-01,inbound_content,Enterprise,Enterprise,121.0,42,US,Chemicals,0,
+CUST-00477,Foundry Beverage LLC,2024-01,outbound_sdr,MidMarket,Scale,88.0,21,NL,Industrial Distribution,0,
+CUST-00478,Pioneer Chemicals Holdings,2024-02,paid_search,Enterprise,Enterprise,121.0,78,US,Automotive Parts,0,
+CUST-00479,Orchard Components Works,2024-03,paid_search,Enterprise,Enterprise,121.0,50,US,Retail,0,
+CUST-00480,Falcon Hardware LLC,2024-03,paid_search,MidMarket,Scale,88.0,28,US,Medical Devices,0,
+CUST-00481,Quarry Hardware Group,2024-03,paid_search,SMB,Growth,62.0,15,AU,Retail,0,
+CUST-00482,Northgate Chemicals Inc,2024-03,paid_search,Enterprise,Enterprise,121.0,48,US,Chemicals,0,
+CUST-00483,Northgate Apparel Works,2024-03,inbound_content,MidMarket,Scale,88.0,49,US,Industrial Distribution,0,2024-05
+CUST-00484,Prairie Materials Group,2024-03,outbound_sdr,SMB,Growth,62.0,9,US,Automotive Parts,0,
+CUST-00485,Orchard Supply Works,2024-04,paid_search,SMB,Growth,62.0,9,SE,3PL,0,
+CUST-00486,Bluff Packaging Co,2024-04,paid_search,MidMarket,Scale,88.0,22,AU,Medical Devices,0,
+CUST-00487,Willow Distribution Holdings,2024-04,paid_search,MidMarket,Scale,88.0,22,AU,3PL,0,
+CUST-00488,Prairie Components Works,2024-04,paid_search,SMB,Growth,62.0,8,SE,Medical Devices,0,
+CUST-00489,Vantage Logistics Inc,2024-04,paid_social,SMB,Growth,62.0,13,US,Chemicals,0,2026-04
+CUST-00490,Pioneer Packaging LLC,2024-04,outbound_sdr,MidMarket,Scale,88.0,23,GB,Industrial Distribution,0,
+CUST-00491,Falcon Automotive Works,2024-04,outbound_sdr,MidMarket,Scale,88.0,20,CA,3PL,0,
+CUST-00492,Granite Distribution Works,2024-04,outbound_sdr,MidMarket,Scale,88.0,36,US,Automotive Parts,0,
+CUST-00493,Meridian Beverage Inc,2024-04,outbound_sdr,MidMarket,Scale,88.0,25,US,Apparel,0,
+CUST-00494,Lakeshore Packaging Group,2024-05,paid_search,SMB,Growth,62.0,12,CA,3PL,0,
+CUST-00495,Quarry Beverage Holdings,2024-05,,SMB,Growth,62.0,10,US,Medical Devices,0,
+CUST-00496,Trident Supply Partners,2024-05,paid_search,SMB,Growth,62.0,17,GB,Automotive Parts,0,
+CUST-00497,Foundry Chemicals Partners,2024-05,paid_search,SMB,Growth,62.0,9,US,Food & Beverage,0,
+CUST-00498,Beacon Freight Partners,2024-05,paid_search,MidMarket,Scale,88.0,11,DE,Food & Beverage,0,
+CUST-00499,Lakeshore Beverage Holdings,2024-05,inbound_content,SMB,Growth,62.0,13,US,Food & Beverage,0,
+CUST-00500,Trident Wholesale Ltd,2024-05,outbound_sdr,MidMarket,Scale,88.0,25,SE,Apparel,0,
+CUST-00501,Quarry Medical Supply Inc,2024-05,partner,MidMarket,Scale,88.0,20,AU,Retail,0,2024-07
+CUST-00502,Foundry Paper Inc,2024-06,paid_search,SMB,Growth,62.0,8,GB,3PL,0,
+CUST-00503,Orchard Automotive Partners,2024-06,paid_search,MidMarket,Scale,88.0,15,AU,Industrial Distribution,0,
+CUST-00504,Lakeshore Automotive Group,2024-06,paid_search,SMB,Starter,39.0,9,US,Chemicals,0,2026-06
+CUST-00505,Northgate Wholesale Partners,2024-06,inbound_content,MidMarket,Scale,88.0,20,GB,Chemicals,0,
+CUST-00506,Northgate Chemicals LLC,2024-07,paid_search,SMB,Growth,62.0,15,SE,Automotive Parts,0,2025-10
+CUST-00507,Meridian Automotive Ltd,2024-07,paid_search,SMB,Growth,62.0,6,SE,Food & Beverage,0,
+CUST-00508,Granite Automotive Inc,2024-07,outbound_sdr,Enterprise,Enterprise,121.0,68,US,3PL,0,
+CUST-00509,Copper Beverage LLC,2024-07,outbound_sdr,MidMarket,Scale,88.0,37,GB,Apparel,0,
+CUST-00510,Beacon Components Partners,2024-07,partner,MidMarket,Scale,88.0,25,GB,Food & Beverage,0,
+CUST-00511,Dune Packaging Inc,2024-08,paid_search,SMB,Growth,62.0,14,US,Medical Devices,0,2026-04
+CUST-00512,Dune Foods Co,2024-08,inbound_content,MidMarket,Scale,88.0,25,GB,3PL,0,2025-07
+CUST-00513,Vantage Components LLC,2024-08,inbound_content,SMB,Growth,62.0,8,US,Food & Beverage,0,2025-01
+CUST-00514,Meridian Apparel LLC,2024-08,outbound_sdr,MidMarket,Scale,88.0,26,SE,Industrial Distribution,0,
+CUST-00515,Willow Wholesale Group,2024-08,partner,SMB,Growth,62.0,9,US,Industrial Distribution,0,2025-09
+CUST-00516,Dune Supply Holdings,2024-09,paid_search,MidMarket,Scale,88.0,18,SE,Food & Beverage,0,
+CUST-00517,Summit Paper Works,2024-09,paid_search,SMB,Growth,62.0,6,US,Industrial Distribution,0,2025-03
+CUST-00518,Halcyon Logistics Group,2024-09,paid_search,SMB,Growth,62.0,14,NL,Chemicals,0,
+CUST-00519,Orchard Industrial Ltd,2024-09,paid_search,MidMarket,Scale,88.0,24,US,Medical Devices,0,2026-05
+CUST-00520,Willow Paper Inc,2024-09,paid_search,SMB,Growth,62.0,9,US,Apparel,0,
+CUST-00521,Prairie Packaging Holdings,2024-09,paid_search,SMB,Growth,62.0,9,SE,Retail,0,
+CUST-00522,Halcyon Hardware LLC,2024-09,paid_search,SMB,Growth,62.0,14,AU,Food & Beverage,0,
+CUST-00523,Cedar Beverage Inc,2024-09,paid_social,SMB,Growth,62.0,17,US,3PL,0,
+CUST-00524,Trident Wholesale Partners,2024-09,paid_social,SMB,Growth,62.0,12,CA,3PL,0,
+CUST-00525,Pioneer Materials LLC,2024-09,inbound_content,SMB,Growth,62.0,15,US,Medical Devices,0,
+CUST-00526,Sterling Wholesale Inc,2024-09,inbound_content,SMB,Growth,62.0,9,SE,Chemicals,0,2024-11
+CUST-00527,Bright Industrial Co,2024-09,outbound_sdr,MidMarket,Scale,88.0,27,US,Apparel,0,
+CUST-00528,Meridian Distribution Group,2024-10,paid_search,SMB,Growth,62.0,11,NL,Retail,0,
+CUST-00529,Willow Apparel Ltd,2024-10,paid_search,SMB,Growth,62.0,7,GB,Chemicals,0,
+CUST-00530,Harbor Paper Ltd,2024-10,paid_search,SMB,Growth,62.0,7,AU,Automotive Parts,0,2025-02
+CUST-00531,Iron Apparel Ltd,2024-10,,SMB,Growth,62.0,11,NL,Chemicals,0,2025-06
+CUST-00532,Prairie Components Ltd,2024-10,paid_social,SMB,Growth,62.0,8,GB,Industrial Distribution,0,2026-02
+CUST-00533,Cedar Materials LLC,2024-10,inbound_content,MidMarket,Scale,88.0,81,US,Food & Beverage,0,
+CUST-00534,Northgate Hardware Inc,2024-10,inbound_content,MidMarket,Scale,88.0,29,US,Automotive Parts,0,
+CUST-00535,Foundry Foods Ltd,2024-10,outbound_sdr,MidMarket,Scale,88.0,25,US,Food & Beverage,0,
+CUST-00536,Meridian Automotive Works,2024-11,paid_search,SMB,Growth,62.0,6,US,Automotive Parts,0,2025-10
+CUST-00537,Quarry Industrial Holdings,2024-11,paid_search,SMB,Growth,62.0,8,GB,Automotive Parts,0,
+CUST-00538,Harbor Beverage Works,2024-11,paid_social,SMB,Growth,62.0,16,DE,Chemicals,0,2026-03
+CUST-00539,Quarry Logistics Inc,2024-11,outbound_sdr,MidMarket,Scale,88.0,33,US,Retail,0,
+CUST-00540,Vantage Wholesale Ltd,2024-11,outbound_sdr,SMB,Growth,62.0,9,US,Retail,0,
+CUST-00541,Prairie Fulfilment Ltd,2024-11,outbound_sdr,MidMarket,Scale,88.0,17,AU,Chemicals,0,
+CUST-00542,Bluff Distribution Holdings,2024-11,partner,MidMarket,Scale,88.0,26,US,Chemicals,0,
+CUST-00543,Granite Logistics LLC,2024-12,paid_search,SMB,Growth,62.0,13,GB,3PL,0,2025-02
+CUST-00544,Dune Distribution Ltd,2024-12,paid_search,SMB,Growth,62.0,13,AU,Medical Devices,0,
+CUST-00545,Prairie Wholesale Ltd,2024-12,paid_search,SMB,Growth,62.0,8,US,Apparel,0,
+CUST-00546,Sterling Supply Holdings,2024-12,paid_social,SMB,Growth,62.0,7,US,3PL,0,2025-03
+CUST-00547,Falcon Industrial LLC,2024-12,paid_social,SMB,Growth,62.0,6,SE,Industrial Distribution,0,2025-07
+CUST-00548,Kestrel Chemicals Co,2024-12,paid_social,SMB,Growth,62.0,10,NL,3PL,0,2026-02
+CUST-00549,Halcyon Freight Co,2024-12,paid_social,SMB,Starter,39.0,8,US,Retail,0,2025-08
+CUST-00550,Harbor Industrial Inc,2024-12,outbound_sdr,MidMarket,Scale,88.0,25,US,Chemicals,0,
+CUST-00551,Falcon Automotive Partners,2025-01,paid_search,SMB,Growth,62.0,18,US,Retail,0,2026-04
+CUST-00552,Sterling Supply Partners,2025-01,paid_search,MidMarket,Scale,88.0,44,US,Industrial Distribution,0,
+CUST-00553,Willow Apparel Holdings,2025-01,paid_search,SMB,Growth,62.0,10,GB,Chemicals,0,
+CUST-00554,Cedar Apparel Inc,2025-01,paid_search,SMB,Growth,62.0,10,AU,Food & Beverage,0,
+CUST-00555,Copper Beverage Partners,2025-01,paid_search,MidMarket,Scale,88.0,10,SE,Medical Devices,0,
+CUST-00556,Granite Packaging Partners,2025-01,paid_search,SMB,Growth,62.0,6,US,Apparel,0,2025-06
+CUST-00557,Vantage Apparel LLC,2025-01,inbound_content,SMB,Growth,62.0,9,US,Medical Devices,0,
+CUST-00558,Bright Apparel Partners,2025-01,outbound_sdr,MidMarket,Scale,88.0,14,DE,Food & Beverage,0,2026-04
+CUST-00559,Quarry Industrial LLC,2025-01,outbound_sdr,Enterprise,Enterprise,121.0,24,US,Automotive Parts,0,
+CUST-00560,Harbor Supply Partners,2025-02,paid_search,SMB,Growth,62.0,9,NL,Chemicals,0,
+CUST-00561,Orchard Apparel Holdings,2025-02,paid_search,SMB,Growth,62.0,10,GB,Industrial Distribution,0,
+CUST-00562,Sterling Freight Inc,2025-02,paid_search,SMB,Growth,62.0,10,CA,Chemicals,0,2025-09
+CUST-00563,Orchard Medical Supply Ltd,2025-02,paid_search,SMB,Growth,62.0,9,GB,Industrial Distribution,0,
+CUST-00564,Ember Distribution LLC,2025-02,paid_search,MidMarket,Scale,88.0,13,AU,Food & Beverage,0,2025-05
+CUST-00565,Summit Packaging Group,2025-02,paid_search,SMB,Growth,62.0,8,AU,Food & Beverage,0,2026-04
+CUST-00566,Lakeshore Wholesale Co,2025-02,paid_social,SMB,Growth,62.0,13,US,3PL,0,2025-05
+CUST-00567,Trident Industrial Inc,2025-02,paid_social,SMB,Growth,62.0,8,SE,Automotive Parts,0,2026-03
+CUST-00568,Halcyon Distribution Inc,2025-02,inbound_content,SMB,Growth,62.0,7,NL,Food & Beverage,0,
+CUST-00569,Iron Apparel Holdings,2025-02,outbound_sdr,Enterprise,Enterprise,121.0,118,GB,Automotive Parts,0,
+CUST-00570,Ember Packaging Inc,2025-02,outbound_sdr,Enterprise,Enterprise,121.0,41,US,Food & Beverage,0,
+CUST-00571,Summit Apparel Co,2025-02,partner,MidMarket,Scale,88.0,19,DE,3PL,0,
+CUST-00572,Summit Hardware Inc,2025-03,paid_search,SMB,Growth,62.0,11,NL,Chemicals,0,2025-09
+CUST-00573,Trident Logistics Co,2025-03,paid_search,SMB,Growth,62.0,11,SE,Apparel,0,2025-12
+CUST-00574,Bluff Supply LLC,2025-03,paid_search,SMB,Growth,62.0,8,NL,3PL,0,
+CUST-00575,Summit Medical Supply Works,2025-03,paid_search,SMB,Growth,62.0,7,AU,Retail,0,2026-01
+CUST-00576,Cedar Fulfilment Inc,2025-03,paid_social,SMB,Growth,62.0,6,US,Medical Devices,0,2025-06
+CUST-00577,Lakeshore Foods Co,2025-03,outbound_sdr,MidMarket,Scale,88.0,47,SE,3PL,0,
+CUST-00578,Anchor Logistics Group,2025-03,outbound_sdr,MidMarket,Scale,88.0,38,DE,Apparel,0,
+CUST-00579,Lakeshore Hardware Inc,2025-03,outbound_sdr,MidMarket,Scale,88.0,31,AU,Retail,0,
+CUST-00580,Bright Packaging Works,2025-03,outbound_sdr,Enterprise,Enterprise,121.0,64,CA,Apparel,0,
+CUST-00581,Kestrel Beverage Ltd,2025-04,paid_search,SMB,Growth,62.0,12,US,Medical Devices,0,
+CUST-00582,Vantage Materials Co,2025-04,paid_search,SMB,Growth,62.0,8,US,Retail,0,2025-07
+CUST-00583,Dune Automotive Co,2025-04,paid_search,SMB,Growth,62.0,7,US,Industrial Distribution,0,
+CUST-00584,Cedar Distribution Group,2025-04,paid_search,SMB,Growth,62.0,8,NL,Food & Beverage,0,
+CUST-00585,Orchard Foods Ltd,2025-04,paid_social,SMB,Growth,62.0,7,US,Food & Beverage,0,2026-06
+CUST-00586,Lakeshore Paper Holdings,2025-04,outbound_sdr,Enterprise,Enterprise,121.0,39,US,Retail,0,
+CUST-00587,Sterling Wholesale Works,2025-04,outbound_sdr,MidMarket,Scale,88.0,25,NL,Food & Beverage,0,
+CUST-00588,Prairie Materials Group,2025-04,outbound_sdr,SMB,Growth,62.0,7,DE,Retail,0,2025-05
+CUST-00589,Sterling Packaging Group,2025-05,paid_search,MidMarket,Scale,88.0,31,AU,Chemicals,0,
+CUST-00590,Ridge Industrial Co,2025-05,paid_search,SMB,Growth,62.0,11,GB,Automotive Parts,0,2026-06
+CUST-00591,Summit Materials LLC,2025-05,paid_search,SMB,Growth,62.0,8,US,Apparel,0,
+CUST-00592,Bright Automotive Ltd,2025-05,paid_search,MidMarket,Scale,88.0,34,US,Chemicals,0,2026-03
+CUST-00593,Bluff Components Partners,2025-05,paid_search,SMB,Growth,62.0,7,US,Industrial Distribution,0,
+CUST-00594,Falcon Chemicals Inc,2025-05,paid_search,SMB,Growth,62.0,6,US,3PL,0,2025-09
+CUST-00595,Harbor Medical Supply Holdings,2025-05,paid_search,MidMarket,Scale,88.0,36,US,Automotive Parts,0,2025-07
+CUST-00596,Summit Distribution Co,2025-05,paid_search,SMB,Growth,62.0,12,NL,Chemicals,0,
+CUST-00597,Halcyon Industrial Ltd,2025-05,paid_social,SMB,Growth,62.0,10,NL,Chemicals,0,
+CUST-00598,Northgate Freight Ltd,2025-05,paid_social,SMB,Growth,62.0,9,AU,Industrial Distribution,0,
+CUST-00599,Dune Chemicals Works,2025-05,paid_social,SMB,Starter,39.0,8,GB,Food & Beverage,0,
+CUST-00600,Beacon Foods Works,2025-05,inbound_content,SMB,Growth,62.0,8,US,Retail,0,
+CUST-00601,Bluff Materials Inc,2025-05,inbound_content,Enterprise,Enterprise,121.0,136,US,Chemicals,0,
+CUST-00602,Vantage Beverage LLC,2025-05,outbound_sdr,MidMarket,Scale,88.0,21,DE,3PL,0,
+CUST-00603,Falcon Distribution Holdings,2025-05,outbound_sdr,MidMarket,Scale,88.0,32,US,3PL,0,
+CUST-00604,Anchor Hardware Works,2025-05,outbound_sdr,Enterprise,Enterprise,121.0,71,US,Retail,0,
+CUST-00605,Lakeshore Hardware Works,2025-05,outbound_sdr,MidMarket,Scale,88.0,20,SE,Medical Devices,0,
+CUST-00606,Pioneer Components Holdings,2025-05,outbound_sdr,MidMarket,Scale,88.0,23,DE,Medical Devices,0,2025-10
+CUST-00607,Anchor Medical Supply Group,2025-05,outbound_sdr,MidMarket,Scale,88.0,13,CA,Retail,0,
+CUST-00608,Harbor Apparel LLC,2025-05,events,MidMarket,Scale,88.0,40,SE,Retail,0,
+CUST-00609,Bluff Hardware Works,2025-06,paid_search,SMB,Growth,62.0,8,GB,Food & Beverage,0,
+CUST-00610,Dune Apparel Partners,2025-06,paid_search,SMB,Growth,62.0,14,CA,Retail,0,2026-05
+CUST-00611,Beacon Fulfilment LLC,2025-06,paid_search,SMB,Growth,62.0,12,US,Medical Devices,0,2025-09
+CUST-00612,Sterling Chemicals Ltd,2025-06,paid_search,SMB,Growth,62.0,8,US,Automotive Parts,0,2025-12
+CUST-00613,Orchard Automotive Ltd,2025-06,paid_search,SMB,Growth,62.0,6,SE,Apparel,0,
+CUST-00614,Pioneer Foods Partners,2025-06,paid_search,SMB,Growth,62.0,14,GB,Automotive Parts,0,
+CUST-00615,Trident Wholesale Inc,2025-06,paid_search,MidMarket,Scale,88.0,20,AU,3PL,0,
+CUST-00616,Summit Fulfilment Inc,2025-06,paid_search,MidMarket,Scale,88.0,19,CA,3PL,0,
+CUST-00617,Quarry Freight Inc,2025-06,paid_social,SMB,Starter,39.0,7,NL,Chemicals,0,
+CUST-00618,Willow Industrial Works,2025-06,paid_social,SMB,Starter,39.0,4,US,Retail,0,
+CUST-00619,Granite Logistics Holdings,2025-06,paid_social,SMB,Growth,62.0,6,DE,Industrial Distribution,0,2025-09
+CUST-00620,Summit Apparel LLC,2025-06,outbound_sdr,SMB,Growth,62.0,8,DE,Chemicals,0,2025-07
+CUST-00621,Cedar Packaging LLC,2025-06,outbound_sdr,MidMarket,Scale,88.0,27,SE,Apparel,0,
+CUST-00622,Halcyon Industrial Works,2025-06,outbound_sdr,MidMarket,Scale,88.0,42,US,Automotive Parts,0,
+CUST-00623,Trident Chemicals Group,2025-06,partner,MidMarket,Scale,88.0,30,US,Apparel,0,
+CUST-00624,Falcon Fulfilment Group,2025-07,paid_search,MidMarket,,88.0,19,US,Retail,0,
+CUST-00625,Pioneer Logistics Holdings,2025-07,paid_search,SMB,Growth,62.0,8,CA,Chemicals,0,2025-11
+CUST-00626,Trident Freight LLC,2025-07,paid_search,MidMarket,Scale,88.0,29,NL,Food & Beverage,0,
+CUST-00627,Ember Paper Ltd,2025-07,paid_social,SMB,Growth,62.0,9,GB,Automotive Parts,0,2025-08
+CUST-00628,Orchard Supply Ltd,2025-07,paid_social,SMB,Starter,39.0,8,US,Apparel,0,2025-08
+CUST-00629,Northgate Materials Holdings,2025-07,outbound_sdr,MidMarket,Scale,88.0,27,DE,Chemicals,0,
+CUST-00630,Northgate Beverage Partners,2025-07,outbound_sdr,Enterprise,Enterprise,121.0,37,NL,3PL,0,
+CUST-00631,Anchor Components Group,2025-07,outbound_sdr,MidMarket,Scale,88.0,23,CA,Chemicals,0,
+CUST-00632,Trident Supply Holdings,2025-07,outbound_sdr,MidMarket,Scale,88.0,22,DE,Automotive Parts,0,
+CUST-00633,Northgate Components Group,2025-07,partner,MidMarket,Scale,88.0,19,US,Chemicals,0,
+CUST-00634,Beacon Chemicals Co,2025-08,paid_search,SMB,Starter,39.0,7,AU,Automotive Parts,0,
+CUST-00635,Northgate Foods Co,2025-08,paid_search,SMB,Growth,62.0,17,US,Automotive Parts,0,
+CUST-00636,Orchard Fulfilment Co,2025-08,paid_search,SMB,Growth,62.0,13,SE,Food & Beverage,0,
+CUST-00637,Sterling Logistics Holdings,2025-08,paid_search,SMB,Growth,62.0,17,SE,Retail,0,
+CUST-00638,Pioneer Chemicals Works,2025-08,paid_search,SMB,Starter,39.0,7,US,Apparel,0,
+CUST-00639,Kestrel Freight LLC,2025-08,paid_social,SMB,Growth,62.0,7,CA,Automotive Parts,0,
+CUST-00640,Summit Distribution LLC,2025-08,inbound_content,MidMarket,Scale,88.0,31,CA,3PL,0,
+CUST-00641,Meridian Distribution Works,2025-08,inbound_content,MidMarket,Scale,88.0,48,US,Chemicals,0,
+CUST-00642,Foundry Automotive Works,2025-08,inbound_content,SMB,Growth,62.0,8,GB,Medical Devices,0,
+CUST-00643,Harbor Automotive Group,2025-09,paid_search,MidMarket,Scale,88.0,18,SE,Industrial Distribution,0,
+CUST-00644,Quarry Fulfilment LLC,2025-09,paid_search,SMB,Growth,62.0,14,SE,Automotive Parts,0,
+CUST-00645,Anchor Distribution Co,2025-09,paid_search,SMB,Growth,62.0,6,CA,Food & Beverage,0,
+CUST-00646,Ember Chemicals LLC,2025-09,paid_search,SMB,Growth,62.0,24,US,Medical Devices,0,2026-02
+CUST-00647,Pioneer Chemicals Co,2025-09,paid_search,SMB,Starter,39.0,8,CA,Retail,0,2026-04
+CUST-00648,Anchor Hardware Holdings,2025-09,paid_search,Enterprise,Enterprise,121.0,32,US,Chemicals,0,
+CUST-00649,Sterling Apparel Inc,2025-09,paid_search,SMB,Growth,62.0,9,US,Automotive Parts,0,
+CUST-00650,Trident Freight Works,2025-09,paid_social,SMB,Starter,39.0,8,AU,3PL,0,2025-11
+CUST-00651,Dune Distribution Holdings,2025-09,inbound_content,MidMarket,Scale,88.0,30,US,Chemicals,0,
+CUST-00652,Falcon Components Partners,2025-09,inbound_content,MidMarket,Scale,88.0,50,US,Medical Devices,0,
+CUST-00653,Granite Wholesale Group,2025-09,inbound_content,MidMarket,Scale,88.0,46,SE,Industrial Distribution,0,
+CUST-00654,Halcyon Paper Works,2025-09,outbound_sdr,MidMarket,Scale,88.0,56,US,Medical Devices,0,
+CUST-00655,Trident Materials Works,2025-09,outbound_sdr,Enterprise,Enterprise,121.0,91,SE,Food & Beverage,0,
+CUST-00656,Bright Chemicals Partners,2025-09,outbound_sdr,MidMarket,Scale,88.0,28,AU,Medical Devices,0,
+CUST-00657,Bright Automotive Ltd,2025-09,outbound_sdr,Enterprise,Enterprise,121.0,18,NL,Automotive Parts,0,
+CUST-00658,Halcyon Automotive Works,2025-09,outbound_sdr,Enterprise,Enterprise,121.0,67,CA,Retail,0,
+CUST-00659,Meridian Freight Works,2025-09,partner,Enterprise,Enterprise,121.0,40,GB,Medical Devices,0,
+CUST-00660,Summit Components Co,2025-10,paid_search,MidMarket,Scale,88.0,28,CA,Food & Beverage,0,
+CUST-00661,Orchard Hardware Group,2025-10,paid_search,MidMarket,Scale,88.0,27,SE,Industrial Distribution,0,
+CUST-00662,Harbor Components LLC,2025-10,paid_search,MidMarket,Scale,88.0,23,US,Apparel,0,
+CUST-00663,Lakeshore Wholesale Inc,2025-10,paid_search,SMB,Growth,62.0,9,US,Food & Beverage,0,
+CUST-00664,Vantage Distribution LLC,2025-10,paid_social,SMB,Growth,62.0,6,US,Apparel,0,
+CUST-00665,Beacon Beverage Partners,2025-10,paid_social,SMB,Growth,62.0,8,DE,Apparel,0,2025-12
+CUST-00666,Trident Logistics Co,2025-10,paid_social,SMB,Starter,39.0,7,US,3PL,0,2026-08
+CUST-00667,Summit Wholesale Group,2025-10,outbound_sdr,MidMarket,Scale,88.0,18,US,3PL,0,
+CUST-00668,Ridge Packaging Ltd,2025-10,outbound_sdr,MidMarket,Scale,88.0,22,GB,3PL,0,
+CUST-00669,Trident Automotive LLC,2025-10,outbound_sdr,MidMarket,Scale,88.0,26,SE,Medical Devices,0,2026-06
+CUST-00670,Granite Chemicals Partners,2025-11,paid_search,MidMarket,Scale,88.0,22,CA,Food & Beverage,0,
+CUST-00671,Cedar Industrial Partners,2025-11,paid_social,SMB,Growth,62.0,8,GB,Food & Beverage,0,
+CUST-00672,Ridge Materials Works,2025-11,paid_social,SMB,Growth,62.0,6,CA,Industrial Distribution,0,
+CUST-00673,Kestrel Fulfilment Group,2025-11,paid_social,SMB,Growth,62.0,9,CA,3PL,0,
+CUST-00674,Vantage Foods LLC,2025-11,inbound_content,MidMarket,Scale,88.0,49,US,Retail,0,
+CUST-00675,Anchor Automotive Partners,2025-11,inbound_content,MidMarket,Scale,88.0,25,US,3PL,0,
+CUST-00676,Granite Medical Supply Inc,2025-11,outbound_sdr,MidMarket,Scale,88.0,18,AU,Food & Beverage,0,
+CUST-00677,Pioneer Hardware Inc,2025-11,partner,MidMarket,Scale,88.0,41,US,Apparel,0,2026-02
+CUST-00678,Anchor Supply LLC,2025-11,partner,MidMarket,Scale,88.0,22,US,Apparel,0,
+CUST-00679,Bluff Industrial Works,2025-12,paid_search,SMB,Growth,62.0,6,US,Food & Beverage,0,
+CUST-00680,Meridian Apparel Holdings,2025-12,paid_search,SMB,Growth,62.0,7,US,Retail,0,
+CUST-00681,Ember Medical Supply Partners,2025-12,paid_search,SMB,Growth,62.0,13,NL,Medical Devices,0,2026-08
+CUST-00682,Northgate Chemicals LLC,2025-12,paid_search,SMB,Growth,62.0,10,US,Chemicals,0,
+CUST-00683,Pioneer Chemicals LLC,2025-12,paid_social,SMB,Growth,62.0,8,SE,3PL,0,
+CUST-00684,Bright Packaging Co,2025-12,paid_social,SMB,Growth,62.0,6,US,Chemicals,0,2026-02
+CUST-00685,Beacon Distribution Partners,2025-12,paid_social,SMB,Growth,62.0,6,GB,Food & Beverage,0,2026-03
+CUST-00686,Iron Hardware Partners,2025-12,paid_social,SMB,Growth,62.0,8,US,3PL,0,
+CUST-00687,Sterling Supply LLC,2025-12,paid_social,SMB,Growth,62.0,12,CA,Automotive Parts,0,2026-08
+CUST-00688,Cedar Fulfilment Group,2025-12,inbound_content,MidMarket,Scale,88.0,51,US,Retail,0,
+CUST-00689,Granite Distribution Group,2025-12,inbound_content,SMB,Growth,62.0,6,NL,Food & Beverage,0,
+CUST-00690,Granite Beverage Works,2025-12,inbound_content,SMB,Growth,62.0,9,DE,3PL,0,
+CUST-00691,Beacon Medical Supply Partners,2025-12,outbound_sdr,MidMarket,Scale,88.0,36,GB,Apparel,0,
+CUST-00692,Harbor Automotive Inc,2025-12,outbound_sdr,MidMarket,Scale,88.0,25,US,Medical Devices,0,
+CUST-00693,Sterling Distribution Group,2025-12,outbound_sdr,MidMarket,Scale,88.0,13,US,Medical Devices,0,
+CUST-00694,Trident Hardware Co,2025-12,outbound_sdr,MidMarket,Scale,88.0,40,AU,Retail,0,
+CUST-00695,Northgate Fulfilment Group,2025-12,outbound_sdr,Enterprise,Enterprise,121.0,41,US,Automotive Parts,0,
+CUST-00696,Falcon Components Holdings,2025-12,events,Enterprise,Enterprise,121.0,69,CA,Automotive Parts,0,
+CUST-00697,Halcyon Hardware Co,2026-01,paid_search,SMB,Growth,62.0,9,AU,Food & Beverage,0,
+CUST-00698,Pioneer Packaging Partners,2026-01,paid_search,SMB,Growth,62.0,11,NL,Retail,0,
+CUST-00699,Pioneer Fulfilment Partners,2026-01,paid_search,MidMarket,Scale,88.0,20,DE,Chemicals,0,
+CUST-00700,Harbor Packaging Partners,2026-01,paid_search,SMB,Growth,62.0,9,US,Chemicals,0,2026-06
+CUST-00701,Harbor Packaging Holdings,2026-01,paid_social,MidMarket,Scale,88.0,18,SE,Industrial Distribution,0,
+CUST-00702,Trident Medical Supply Holdings,2026-01,paid_social,MidMarket,Scale,88.0,29,US,Apparel,0,
+CUST-00703,Meridian Medical Supply Partners,2026-01,inbound_content,SMB,Growth,62.0,12,AU,Automotive Parts,0,
+CUST-00704,Ridge Paper Works,2026-01,inbound_content,SMB,Growth,62.0,10,CA,Retail,0,
+CUST-00705,Vantage Materials Partners,2026-01,outbound_sdr,MidMarket,Scale,88.0,27,AU,Apparel,0,
+CUST-00706,Falcon Medical Supply LLC,2026-01,outbound_sdr,Enterprise,Enterprise,121.0,57,NL,3PL,0,
+CUST-00707,Vantage Apparel Co,2026-01,outbound_sdr,Enterprise,Enterprise,121.0,62,US,Food & Beverage,0,
+CUST-00708,Prairie Components LLC,2026-01,partner,MidMarket,Scale,88.0,25,SE,Industrial Distribution,0,
+CUST-00709,Quarry Foods Partners,2026-01,partner,MidMarket,Scale,88.0,25,US,3PL,0,
+CUST-00710,Granite Industrial LLC,2026-01,partner,Enterprise,Enterprise,121.0,81,US,Medical Devices,0,
+CUST-00711,Summit Logistics LLC,2026-02,paid_search,SMB,Growth,62.0,7,AU,Apparel,0,
+CUST-00712,Kestrel Beverage LLC,2026-02,paid_search,Enterprise,Enterprise,121.0,44,SE,Apparel,0,
+CUST-00713,Northgate Freight Ltd,2026-02,paid_search,MidMarket,Scale,88.0,38,US,Apparel,0,
+CUST-00714,Prairie Chemicals LLC,2026-02,paid_search,SMB,Growth,62.0,7,US,Industrial Distribution,0,
+CUST-00715,Falcon Medical Supply Holdings,2026-02,paid_search,MidMarket,Scale,88.0,24,SE,Apparel,0,2026-03
+CUST-00716,Ridge Distribution Co,2026-02,paid_social,SMB,Growth,62.0,7,DE,Apparel,0,2026-08
+CUST-00717,Ember Distribution Works,2026-02,paid_social,MidMarket,Scale,88.0,15,GB,Food & Beverage,0,
+CUST-00718,Vantage Automotive Partners,2026-02,paid_social,SMB,Starter,39.0,6,US,Apparel,0,
+CUST-00719,Cedar Distribution Inc,2026-02,paid_social,MidMarket,Scale,88.0,11,AU,Food & Beverage,0,
+CUST-00720,Kestrel Packaging Co,2026-02,inbound_content,SMB,Growth,62.0,7,AU,Retail,0,
+CUST-00721,Northgate Hardware Holdings,2026-02,outbound_sdr,MidMarket,Scale,88.0,13,DE,Industrial Distribution,0,
+CUST-00722,Halcyon Distribution Co,2026-02,outbound_sdr,Enterprise,Enterprise,121.0,78,GB,Automotive Parts,0,
+CUST-00723,Meridian Industrial LLC,2026-02,outbound_sdr,Enterprise,Enterprise,121.0,67,US,Apparel,0,
+CUST-00724,Kestrel Supply Inc,2026-02,outbound_sdr,MidMarket,Scale,88.0,25,SE,Food & Beverage,0,
+CUST-00725,Pioneer Hardware Co,2026-02,outbound_sdr,Enterprise,Enterprise,121.0,71,US,Automotive Parts,0,
+CUST-00726,Bright Freight Co,2026-02,outbound_sdr,MidMarket,Scale,88.0,31,CA,3PL,0,
+CUST-00727,Quarry Freight Holdings,2026-02,outbound_sdr,MidMarket,Scale,88.0,16,NL,Apparel,0,
+CUST-00728,Sterling Chemicals Ltd,2026-02,partner,MidMarket,Scale,88.0,29,SE,Apparel,0,
+CUST-00729,Copper Logistics Partners,2026-03,paid_search,SMB,Growth,62.0,7,DE,Retail,0,
+CUST-00730,Orchard Materials Inc,2026-03,paid_search,SMB,Growth,62.0,7,US,Automotive Parts,0,
+CUST-00731,Iron Paper LLC,2026-03,paid_search,SMB,Growth,62.0,6,US,Automotive Parts,0,
+CUST-00732,Granite Materials Co,2026-03,paid_search,SMB,Growth,62.0,13,SE,Retail,0,
+CUST-00733,Vantage Beverage Inc,2026-03,paid_search,SMB,Growth,62.0,7,DE,Automotive Parts,0,2026-06
+CUST-00734,Halcyon Hardware Partners,2026-03,paid_search,SMB,Growth,62.0,17,NL,Apparel,0,
+CUST-00735,Northgate Packaging Group,2026-03,,SMB,Growth,62.0,6,US,Food & Beverage,0,
+CUST-00736,Kestrel Foods Inc,2026-03,paid_social,SMB,Growth,62.0,6,AU,Food & Beverage,0,2026-06
+CUST-00737,Prairie Wholesale Group,2026-03,inbound_content,SMB,Growth,62.0,12,AU,3PL,0,
+CUST-00738,Cedar Automotive Ltd,2026-03,outbound_sdr,MidMarket,Scale,88.0,42,US,Chemicals,0,
+CUST-00739,Cedar Distribution Co,2026-03,outbound_sdr,MidMarket,Scale,88.0,32,GB,Chemicals,0,
+CUST-00740,Prairie Paper Works,2026-03,outbound_sdr,MidMarket,Scale,88.0,18,AU,Retail,0,
+CUST-00741,Dune Packaging Ltd,2026-03,outbound_sdr,MidMarket,Scale,88.0,20,NL,Automotive Parts,0,
+CUST-00742,Willow Wholesale Partners,2026-03,partner,MidMarket,Scale,88.0,21,US,3PL,0,
+CUST-00743,Meridian Materials LLC,2026-04,paid_search,SMB,Growth,62.0,10,CA,Chemicals,0,
+CUST-00744,Kestrel Supply Ltd,2026-04,paid_search,SMB,Growth,62.0,15,AU,Chemicals,0,
+CUST-00745,Copper Hardware Group,2026-04,paid_search,SMB,Growth,62.0,10,US,Chemicals,0,
+CUST-00746,Sterling Packaging LLC,2026-04,paid_social,SMB,Growth,62.0,8,GB,Retail,0,2026-05
+CUST-00747,Halcyon Supply Holdings,2026-04,paid_social,SMB,Starter,39.0,8,DE,Retail,0,
+CUST-00748,Vantage Distribution LLC,2026-04,paid_social,SMB,Growth,62.0,7,US,Automotive Parts,0,2026-08
+CUST-00749,Pioneer Fulfilment Group,2026-04,paid_social,SMB,Growth,62.0,10,US,Food & Beverage,0,
+CUST-00750,Ember Beverage LLC,2026-04,inbound_content,SMB,Growth,62.0,8,US,3PL,0,
+CUST-00751,Iron Freight Co,2026-04,inbound_content,MidMarket,Scale,88.0,19,AU,3PL,0,
+CUST-00752,Beacon Hardware LLC,2026-04,outbound_sdr,SMB,Growth,62.0,9,NL,Food & Beverage,0,
+CUST-00753,Ember Industrial Partners,2026-04,outbound_sdr,Enterprise,Enterprise,121.0,91,DE,Retail,0,
+CUST-00754,Dune Packaging Works,2026-04,outbound_sdr,Enterprise,Enterprise,121.0,46,DE,Medical Devices,0,
+CUST-00755,Sterling Automotive Works,2026-04,outbound_sdr,SMB,Growth,62.0,12,SE,Industrial Distribution,0,
+CUST-00756,Ridge Components Partners,2026-04,outbound_sdr,MidMarket,Scale,88.0,23,US,Retail,0,
+CUST-00757,Meridian Supply Holdings,2026-04,outbound_sdr,MidMarket,Scale,88.0,19,AU,Retail,0,
+CUST-00758,Ridge Hardware Partners,2026-04,outbound_sdr,MidMarket,Scale,88.0,19,US,Chemicals,0,
+CUST-00759,Iron Beverage Holdings,2026-04,partner,MidMarket,Scale,88.0,33,NL,3PL,0,
+CUST-00760,Summit Paper Group,2026-05,paid_search,MidMarket,,88.0,22,NL,Apparel,0,
+CUST-00761,Foundry Materials Group,2026-05,paid_search,SMB,Growth,62.0,12,US,Retail,0,
+CUST-00762,Harbor Industrial Group,2026-05,paid_search,MidMarket,Scale,88.0,24,US,Automotive Parts,0,
+CUST-00763,Beacon Supply Ltd,2026-05,paid_search,SMB,Growth,62.0,7,US,Retail,0,
+CUST-00764,Summit Supply Group,2026-05,paid_search,SMB,Growth,62.0,10,AU,Food & Beverage,0,
+CUST-00765,Granite Supply Ltd,2026-05,paid_social,SMB,Growth,62.0,9,CA,Medical Devices,0,
+CUST-00766,Falcon Freight LLC,2026-05,paid_social,SMB,Growth,62.0,10,GB,Medical Devices,0,
+CUST-00767,Prairie Paper Co,2026-05,paid_social,SMB,Growth,62.0,7,GB,3PL,0,
+CUST-00768,Meridian Supply Ltd,2026-05,paid_social,SMB,Starter,39.0,8,US,Automotive Parts,0,2026-08
+CUST-00769,Beacon Beverage Group,2026-05,inbound_content,MidMarket,Scale,88.0,30,CA,3PL,0,
+CUST-00770,Meridian Hardware LLC,2026-05,outbound_sdr,MidMarket,Scale,88.0,19,GB,Retail,0,
+CUST-00771,Copper Components LLC,2026-05,outbound_sdr,Enterprise,Enterprise,121.0,91,SE,Apparel,0,
+CUST-00772,Lakeshore Components Ltd,2026-05,outbound_sdr,MidMarket,Scale,88.0,17,US,3PL,0,
+CUST-00773,Iron Foods Works,2026-05,outbound_sdr,MidMarket,Scale,88.0,24,US,Medical Devices,0,
+CUST-00774,Vantage Apparel Ltd,2026-05,outbound_sdr,MidMarket,Scale,88.0,29,SE,Retail,0,
+CUST-00775,Harbor Logistics Holdings,2026-05,events,MidMarket,Scale,88.0,17,US,Medical Devices,0,
+CUST-00776,Cedar Industrial Group,2026-06,,SMB,Starter,39.0,8,US,Automotive Parts,0,
+CUST-00777,Northgate Packaging Group,2026-06,paid_search,SMB,Growth,62.0,11,AU,Industrial Distribution,0,
+CUST-00778,Summit Industrial LLC,2026-06,paid_search,MidMarket,Scale,88.0,25,US,Automotive Parts,0,
+CUST-00779,Bluff Freight Inc,2026-06,paid_search,SMB,Growth,62.0,14,GB,Industrial Distribution,0,
+CUST-00780,Bright Components Works,2026-06,paid_search,SMB,Growth,62.0,10,DE,Industrial Distribution,0,
+CUST-00781,Ridge Materials Ltd,2026-06,paid_search,SMB,Growth,62.0,9,US,Food & Beverage,0,
+CUST-00782,Granite Hardware Group,2026-06,paid_social,SMB,Growth,62.0,7,CA,Apparel,0,
+CUST-00783,Cedar Chemicals Works,2026-06,paid_social,SMB,Starter,39.0,8,US,Medical Devices,0,
+CUST-00784,Prairie Logistics Inc,2026-06,paid_social,SMB,Starter,39.0,6,DE,Apparel,0,
+CUST-00785,Prairie Industrial Partners,2026-06,paid_social,SMB,Growth,62.0,8,AU,Retail,0,2026-07
+CUST-00786,Dune Freight Group,2026-06,inbound_content,Enterprise,Enterprise,121.0,61,SE,Retail,0,
+CUST-00787,Quarry Foods Inc,2026-06,inbound_content,SMB,Growth,62.0,10,CA,3PL,0,
+CUST-00788,Northgate Apparel Holdings,2026-06,inbound_content,MidMarket,Scale,88.0,29,DE,3PL,0,
+CUST-00789,Summit Supply Group,2026-06,,MidMarket,Scale,88.0,17,NL,Retail,0,
+CUST-00790,Harbor Materials Co,2026-06,outbound_sdr,MidMarket,Scale,88.0,15,CA,Industrial Distribution,0,
+CUST-00791,Ember Wholesale Co,2026-06,outbound_sdr,MidMarket,Scale,88.0,31,DE,Food & Beverage,0,
+CUST-00792,Orchard Apparel Inc,2026-06,outbound_sdr,MidMarket,Scale,88.0,33,SE,Apparel,0,
+CUST-00793,Willow Components LLC,2026-06,partner,MidMarket,Scale,88.0,36,SE,Chemicals,0,
+CUST-00794,Trident Packaging Holdings,2026-06,,MidMarket,Scale,88.0,22,GB,Industrial Distribution,0,
+CUST-00795,Harbor Wholesale Works,2026-06,partner,MidMarket,Scale,88.0,13,NL,Medical Devices,0,
+CUST-00796,Vantage Supply Works,2026-06,partner,MidMarket,Scale,88.0,22,US,Industrial Distribution,0,
+CUST-00797,Falcon Apparel Ltd,2026-06,partner,MidMarket,Scale,88.0,66,US,Food & Beverage,0,
+CUST-00798,Meridian Wholesale Partners,2026-07,paid_search,SMB,Growth,62.0,13,DE,Retail,0,
+CUST-00799,Ember Materials Partners,2026-07,paid_search,SMB,Growth,62.0,12,DE,3PL,0,
+CUST-00800,Pioneer Freight Partners,2026-07,paid_search,SMB,Growth,62.0,11,US,Chemicals,0,
+CUST-00801,Trident Distribution LLC,2026-07,paid_search,MidMarket,Scale,88.0,26,AU,Automotive Parts,0,
+CUST-00802,Anchor Freight Works,2026-07,paid_social,SMB,Growth,62.0,6,US,Chemicals,0,
+CUST-00803,Halcyon Apparel Group,2026-07,paid_social,SMB,Growth,62.0,9,GB,Food & Beverage,0,
+CUST-00804,Granite Logistics Holdings,2026-07,paid_social,SMB,Growth,62.0,9,CA,3PL,0,2026-08
+CUST-00805,Ember Components Holdings,2026-07,outbound_sdr,SMB,Growth,62.0,9,US,Apparel,0,2026-08
+CUST-00806,Bluff Industrial Co,2026-07,outbound_sdr,Enterprise,Enterprise,121.0,57,US,Food & Beverage,0,
+CUST-00807,Willow Distribution Ltd,2026-07,partner,MidMarket,Scale,88.0,40,CA,Medical Devices,0,
+CUST-00808,Harbor Beverage Group,2026-07,partner,SMB,Growth,62.0,11,DE,Industrial Distribution,0,
+CUST-00809,Bluff Automotive LLC,2026-08,paid_search,MidMarket,Scale,88.0,15,DE,Apparel,0,
+CUST-00810,Summit Components Group,2026-08,paid_search,SMB,Growth,62.0,10,CA,Chemicals,0,
+CUST-00811,Ember Medical Supply Works,2026-08,paid_search,SMB,Growth,62.0,14,US,Chemicals,0,
+CUST-00812,Quarry Automotive Group,2026-08,paid_search,SMB,Growth,62.0,7,US,Apparel,0,
+CUST-00813,Harbor Medical Supply Group,2026-08,paid_search,MidMarket,Scale,88.0,53,NL,Food & Beverage,0,
+CUST-00814,Bluff Hardware Inc,2026-08,paid_search,MidMarket,Scale,88.0,23,DE,Apparel,0,
+CUST-00815,Trident Apparel LLC,2026-08,paid_search,SMB,Growth,62.0,10,SE,Apparel,0,
+CUST-00816,Ridge Industrial LLC,2026-08,paid_search,MidMarket,Scale,88.0,29,GB,Retail,0,
+CUST-00817,Anchor Logistics Works,2026-08,paid_search,SMB,Growth,62.0,16,SE,Automotive Parts,0,
+CUST-00818,Iron Materials Works,2026-08,paid_social,SMB,Starter,39.0,7,US,Food & Beverage,0,
+CUST-00819,Vantage Wholesale Holdings,2026-08,paid_social,SMB,Starter,39.0,7,DE,Automotive Parts,0,
+CUST-00820,Vantage Packaging Works,2026-08,inbound_content,SMB,Growth,62.0,11,US,Retail,0,
+CUST-00821,Trident Materials Group,2026-08,inbound_content,SMB,Growth,62.0,13,AU,Chemicals,0,
+CUST-00822,Anchor Medical Supply Holdings,2026-08,inbound_content,MidMarket,Scale,88.0,15,US,Industrial Distribution,0,
+CUST-00823,Granite Distribution Holdings,2026-08,inbound_content,MidMarket,Scale,88.0,16,AU,Automotive Parts,0,
+CUST-00824,Quarry Fulfilment Ltd,2026-08,inbound_content,Enterprise,Enterprise,121.0,48,US,Automotive Parts,0,
+CUST-00825,Meridian Fulfilment Co,2026-08,outbound_sdr,SMB,Growth,62.0,16,CA,Food & Beverage,0,
+CUST-00826,Kestrel Beverage Group,2026-08,partner,MidMarket,Scale,88.0,19,US,Industrial Distribution,0,
