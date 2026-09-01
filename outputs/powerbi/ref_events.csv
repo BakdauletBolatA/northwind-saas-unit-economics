@@ -1,0 +1,7 @@
+EventId,EventName,StartMonth,ScopeType,ScopeValue,Description
+E1,Paid Social lead-quality collapse,2024-11,channel,paid_social,"Agency moved to broad-reach bidding. CPL fell ~35% and volume tripled, but the leads sit outside ICP. Cohorts acquired after this date churn ~2.3x faster and sign ~22% smaller."
+E2,Multi-Warehouse Sync drives Enterprise expansion,2025-06,segment,Enterprise,"GA of Multi-Warehouse Sync. Enterprise accounts start adding sites. Shows up as expansion MRR and NRR, not as new logos."
+E3,SMB list-price increase,2025-02,segment,SMB,+18% list price applied to SMB accounts at their renewal anniversary. Realised ARPA rises; gross churn spikes for four months and then settles at a permanently higher plateau.
+E4,SDR team scale-up 4 -> 9,2025-09,channel,outbound_sdr,SDR headcount went from 4 to 9. Total meetings rose; meetings per rep fell about 27%. This is the only direct evidence available on what SDR #10 through #18 would actually produce.
+E5,Partner co-sell programme,2025-03,channel,partner,"Co-sell agreement with two 3PL platforms. Best LTV/CAC in the book, but volume is capped by partner-side AE availability."
+E6,Billing engine migration,2026-02,system,billing,"Cut-over to the new billing engine double-posted one month of invoices and back-dated a batch of credit memos. Data defect only, no economics."

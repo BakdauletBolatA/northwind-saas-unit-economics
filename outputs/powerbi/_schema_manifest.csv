@@ -1,0 +1,13 @@
+table,rows,columns,column_names
+dim_date,54,9,MonthKey|MonthLabel|MonthEndDate|MonthIndex|Year|Quarter|FiscalPeriod|MonthNumber|PeriodType
+dim_customer,826,20,CustomerKey|CustomerId|CompanyName|Segment|Channel|ChannelLabel|ChannelGroup|Plan|Country|Industry|SignupMonth|CohortMonth|AcquisitionWindow|IsPreWindow|SegmentImputed|ChannelUnattributed|PlanImputed|IsChurned|ChurnMonth|EntryAcv
+dim_channel,7,6,ChannelKey|Channel|ChannelLabel|ChannelGroup|SalesTouchWeight|IsAttributable
+dim_segment,3,6,SegmentKey|Segment|GrossMargin|SalesEffortIndex|BenchmarkMonthlyLogoChurn|SortOrder
+fact_subscription_month,17181,13,CustomerKey|MonthKey|Mrr|PriorMrr|Arr|Seats|SeatPrice|MovementType|MovementMrr|MovementArr|TenureMonths|OutlierFlag|IsActive
+fact_marketing_spend,216,6,MonthKey|ChannelKey|ProgramSpend|CostPerLead|Leads|Sqls
+fact_opex,720,5,MonthKey|CostCategory|CostCenter|GlAccount|Amount
+fact_headcount,288,6,MonthKey|Role|Headcount|LoadedCostPerHead|TotalCost|CostCategory
+fact_credit_memo,239,3,CustomerKey|MonthKey|CreditAmount
+bridge_cohort_age,17181,3,CustomerKey|MonthKey|MonthsSinceCohort
+ref_events,6,6,EventId|EventName|StartMonth|ScopeType|ScopeValue|Description
+etl_audit,13,9,StepNo|RuleId|RuleName|TableName|RowsIn|RowsOut|RowsAffected|Severity|RuleDescription
