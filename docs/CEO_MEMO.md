@@ -182,7 +182,8 @@ one being made a condition below.
 | 4 | Re-point the existing nine reps away from Mid-Market outbound. Mid-Market is served by paid search (11.5-month payback) and partner (14.0), both of which already work. | CRO | 31 Oct 2026 |
 | 5 | Increase Partner programme spend from $19.8k to $40k/month and add one partner manager. Best payback in the book; the constraint is capacity, not demand. | CRO | 30 Nov 2026 |
 | 6 | Stop bidding paid search on SMB terms. SMB pays back in 39 months there and 62 months overall. | VP Marketing | 31 Oct 2026 |
-| 7 | Re-open the full expansion at the Q1 board meeting, on evidence: two quarters of pod actuals against the 11.2-month payback modelled here. | CFO | 15 Mar 2027 |
+| 7 | Review Events. It runs $27.3k/month for two wins in twelve months at a 48.2-month payback. Two deals cannot support a confident verdict, which is the finding: we are spending $328k a year on a channel we cannot measure. Either commit enough to measure it or stop. | VP Marketing | 30 Nov 2026 |
+| 8 | Re-open the full expansion at the Q1 board meeting, on evidence: two quarters of pod actuals against the 11.2-month payback modelled here. | CFO | 15 Mar 2027 |
 
 The modelled selective scenario — the pod plus retiring Paid Social — extends
 runway from 21 to 23 months on its own. Adding recommendations 5 and 6 is close

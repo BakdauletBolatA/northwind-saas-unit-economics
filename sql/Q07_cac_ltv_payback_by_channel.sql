@@ -17,7 +17,13 @@
 --   * pre-window customers  - acquired before the S&M ledger begins, so they
 --     have no cost. Leaving them in inflates the denominator and cuts CAC by
 --     roughly half. This is the single most common way SaaS CAC is flattered.
---   * 'unattributed' is reported as its own row, never spread across channels.
+--   * customers whose channel is missing are EXCLUDED entirely, not spread
+--     across channels and not given their own row. The spend that produced
+--     them already sits inside a real channel's cost pool, so giving them a
+--     row would double-count it and take allocation basis away from the
+--     channels being judged. Excluding them makes every CAC below very
+--     slightly conservative (4 of 184 logos in the window), which is the
+--     right direction of error for a spending decision.
 --
 -- LTV IS SHOWN THREE WAYS ON PURPOSE. See the notes at the bottom.
 -- =============================================================================
