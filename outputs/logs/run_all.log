@@ -11,7 +11,7 @@ legacy acv scale   : 0.5431
 defects            : {'duplicate_rows_injected': 157, 'credit_memo_rows_injected': 239, 'orphan_rows_injected': 12, 'negative_seat_rows_injected': 7, 'missing_acquisition_channel': 17, 'missing_segment': 11, 'missing_plan_code': 7}
 
 [1m=== 2/8  Build the SQLite star schema and ETL audit ===[0m
-ETL run 20260901T160703Z
+ETL run 20260901T161211Z
   R01  Load raw billing extract                   in= 17,310 out= 17,310 affected=     0
   R02  Quarantine orphan billing rows             in= 17,310 out= 17,298 affected=    12
   R03  Separate credit memos from recurring       in= 17,298 out= 17,059 affected=   239
