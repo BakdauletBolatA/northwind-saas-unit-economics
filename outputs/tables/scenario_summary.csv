@@ -1,0 +1,4 @@
+scenario,label,incremental_sm_per_month,net_incremental_burn_month6,arr_month18,delta_arr_month18,burn_month18,cash_month18,runway_months,incremental_gp_month18
+base,Base - hold the line,0.0,0.0,19723412.0,0.0,264308.0,805627.0,21.0,0.0
+sales_proposal,Sales proposal - double the SDR team (+$180k/mo),180000.0,186987.0,20963205.0,1239793.0,373435.0,-1704336.0,14.0,80879.0
+selective,"Selective - 5-rep Enterprise pod, funded by retiring Paid Social",88500.0,26770.0,21039842.0,1316430.0,202640.0,1073224.0,23.0,85878.0

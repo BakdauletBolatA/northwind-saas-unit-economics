@@ -1,0 +1,5 @@
+segment,new_logo_arr,expansion_arr,reactivation_arr,contraction_arr,churn_arr,net_new_arr,pct_from_new_logos,pct_from_expansion
+TOTAL,4495140.0,1728739.0,39162.0,-238429.0,-989752.0,5034859.0,89.3,34.3
+Enterprise,1759824.0,866844.0,0.0,-43560.0,-65340.0,2517768.0,69.9,34.4
+MidMarket,2146848.0,605616.0,16896.0,-92928.0,-341088.0,2335344.0,91.9,25.9
+SMB,588468.0,256279.0,22266.0,-101941.0,-583324.0,181747.0,323.8,141.0

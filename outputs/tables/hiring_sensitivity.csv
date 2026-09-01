@@ -1,0 +1,3 @@
+scenario,added_heads,list_overlap,monthly_cost,incremental_meetings_per_month,meetings_per_added_rep,wins_per_month,blended_acv,incremental_cac,cac_payback_months,breakeven_meetings_per_added_rep_for_18m,productivity_headroom_pct
+sales_proposal,9,1.0,180000,49.5,5.5,2.26,44354,79788,28.0,8.57,-35.8
+selective,5,0.4,88500,42.5,8.51,1.94,65099,45671,11.2,5.27,61.4

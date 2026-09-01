@@ -138,6 +138,13 @@ segments:
     hosting_weight: 5.5
 
 # Tenure hazard shape: multiplier on base churn by months-since-signup.
+# Relative sales effort consumed by one deal, by segment: SE involvement,
+# proof-of-concept, security review, procurement. Used ONLY as an alternative
+# CAC allocation basis in Q09, to test whether the segment ranking survives
+# charging Enterprise four times the effort of an SMB deal. It is a stated
+# judgement, not an observation, and is reported as such.
+segment_sales_effort_index: {SMB: 1.0, MidMarket: 2.2, Enterprise: 4.0}
+
 tenure_churn_multiplier: {1: 1.70, 3: 1.45, 6: 1.15, 9: 1.00, 24: 0.92, 48: 0.85}
 
 # Contract minimums are genuine floors, but deliberately low enough that they
@@ -285,45 +292,70 @@ data_quality:
 # ---------------------------------------------------------------------------
 # Cash-flow scenarios (18 months forward).
 # ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# Forward cost policy. The first version of this model held S&M, R&D and G&A
+# flat in dollars for 18 months while the revenue forecast grew 59%. That is
+# internally inconsistent: the top-line forecast embeds continued commercial
+# scaling that a frozen S&M line does not fund, and it made the company
+# profitable by month 18 in the base case, which dissolves the very question
+# the board is asking. S&M is therefore held at a constant SHARE of revenue -
+# "hold the line" means hold the policy, not freeze the dollars.
+# ---------------------------------------------------------------------------
+forecast_policy:
+  sm_pct_of_revenue_source: trailing_3m     # keep spending today's share
+  cogs_pct_of_revenue_source: trailing_3m
+  opex_inflation_annual: 0.025              # R&D and G&A, headcount held flat
+  paid_social_runrate_source: trailing_3m   # what is actually being switched off
+
 scenarios:
   base:
-    label: "Base — hold the line"
-    description: "No incremental S&M. Existing plan runs out."
-  sales_proposal:
-    label: "Sales proposal — double the SDR team (+$180k/mo)"
+    label: "Base - hold the line"
     description: >
-      The ask as tabled. Cost build-up demanded by finance rather than
-      accepting one blended number.
-    build_up:
-      sdr_heads: 9
-      sdr_cost_each: 11_000
-      sdr_manager_heads: 2
-      sdr_manager_cost_each: 16_000
-      ae_heads: 3
-      ae_cost_each: 15_000
-      tooling_data: 4_000
-    marginal_meetings_per_rep: 6.0      # NOT 12.5 — see sdr.saturation_decay
-    ramp_curve: [0.35, 0.70, 1.00]
-    hire_lag_months: 2                  # req -> seat filled
-    sales_cycle_lag: {SMB: 1, MidMarket: 2, Enterprise: 4}
-    seg_mix: {SMB: 0.06, MidMarket: 0.66, Enterprise: 0.28}
+      No incremental S&M. The month-36 cost base runs forward flat in real
+      terms; no hiring beyond what is already committed.
+    sdr_heads_added: 0
     paid_social_cut_pct: 0.0
-  selective:
-    label: "Selective — 5-rep Mid-Market pod, funded by retiring Paid Social"
+
+  sales_proposal:
+    label: "Sales proposal - double the SDR team (+$180k/mo)"
     description: >
-      Mid-Market-only territory on a curated ICP list, folded under the
-      existing SDR manager. Funded by switching Paid Social off.
+      The ask exactly as tabled. Finance rejects a single blended number and
+      prices the build-up. list_overlap = 1.00 because reps 10-18 work the
+      SAME target-account list as reps 1-9, which is why the saturation curve
+      observed in the historical data applies to them in full.
+    sdr_heads_added: 9
+    list_overlap: 1.00
     build_up:
-      sdr_heads: 5
-      sdr_cost_each: 11_000
-      sdr_manager_heads: 0              # absorbed by existing span of control
-      sdr_manager_cost_each: 16_000
-      ae_heads: 1
-      ae_cost_each: 15_000
-      tooling_data: 2_000
-    marginal_meetings_per_rep: 7.5      # tighter list, single-segment focus
-    ramp_curve: [0.35, 0.70, 1.00]
+      - {role: sdr,         heads: 9, cost_each: 11_000}
+      - {role: sdr_manager, heads: 2, cost_each: 16_000}
+      - {role: ae,          heads: 3, cost_each: 15_000}
+    tooling_data: 4_000
     hire_lag_months: 2
-    sales_cycle_lag: {SMB: 1, MidMarket: 2, Enterprise: 4}
-    seg_mix: {SMB: 0.04, MidMarket: 0.82, Enterprise: 0.14}
+    ramp_curve: [0.35, 0.70, 1.00]
+    seg_mix: {SMB: 0.06, MidMarket: 0.66, Enterprise: 0.28}   # today's outbound mix
+    paid_social_cut_pct: 0.0
+
+  selective:
+    label: "Selective - 5-rep Enterprise pod, funded by retiring Paid Social"
+    description: >
+      Points new capacity at the only slice of outbound that pays back inside
+      the runway (Enterprise, 12.3-month payback vs 40.3 for Mid-Market, Q08),
+      and funds it by switching off Paid Social. list_overlap = 0.40 because
+      the pod works a named Enterprise account list that the current team has
+      barely touched - partial, not complete, independence. THIS IS THE
+      WEAKEST ASSUMPTION IN THE ANALYSIS; src/04 reports the break-even value.
+    sdr_heads_added: 5
+    list_overlap: 0.40
+    build_up:
+      - {role: sdr,            heads: 5, cost_each: 11_000}
+      - {role: ae,             heads: 1, cost_each: 15_000}
+      - {role: sales_engineer, heads: 1, cost_each: 16_500}
+    tooling_data: 2_000
+    hire_lag_months: 2
+    ramp_curve: [0.35, 0.70, 1.00]
+    seg_mix: {SMB: 0.02, MidMarket: 0.40, Enterprise: 0.58}
     paid_social_cut_pct: 1.00
+
+# Time from a closed-won signature to the first full month of billing, by
+# segment. Enterprise runs long: security review and procurement.
+sales_cycle_lag_months: {SMB: 1, MidMarket: 2, Enterprise: 4}
