@@ -412,7 +412,6 @@ def main() -> int:
             exit_burn = float(df.net_burn.tail(3).mean())
             runway = (round(H + float(df.cash.iloc[-1]) / exit_burn, 1)
                       if exit_burn > 0 else "cash-flow positive")
-        inc_wins_yr = sum(booked[s].sum() for s in booked) * 12 / (H / 12.0)
         inc_gp_m18 = float(df.delta_mrr.iloc[-1]) * (1 - base_cost["cogs_pct"])
         summary.append(dict(
             scenario=name, label=scfg["label"],

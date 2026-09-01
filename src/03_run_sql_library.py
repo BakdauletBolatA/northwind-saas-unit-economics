@@ -90,6 +90,39 @@ def main() -> int:
         print(bad.to_string(index=False))
         failures.append("cohort reconciliation")
 
+    # ---- pivot the cohort triangle into something readable ---------------
+    # Q03 returns long format because that is the right shape for a warehouse
+    # and for Power BI. Nobody reads a 698-row cohort table, so the triangle a
+    # human actually looks at is written out here as well.
+    q3 = results["Q03_cohort_revenue_retention"]
+    for value, name in (("revenue_retention_pct", "revenue"),
+                        ("logo_retention_pct", "logo")):
+        tri = (q3.pivot(index="cohort", columns="months_since", values=value)
+               .sort_index())
+        size = q3[q3.months_since == 0].set_index("cohort").cohort_size
+        tri.insert(0, "cohort_size", size)
+        tri.to_csv(OUT / f"cohort_triangle_{name}_retention.csv")
+    # Monthly cohorts at this deal volume are 1-9 logos. A cohort of one
+    # reporting "124% retention" is one account buying seats, not a rate. The
+    # quarterly triangle is the grain that can actually carry a claim; the
+    # monthly one is kept because it is what reconciles in Q04.
+    qq = q3[q3.cohort != "PRE-WINDOW"].copy()
+    qq["cohort_q"] = (qq.cohort.str[:4] + " Q"
+                      + ((qq.cohort.str[5:].astype(int) - 1) // 3 + 1).astype(str))
+    agg = (qq.groupby(["cohort_q", "months_since"])
+             .agg(mrr=("cohort_mrr", "sum"), m0=("cohort_mrr_m0", "sum"),
+                  logos=("live_logos", "sum"))
+             .reset_index())
+    agg["retention_pct"] = (100 * agg.mrr / agg.m0).round(1)
+    tri_q = agg.pivot(index="cohort_q", columns="months_since", values="retention_pct")
+    size_q = (qq[qq.months_since == 0].groupby("cohort_q").cohort_size.sum())
+    tri_q.insert(0, "cohort_size", size_q)
+    tri_q.to_csv(OUT / "cohort_triangle_quarterly_revenue_retention.csv")
+    print(f"\ncohort triangles written: {q3.cohort.nunique()} monthly cohorts "
+          f"(median size {int(q3[q3.months_since==0].cohort_size.median())}) and "
+          f"{len(tri_q)} quarterly cohorts "
+          f"(median size {int(size_q.median())})")
+
     # ---- headline output --------------------------------------------------
     show(results["Q01_executive_summary"], n=6, title="Q01 Executive summary (last 6 months)")
     show(br, n=4, title="Q02 ARR bridge (last 4 months, $ ARR)")

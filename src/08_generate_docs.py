@@ -72,7 +72,7 @@ def main() -> int:
         "a SaaS ARR bridge stops tying.",
         "",
         "**Missing acquisition channel is never imputed.** Attribution cannot be",
-        f"reconstructed from revenue. Guessing would feed a fabricated denominator",
+        "reconstructed from revenue. Guessing would feed a fabricated denominator",
         "straight into CAC. Those customers go to an explicit `unattributed` bucket",
         "and are excluded from every channel CAC figure.",
         "",

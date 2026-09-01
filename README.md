@@ -153,7 +153,7 @@ git clone https://github.com/BakdauletBolatA/northwind-saas-unit-economics
 cd northwind-saas-unit-economics
 pip install -r requirements.txt
 apt-get install -y libreoffice-calc     # G5-G7 recalculate the workbook headlessly
-./run_all.sh                            # ~3 minutes end to end
+./run_all.sh                            # ~40 seconds end to end
 ```
 
 Everything is driven by `config/assumptions.yml`. Change a number there — a

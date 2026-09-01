@@ -28,7 +28,6 @@ import hashlib
 import json
 import math
 import sys
-from datetime import date
 from pathlib import Path
 
 import numpy as np
@@ -309,7 +308,7 @@ class Generator:
         e1p = self.ev["E1"]["params"]
         e2p = self.ev["E2"]["params"]
         e3p = self.ev["E3"]["params"]
-        t_e1, t_e2, t_e3 = self.ev_t["E1"], self.ev_t["E2"], self.ev_t["E3"]
+        t_e2, t_e3 = self.ev_t["E2"], self.ev_t["E3"]
 
         bid = 1
         for cust in self.customers:
@@ -472,7 +471,6 @@ class Generator:
         hc_cost = cfg["headcount"]["loaded_cost"]
         hc_cat = cfg["headcount"]["cost_category"]
         op = cfg["opex"]
-        seg = cfg["segments"]
 
         headcount_rows, opex_rows = [], []
         for t in range(1, self.T + 1):
