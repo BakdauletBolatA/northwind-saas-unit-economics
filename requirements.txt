@@ -3,6 +3,10 @@ pandas>=2.0
 numpy>=1.24
 openpyxl>=3.1
 PyYAML>=6.0
-# SQLite ships with the standard library.
-# LibreOffice (soffice) is required by src/06_validate.py to recalculate the
-# workbook headlessly. On Debian/Ubuntu: apt-get install -y libreoffice-calc
+
+# SQLite ships with the Python standard library.
+#
+# src/06_validate.py recalculates the workbook headlessly, which needs
+# LibreOffice *Calc* specifically — libreoffice-core alone cannot open a
+# spreadsheet and fails with "source file could not be loaded":
+#   apt-get install -y libreoffice-calc

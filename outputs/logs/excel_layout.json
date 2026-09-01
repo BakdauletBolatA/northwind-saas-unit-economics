@@ -1,0 +1,12 @@
+{
+  "forecast_first_row": 46,
+  "forecast_last_row": 63,
+  "n_checks": 24,
+  "check_status_range": "F5:F28",
+  "n_actuals": 36,
+  "n_channels": 6,
+  "unit_econ_rows": [
+    5,
+    10
+  ]
+}
