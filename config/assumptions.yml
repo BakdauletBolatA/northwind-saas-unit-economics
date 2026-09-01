@@ -1,0 +1,329 @@
+# ============================================================================
+# Northwind Cloud — master assumption file.
+# Every downstream script (generator, ETL, cash model, Excel builder) reads
+# THIS file. Change a number here, re-run ./run_all.sh, and the whole chain
+# moves — including the Excel workbook.
+#
+# Schedules written as {month_index: value} are linearly interpolated between
+# anchor points and held flat outside them. month_index 1 == meta.history_start.
+# ============================================================================
+
+meta:
+  company: "Northwind Cloud"
+  product: "Cloud warehouse-management software (WMS) for B2B distributors"
+  seed: 20260901
+  history_start: "2023-09"        # month_index 1
+  history_months: 36              # last actual month = 2026-08
+  forecast_months: 18             # 2026-09 .. 2028-02
+  currency: "USD"
+
+treasury:
+  cash_on_hand: 6_100_000         # per the CEO, as at 2026-08-31
+  board_min_runway_months: 18     # the guardrail the board applies
+
+# ---------------------------------------------------------------------------
+# Legacy installed base.
+# Northwind grew 2021-2023 on a low-touch, SMB-heavy self-serve motion and
+# has since moved upmarket. Those accounts exist in the billing system, but
+# the S&M ledger only starts at history_start — so they carry NO acquisition
+# cost and must be excluded from every CAC / payback figure. Flagged
+# is_pre_window = 1. This is the single most common way SaaS CAC gets
+# flattered in practice, so the trap is deliberately left in the data.
+# ---------------------------------------------------------------------------
+legacy_base:
+  n_customers: 452
+  target_arr_at_window_start: 3_600_000
+  max_tenure_months: 30
+  segment_mix:  {SMB: 0.740, MidMarket: 0.220, Enterprise: 0.040}
+  channel_mix:  {paid_search: 0.30, inbound_content: 0.26, paid_social: 0.10,
+                 partner: 0.14, outbound_sdr: 0.13, events: 0.07}
+
+# ---------------------------------------------------------------------------
+# Acquisition channels.
+# program_spend  : marketing programme dollars only (people sit in headcount)
+# cpl            : cost per raw lead in month 1, drifting at cpl_drift/month
+# lead_to_sql    : raw lead -> sales-qualified
+# sql_to_win     : sales-qualified -> closed won
+# seg_mix        : segment split of won logos
+# sales_touch    : relative AE/SE effort a won deal in this channel consumes.
+#                  Used to allocate shared sales cost into channel CAC.
+# ---------------------------------------------------------------------------
+channels:
+  paid_search:
+    label: "Paid Search"
+    program_spend: {1: 17_000, 12: 25_500, 24: 37_400, 36: 51_000}
+    cpl: 165
+    cpl_drift: 0.0055             # auction inflation, ~6.8%/yr
+    lead_to_sql: 0.160
+    sql_to_win: 0.140
+    seg_mix: {SMB: 0.72, MidMarket: 0.25, Enterprise: 0.03}
+    sales_touch: 0.35
+  paid_social:
+    label: "Paid Social"
+    program_spend: {1: 6_000, 14: 11_000, 15: 18_000, 20: 34_000,
+                    28: 58_000, 36: 78_000}
+    cpl: 96
+    cpl_drift: -0.0090            # CPL *falls* — which is exactly the trap
+    lead_to_sql: 0.115
+    sql_to_win: 0.075
+    seg_mix: {SMB: 0.88, MidMarket: 0.11, Enterprise: 0.01}
+    sales_touch: 0.30
+  inbound_content:
+    label: "Inbound / Content"
+    program_spend: {1: 7_650, 18: 17_000, 36: 28_900}
+    cpl: 210
+    cpl_drift: 0.0020
+    lead_to_sql: 0.240
+    sql_to_win: 0.060
+    seg_mix: {SMB: 0.46, MidMarket: 0.44, Enterprise: 0.10}
+    sales_touch: 0.55
+  outbound_sdr:
+    label: "Outbound SDR"
+    program_spend: {1: 4_000, 25: 12_000, 36: 19_000}   # data + tooling only
+    cpl: 0                        # volume comes from SDR capacity, not spend
+    cpl_drift: 0.0
+    lead_to_sql: 0.300            # booked meeting -> qualified opportunity
+    sql_to_win: 0.125
+    seg_mix: {SMB: 0.06, MidMarket: 0.66, Enterprise: 0.28}
+    sales_touch: 1.00
+  partner:
+    label: "Partner / Reseller"
+    program_spend: {1: 3_400, 19: 10_200, 36: 20_400}
+    cpl: 620
+    cpl_drift: 0.0035
+    lead_to_sql: 0.500
+    sql_to_win: 0.075
+    seg_mix: {SMB: 0.18, MidMarket: 0.57, Enterprise: 0.25}
+    sales_touch: 0.45
+  events:
+    label: "Events / Field"
+    program_spend: {1: 5_100, 18: 15_300, 36: 28_050}
+    cpl: 1_450
+    cpl_drift: 0.0045
+    lead_to_sql: 0.310
+    sql_to_win: 0.050
+    seg_mix: {SMB: 0.09, MidMarket: 0.41, Enterprise: 0.50}
+    sales_touch: 0.85
+
+segments:
+  SMB:
+    acv_mean: 7_200
+    acv_sigma: 0.34
+    base_monthly_logo_churn: 0.0185
+    expansion_rate: 0.0500          # monthly P(seat expansion event)
+    expansion_size: 0.095           # mean % seat uplift when it fires
+    contraction_rate: 0.0250
+    contraction_size: 0.115
+    gross_margin: 0.820
+    hosting_weight: 1.0
+  MidMarket:
+    acv_mean: 28_400
+    acv_sigma: 0.40
+    base_monthly_logo_churn: 0.0098
+    expansion_rate: 0.0900
+    expansion_size: 0.125
+    contraction_rate: 0.0180
+    contraction_size: 0.095
+    gross_margin: 0.780
+    hosting_weight: 2.4
+  Enterprise:
+    acv_mean: 88_000
+    acv_sigma: 0.46
+    base_monthly_logo_churn: 0.0042
+    expansion_rate: 0.0850
+    expansion_size: 0.115
+    contraction_rate: 0.0140
+    contraction_size: 0.085
+    gross_margin: 0.735
+    hosting_weight: 5.5
+
+# Tenure hazard shape: multiplier on base churn by months-since-signup.
+tenure_churn_multiplier: {1: 1.70, 3: 1.45, 6: 1.15, 9: 1.00, 24: 0.92, 48: 0.85}
+
+# Contract minimums are genuine floors, but deliberately low enough that they
+# bind on only the very smallest deals — otherwise the plan ladder, not the
+# demand model, would be setting ARPA.
+plans:
+  Starter:    {seat_price: 39,  min_seats: 3,  segment: SMB}
+  Growth:     {seat_price: 62,  min_seats: 6,  segment: SMB}
+  Scale:      {seat_price: 88,  min_seats: 10, segment: MidMarket}
+  Enterprise: {seat_price: 121, min_seats: 15, segment: Enterprise}
+
+headcount:
+  loaded_cost:                      # fully-loaded monthly cost per head
+    sdr: 11_000
+    sdr_manager: 16_000
+    ae: 15_000
+    sales_engineer: 16_500
+    marketing: 14_000
+    cs_am: 12_000
+    engineering: 17_500
+    ga: 15_500
+  cost_category:                    # where each role lands in the P&L
+    sdr: SM
+    sdr_manager: SM
+    ae: SM
+    sales_engineer: SM
+    marketing: SM
+    cs_am: COGS                     # customer success = cost of service
+    engineering: RD
+    ga: GA
+  plan:
+    sdr:            {1: 2, 9: 3, 16: 4, 22: 5, 25: 9, 36: 9}
+    sdr_manager:    {1: 1, 25: 2, 36: 2}
+    ae:             {1: 3, 12: 5, 24: 6, 30: 8, 36: 8}
+    sales_engineer: {1: 1, 18: 2, 36: 3}
+    marketing:      {1: 2, 18: 4, 36: 5}
+    cs_am:          {1: 3, 18: 6, 36: 9}
+    engineering:    {1: 8, 18: 12, 36: 17}
+    ga:             {1: 3, 18: 4, 36: 5}
+
+# The board question lives in this block. Meetings per fully-ramped SDR per
+# month fall as the team grows: territories overlap and the ICP list gets
+# re-worked. This is what makes SDR #10 worth less than SDR #3.
+# Meetings per fully-ramped rep follow a power law in team size:
+#     per_rep(N) = base * (N0 / N) ** alpha      for N > N0
+# so total output rises but concavely. An exponential per-rep decay was
+# rejected: it implies total outbound meetings PEAK at ~16 reps and fall
+# after, which is a far stronger claim than the data can support.
+sdr:
+  meetings_per_rep_small_team: 12.5
+  saturation_team_size: 4             # N0 - decay starts above this headcount
+  saturation_exponent: 0.34           # alpha
+  ramp_curve: [0.35, 0.70, 1.00]      # productivity in ramp months 1..3
+
+opex:
+  hosting_pct_of_revenue: 0.068
+  other_cogs_pct_of_revenue: 0.041
+  ga_fixed_base: 40_000
+  ga_fixed_growth: 0.0125
+  rd_tooling_base: 21_000
+  rd_tooling_growth: 0.0140
+  marketing_ops_base: 12_000
+  marketing_ops_growth: 0.0115
+  commission_new_pct: 0.10            # % of new ACV booked
+  commission_expansion_pct: 0.05      # % of expansion ACV booked
+
+# ---------------------------------------------------------------------------
+# Named business events. These are the things the analysis is supposed to
+# surface. They are listed here so the generator can inject them and so the
+# finished analysis can be graded against ground truth — the SQL library and
+# the memo must find them from the data, not from this file.
+# ---------------------------------------------------------------------------
+events_log:
+  - id: E1
+    name: "Paid Social lead-quality collapse"
+    start_month: "2024-11"
+    scope_type: channel
+    scope_value: paid_social
+    description: >
+      Agency moved to broad-reach bidding. CPL fell ~35% and volume tripled,
+      but the leads sit outside ICP. Cohorts acquired after this date churn
+      ~2.3x faster and sign ~22% smaller.
+    params: {churn_multiplier: 2.30, ramp_months: 4, acv_multiplier: 0.78}
+  - id: E2
+    name: "Multi-Warehouse Sync drives Enterprise expansion"
+    start_month: "2025-06"
+    scope_type: segment
+    scope_value: Enterprise
+    description: >
+      GA of Multi-Warehouse Sync. Enterprise accounts start adding sites.
+      Shows up as expansion MRR and NRR, not as new logos.
+    params: {expansion_rate_multiplier: 1.75, expansion_size_multiplier: 1.25}
+  - id: E3
+    name: "SMB list-price increase"
+    start_month: "2025-02"
+    scope_type: segment
+    scope_value: SMB
+    description: >
+      +18% list price applied to SMB accounts at their renewal anniversary.
+      Realised ARPA rises; gross churn spikes for four months and then settles
+      at a permanently higher plateau.
+    params: {price_uplift: 0.18, churn_multiplier_peak: 2.05,
+             churn_multiplier_plateau: 1.32, spike_months: 4,
+             contraction_rate_multiplier: 1.55}
+  - id: E4
+    name: "SDR team scale-up 4 -> 9"
+    start_month: "2025-09"
+    scope_type: channel
+    scope_value: outbound_sdr
+    description: >
+      SDR headcount went from 4 to 9. Total meetings rose; meetings per rep
+      fell about 27%. This is the only direct evidence available on what
+      SDR #10 through #18 would actually produce.
+    params: {}
+  - id: E5
+    name: "Partner co-sell programme"
+    start_month: "2025-03"
+    scope_type: channel
+    scope_value: partner
+    description: >
+      Co-sell agreement with two 3PL platforms. Best LTV/CAC in the book,
+      but volume is capped by partner-side AE availability.
+    params: {sql_to_win_multiplier: 1.42}
+  - id: E6
+    name: "Billing engine migration"
+    start_month: "2026-02"
+    scope_type: system
+    scope_value: billing
+    description: >
+      Cut-over to the new billing engine double-posted one month of invoices
+      and back-dated a batch of credit memos. Data defect only, no economics.
+    params: {}
+
+# Deliberate defects the ETL has to detect, fix and log.
+data_quality:
+  duplicate_month: "2026-02"
+  duplicate_share: 0.31
+  credit_memo_share: 0.014
+  missing_channel_share: 0.021
+  missing_segment_share: 0.013
+  missing_plan_share: 0.009
+  orphan_billing_rows: 12
+  negative_seat_rows: 7
+
+# ---------------------------------------------------------------------------
+# Cash-flow scenarios (18 months forward).
+# ---------------------------------------------------------------------------
+scenarios:
+  base:
+    label: "Base — hold the line"
+    description: "No incremental S&M. Existing plan runs out."
+  sales_proposal:
+    label: "Sales proposal — double the SDR team (+$180k/mo)"
+    description: >
+      The ask as tabled. Cost build-up demanded by finance rather than
+      accepting one blended number.
+    build_up:
+      sdr_heads: 9
+      sdr_cost_each: 11_000
+      sdr_manager_heads: 2
+      sdr_manager_cost_each: 16_000
+      ae_heads: 3
+      ae_cost_each: 15_000
+      tooling_data: 4_000
+    marginal_meetings_per_rep: 6.0      # NOT 12.5 — see sdr.saturation_decay
+    ramp_curve: [0.35, 0.70, 1.00]
+    hire_lag_months: 2                  # req -> seat filled
+    sales_cycle_lag: {SMB: 1, MidMarket: 2, Enterprise: 4}
+    seg_mix: {SMB: 0.06, MidMarket: 0.66, Enterprise: 0.28}
+    paid_social_cut_pct: 0.0
+  selective:
+    label: "Selective — 5-rep Mid-Market pod, funded by retiring Paid Social"
+    description: >
+      Mid-Market-only territory on a curated ICP list, folded under the
+      existing SDR manager. Funded by switching Paid Social off.
+    build_up:
+      sdr_heads: 5
+      sdr_cost_each: 11_000
+      sdr_manager_heads: 0              # absorbed by existing span of control
+      sdr_manager_cost_each: 16_000
+      ae_heads: 1
+      ae_cost_each: 15_000
+      tooling_data: 2_000
+    marginal_meetings_per_rep: 7.5      # tighter list, single-segment focus
+    ramp_curve: [0.35, 0.70, 1.00]
+    hire_lag_months: 2
+    sales_cycle_lag: {SMB: 1, MidMarket: 2, Enterprise: 4}
+    seg_mix: {SMB: 0.04, MidMarket: 0.82, Enterprise: 0.14}
+    paid_social_cut_pct: 1.00

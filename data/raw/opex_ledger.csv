@@ -1,0 +1,721 @@
+month,cost_category,cost_center,gl_account,amount,note
+2023-09,COGS,cs_am,Personnel,36000.0,3 x cs_am fully loaded
+2023-09,COGS,infrastructure,Hosting,21519.48,"cloud infrastructure, % of MRR"
+2023-09,COGS,infrastructure,Third-party licences,12974.98,"carrier / EDI / mapping licences, % of MRR"
+2023-09,GA,corporate,"Facilities, insurance, professional fees",40000.0,fixed corporate overhead
+2023-09,GA,ga,Personnel,46500.0,3 x ga fully loaded
+2023-09,RD,engineering,Personnel,140000.0,8 x engineering fully loaded
+2023-09,RD,engineering,R&D tooling,21000.0,"CI, observability, dev environments"
+2023-09,SM,ae,Personnel,45000.0,3 x ae fully loaded
+2023-09,SM,events,Marketing programmes,5100.0,ties to marketing_spend.csv
+2023-09,SM,inbound_content,Marketing programmes,7650.0,ties to marketing_spend.csv
+2023-09,SM,marketing,Marketing operations,12000.0,"martech stack, agency retainers"
+2023-09,SM,marketing,Personnel,28000.0,2 x marketing fully loaded
+2023-09,SM,outbound_sdr,Marketing programmes,4000.0,ties to marketing_spend.csv
+2023-09,SM,paid_search,Marketing programmes,17000.0,ties to marketing_spend.csv
+2023-09,SM,paid_social,Marketing programmes,6000.0,ties to marketing_spend.csv
+2023-09,SM,partner,Marketing programmes,3400.0,ties to marketing_spend.csv
+2023-09,SM,sales,Sales commission,12806.4,10% of new ACV + 5% of expansion ACV
+2023-09,SM,sales_engineer,Personnel,16500.0,1 x sales_engineer fully loaded
+2023-09,SM,sdr,Personnel,22000.0,2 x sdr fully loaded
+2023-09,SM,sdr_manager,Personnel,16000.0,1 x sdr_manager fully loaded
+2023-10,COGS,cs_am,Personnel,36000.0,3 x cs_am fully loaded
+2023-10,COGS,infrastructure,Hosting,21662.9,"cloud infrastructure, % of MRR"
+2023-10,COGS,infrastructure,Third-party licences,13061.45,"carrier / EDI / mapping licences, % of MRR"
+2023-10,GA,corporate,"Facilities, insurance, professional fees",40500.0,fixed corporate overhead
+2023-10,GA,ga,Personnel,46500.0,3 x ga fully loaded
+2023-10,RD,engineering,Personnel,140000.0,8 x engineering fully loaded
+2023-10,RD,engineering,R&D tooling,21294.0,"CI, observability, dev environments"
+2023-10,SM,ae,Personnel,45000.0,3 x ae fully loaded
+2023-10,SM,events,Marketing programmes,5700.0,ties to marketing_spend.csv
+2023-10,SM,inbound_content,Marketing programmes,8200.0,ties to marketing_spend.csv
+2023-10,SM,marketing,Marketing operations,12138.0,"martech stack, agency retainers"
+2023-10,SM,marketing,Personnel,28000.0,2 x marketing fully loaded
+2023-10,SM,outbound_sdr,Marketing programmes,4333.33,ties to marketing_spend.csv
+2023-10,SM,paid_search,Marketing programmes,17772.73,ties to marketing_spend.csv
+2023-10,SM,paid_social,Marketing programmes,6384.62,ties to marketing_spend.csv
+2023-10,SM,partner,Marketing programmes,3777.78,ties to marketing_spend.csv
+2023-10,SM,sales,Sales commission,5845.8,10% of new ACV + 5% of expansion ACV
+2023-10,SM,sales_engineer,Personnel,16500.0,1 x sales_engineer fully loaded
+2023-10,SM,sdr,Personnel,22000.0,2 x sdr fully loaded
+2023-10,SM,sdr_manager,Personnel,16000.0,1 x sdr_manager fully loaded
+2023-11,COGS,cs_am,Personnel,36000.0,3 x cs_am fully loaded
+2023-11,COGS,infrastructure,Hosting,22238.45,"cloud infrastructure, % of MRR"
+2023-11,COGS,infrastructure,Third-party licences,13408.48,"carrier / EDI / mapping licences, % of MRR"
+2023-11,GA,corporate,"Facilities, insurance, professional fees",41006.25,fixed corporate overhead
+2023-11,GA,ga,Personnel,46500.0,3 x ga fully loaded
+2023-11,RD,engineering,Personnel,140000.0,8 x engineering fully loaded
+2023-11,RD,engineering,R&D tooling,21592.12,"CI, observability, dev environments"
+2023-11,SM,ae,Personnel,45000.0,3 x ae fully loaded
+2023-11,SM,events,Marketing programmes,6300.0,ties to marketing_spend.csv
+2023-11,SM,inbound_content,Marketing programmes,8750.0,ties to marketing_spend.csv
+2023-11,SM,marketing,Marketing operations,12277.59,"martech stack, agency retainers"
+2023-11,SM,marketing,Personnel,28000.0,2 x marketing fully loaded
+2023-11,SM,outbound_sdr,Marketing programmes,4666.67,ties to marketing_spend.csv
+2023-11,SM,paid_search,Marketing programmes,18545.45,ties to marketing_spend.csv
+2023-11,SM,paid_social,Marketing programmes,6769.23,ties to marketing_spend.csv
+2023-11,SM,partner,Marketing programmes,4155.56,ties to marketing_spend.csv
+2023-11,SM,sales,Sales commission,13015.2,10% of new ACV + 5% of expansion ACV
+2023-11,SM,sales_engineer,Personnel,16500.0,1 x sales_engineer fully loaded
+2023-11,SM,sdr,Personnel,22000.0,2 x sdr fully loaded
+2023-11,SM,sdr_manager,Personnel,16000.0,1 x sdr_manager fully loaded
+2023-12,COGS,cs_am,Personnel,48000.0,4 x cs_am fully loaded
+2023-12,COGS,infrastructure,Hosting,22346.09,"cloud infrastructure, % of MRR"
+2023-12,COGS,infrastructure,Third-party licences,13473.38,"carrier / EDI / mapping licences, % of MRR"
+2023-12,GA,corporate,"Facilities, insurance, professional fees",41518.83,fixed corporate overhead
+2023-12,GA,ga,Personnel,46500.0,3 x ga fully loaded
+2023-12,RD,engineering,Personnel,157500.0,9 x engineering fully loaded
+2023-12,RD,engineering,R&D tooling,21894.41,"CI, observability, dev environments"
+2023-12,SM,ae,Personnel,60000.0,4 x ae fully loaded
+2023-12,SM,events,Marketing programmes,6900.0,ties to marketing_spend.csv
+2023-12,SM,inbound_content,Marketing programmes,9300.0,ties to marketing_spend.csv
+2023-12,SM,marketing,Marketing operations,12418.78,"martech stack, agency retainers"
+2023-12,SM,marketing,Personnel,28000.0,2 x marketing fully loaded
+2023-12,SM,outbound_sdr,Marketing programmes,5000.0,ties to marketing_spend.csv
+2023-12,SM,paid_search,Marketing programmes,19318.18,ties to marketing_spend.csv
+2023-12,SM,paid_social,Marketing programmes,7153.85,ties to marketing_spend.csv
+2023-12,SM,partner,Marketing programmes,4533.33,ties to marketing_spend.csv
+2023-12,SM,sales,Sales commission,3911.4,10% of new ACV + 5% of expansion ACV
+2023-12,SM,sales_engineer,Personnel,16500.0,1 x sales_engineer fully loaded
+2023-12,SM,sdr,Personnel,22000.0,2 x sdr fully loaded
+2023-12,SM,sdr_manager,Personnel,16000.0,1 x sdr_manager fully loaded
+2024-01,COGS,cs_am,Personnel,48000.0,4 x cs_am fully loaded
+2024-01,COGS,infrastructure,Hosting,23141.76,"cloud infrastructure, % of MRR"
+2024-01,COGS,infrastructure,Third-party licences,13953.12,"carrier / EDI / mapping licences, % of MRR"
+2024-01,GA,corporate,"Facilities, insurance, professional fees",42037.81,fixed corporate overhead
+2024-01,GA,ga,Personnel,46500.0,3 x ga fully loaded
+2024-01,RD,engineering,Personnel,157500.0,9 x engineering fully loaded
+2024-01,RD,engineering,R&D tooling,22200.93,"CI, observability, dev environments"
+2024-01,SM,ae,Personnel,60000.0,4 x ae fully loaded
+2024-01,SM,events,Marketing programmes,7500.0,ties to marketing_spend.csv
+2024-01,SM,inbound_content,Marketing programmes,9850.0,ties to marketing_spend.csv
+2024-01,SM,marketing,Marketing operations,12561.6,"martech stack, agency retainers"
+2024-01,SM,marketing,Personnel,28000.0,2 x marketing fully loaded
+2024-01,SM,outbound_sdr,Marketing programmes,5333.33,ties to marketing_spend.csv
+2024-01,SM,paid_search,Marketing programmes,20090.91,ties to marketing_spend.csv
+2024-01,SM,paid_social,Marketing programmes,7538.46,ties to marketing_spend.csv
+2024-01,SM,partner,Marketing programmes,4911.11,ties to marketing_spend.csv
+2024-01,SM,sales,Sales commission,14831.4,10% of new ACV + 5% of expansion ACV
+2024-01,SM,sales_engineer,Personnel,16500.0,1 x sales_engineer fully loaded
+2024-01,SM,sdr,Personnel,22000.0,2 x sdr fully loaded
+2024-01,SM,sdr_manager,Personnel,16000.0,1 x sdr_manager fully loaded
+2024-02,COGS,cs_am,Personnel,48000.0,4 x cs_am fully loaded
+2024-02,COGS,infrastructure,Hosting,23617.69,"cloud infrastructure, % of MRR"
+2024-02,COGS,infrastructure,Third-party licences,14240.08,"carrier / EDI / mapping licences, % of MRR"
+2024-02,GA,corporate,"Facilities, insurance, professional fees",42563.29,fixed corporate overhead
+2024-02,GA,ga,Personnel,46500.0,3 x ga fully loaded
+2024-02,RD,engineering,Personnel,157500.0,9 x engineering fully loaded
+2024-02,RD,engineering,R&D tooling,22511.74,"CI, observability, dev environments"
+2024-02,SM,ae,Personnel,60000.0,4 x ae fully loaded
+2024-02,SM,events,Marketing programmes,8100.0,ties to marketing_spend.csv
+2024-02,SM,inbound_content,Marketing programmes,10400.0,ties to marketing_spend.csv
+2024-02,SM,marketing,Marketing operations,12706.05,"martech stack, agency retainers"
+2024-02,SM,marketing,Personnel,42000.0,3 x marketing fully loaded
+2024-02,SM,outbound_sdr,Marketing programmes,5666.67,ties to marketing_spend.csv
+2024-02,SM,paid_search,Marketing programmes,20863.64,ties to marketing_spend.csv
+2024-02,SM,paid_social,Marketing programmes,7923.08,ties to marketing_spend.csv
+2024-02,SM,partner,Marketing programmes,5288.89,ties to marketing_spend.csv
+2024-02,SM,sales,Sales commission,12918.0,10% of new ACV + 5% of expansion ACV
+2024-02,SM,sales_engineer,Personnel,16500.0,1 x sales_engineer fully loaded
+2024-02,SM,sdr,Personnel,33000.0,3 x sdr fully loaded
+2024-02,SM,sdr_manager,Personnel,16000.0,1 x sdr_manager fully loaded
+2024-03,COGS,cs_am,Personnel,48000.0,4 x cs_am fully loaded
+2024-03,COGS,infrastructure,Hosting,24913.43,"cloud infrastructure, % of MRR"
+2024-03,COGS,infrastructure,Third-party licences,15021.33,"carrier / EDI / mapping licences, % of MRR"
+2024-03,GA,corporate,"Facilities, insurance, professional fees",43095.33,fixed corporate overhead
+2024-03,GA,ga,Personnel,46500.0,3 x ga fully loaded
+2024-03,RD,engineering,Personnel,157500.0,9 x engineering fully loaded
+2024-03,RD,engineering,R&D tooling,22826.9,"CI, observability, dev environments"
+2024-03,SM,ae,Personnel,60000.0,4 x ae fully loaded
+2024-03,SM,events,Marketing programmes,8700.0,ties to marketing_spend.csv
+2024-03,SM,inbound_content,Marketing programmes,10950.0,ties to marketing_spend.csv
+2024-03,SM,marketing,Marketing operations,12852.17,"martech stack, agency retainers"
+2024-03,SM,marketing,Personnel,42000.0,3 x marketing fully loaded
+2024-03,SM,outbound_sdr,Marketing programmes,6000.0,ties to marketing_spend.csv
+2024-03,SM,paid_search,Marketing programmes,21636.36,ties to marketing_spend.csv
+2024-03,SM,paid_social,Marketing programmes,8307.69,ties to marketing_spend.csv
+2024-03,SM,partner,Marketing programmes,5666.67,ties to marketing_spend.csv
+2024-03,SM,sales,Sales commission,26028.0,10% of new ACV + 5% of expansion ACV
+2024-03,SM,sales_engineer,Personnel,16500.0,1 x sales_engineer fully loaded
+2024-03,SM,sdr,Personnel,33000.0,3 x sdr fully loaded
+2024-03,SM,sdr_manager,Personnel,16000.0,1 x sdr_manager fully loaded
+2024-04,COGS,cs_am,Personnel,48000.0,4 x cs_am fully loaded
+2024-04,COGS,infrastructure,Hosting,25683.94,"cloud infrastructure, % of MRR"
+2024-04,COGS,infrastructure,Third-party licences,15485.91,"carrier / EDI / mapping licences, % of MRR"
+2024-04,GA,corporate,"Facilities, insurance, professional fees",43634.02,fixed corporate overhead
+2024-04,GA,ga,Personnel,46500.0,3 x ga fully loaded
+2024-04,RD,engineering,Personnel,175000.0,10 x engineering fully loaded
+2024-04,RD,engineering,R&D tooling,23146.48,"CI, observability, dev environments"
+2024-04,SM,ae,Personnel,60000.0,4 x ae fully loaded
+2024-04,SM,events,Marketing programmes,9300.0,ties to marketing_spend.csv
+2024-04,SM,inbound_content,Marketing programmes,11500.0,ties to marketing_spend.csv
+2024-04,SM,marketing,Marketing operations,12999.97,"martech stack, agency retainers"
+2024-04,SM,marketing,Personnel,42000.0,3 x marketing fully loaded
+2024-04,SM,outbound_sdr,Marketing programmes,6333.33,ties to marketing_spend.csv
+2024-04,SM,paid_search,Marketing programmes,22409.09,ties to marketing_spend.csv
+2024-04,SM,paid_social,Marketing programmes,8692.31,ties to marketing_spend.csv
+2024-04,SM,partner,Marketing programmes,6044.44,ties to marketing_spend.csv
+2024-04,SM,sales,Sales commission,19027.2,10% of new ACV + 5% of expansion ACV
+2024-04,SM,sales_engineer,Personnel,16500.0,1 x sales_engineer fully loaded
+2024-04,SM,sdr,Personnel,33000.0,3 x sdr fully loaded
+2024-04,SM,sdr_manager,Personnel,16000.0,1 x sdr_manager fully loaded
+2024-05,COGS,cs_am,Personnel,48000.0,4 x cs_am fully loaded
+2024-05,COGS,infrastructure,Hosting,25845.03,"cloud infrastructure, % of MRR"
+2024-05,COGS,infrastructure,Third-party licences,15583.03,"carrier / EDI / mapping licences, % of MRR"
+2024-05,GA,corporate,"Facilities, insurance, professional fees",44179.44,fixed corporate overhead
+2024-05,GA,ga,Personnel,46500.0,3 x ga fully loaded
+2024-05,RD,engineering,Personnel,175000.0,10 x engineering fully loaded
+2024-05,RD,engineering,R&D tooling,23470.53,"CI, observability, dev environments"
+2024-05,SM,ae,Personnel,60000.0,4 x ae fully loaded
+2024-05,SM,events,Marketing programmes,9900.0,ties to marketing_spend.csv
+2024-05,SM,inbound_content,Marketing programmes,12050.0,ties to marketing_spend.csv
+2024-05,SM,marketing,Marketing operations,13149.47,"martech stack, agency retainers"
+2024-05,SM,marketing,Personnel,42000.0,3 x marketing fully loaded
+2024-05,SM,outbound_sdr,Marketing programmes,6666.67,ties to marketing_spend.csv
+2024-05,SM,paid_search,Marketing programmes,23181.82,ties to marketing_spend.csv
+2024-05,SM,paid_social,Marketing programmes,9076.92,ties to marketing_spend.csv
+2024-05,SM,partner,Marketing programmes,6422.22,ties to marketing_spend.csv
+2024-05,SM,sales,Sales commission,12329.4,10% of new ACV + 5% of expansion ACV
+2024-05,SM,sales_engineer,Personnel,16500.0,1 x sales_engineer fully loaded
+2024-05,SM,sdr,Personnel,33000.0,3 x sdr fully loaded
+2024-05,SM,sdr_manager,Personnel,16000.0,1 x sdr_manager fully loaded
+2024-06,COGS,cs_am,Personnel,60000.0,5 x cs_am fully loaded
+2024-06,COGS,infrastructure,Hosting,26049.37,"cloud infrastructure, % of MRR"
+2024-06,COGS,infrastructure,Third-party licences,15706.24,"carrier / EDI / mapping licences, % of MRR"
+2024-06,GA,corporate,"Facilities, insurance, professional fees",44731.69,fixed corporate overhead
+2024-06,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2024-06,RD,engineering,Personnel,175000.0,10 x engineering fully loaded
+2024-06,RD,engineering,R&D tooling,23799.12,"CI, observability, dev environments"
+2024-06,SM,ae,Personnel,75000.0,5 x ae fully loaded
+2024-06,SM,events,Marketing programmes,10500.0,ties to marketing_spend.csv
+2024-06,SM,inbound_content,Marketing programmes,12600.0,ties to marketing_spend.csv
+2024-06,SM,marketing,Marketing operations,13300.69,"martech stack, agency retainers"
+2024-06,SM,marketing,Personnel,42000.0,3 x marketing fully loaded
+2024-06,SM,outbound_sdr,Marketing programmes,7000.0,ties to marketing_spend.csv
+2024-06,SM,paid_search,Marketing programmes,23954.55,ties to marketing_spend.csv
+2024-06,SM,paid_social,Marketing programmes,9461.54,ties to marketing_spend.csv
+2024-06,SM,partner,Marketing programmes,6800.0,ties to marketing_spend.csv
+2024-06,SM,sales,Sales commission,6301.2,10% of new ACV + 5% of expansion ACV
+2024-06,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2024-06,SM,sdr,Personnel,33000.0,3 x sdr fully loaded
+2024-06,SM,sdr_manager,Personnel,16000.0,1 x sdr_manager fully loaded
+2024-07,COGS,cs_am,Personnel,60000.0,5 x cs_am fully loaded
+2024-07,COGS,infrastructure,Hosting,26877.75,"cloud infrastructure, % of MRR"
+2024-07,COGS,infrastructure,Third-party licences,16205.7,"carrier / EDI / mapping licences, % of MRR"
+2024-07,GA,corporate,"Facilities, insurance, professional fees",45290.83,fixed corporate overhead
+2024-07,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2024-07,RD,engineering,Personnel,175000.0,10 x engineering fully loaded
+2024-07,RD,engineering,R&D tooling,24132.31,"CI, observability, dev environments"
+2024-07,SM,ae,Personnel,75000.0,5 x ae fully loaded
+2024-07,SM,events,Marketing programmes,11100.0,ties to marketing_spend.csv
+2024-07,SM,inbound_content,Marketing programmes,13150.0,ties to marketing_spend.csv
+2024-07,SM,marketing,Marketing operations,13453.65,"martech stack, agency retainers"
+2024-07,SM,marketing,Personnel,42000.0,3 x marketing fully loaded
+2024-07,SM,outbound_sdr,Marketing programmes,7333.33,ties to marketing_spend.csv
+2024-07,SM,paid_search,Marketing programmes,24727.27,ties to marketing_spend.csv
+2024-07,SM,paid_social,Marketing programmes,9846.15,ties to marketing_spend.csv
+2024-07,SM,partner,Marketing programmes,7177.78,ties to marketing_spend.csv
+2024-07,SM,sales,Sales commission,19783.2,10% of new ACV + 5% of expansion ACV
+2024-07,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2024-07,SM,sdr,Personnel,33000.0,3 x sdr fully loaded
+2024-07,SM,sdr_manager,Personnel,16000.0,1 x sdr_manager fully loaded
+2024-08,COGS,cs_am,Personnel,60000.0,5 x cs_am fully loaded
+2024-08,COGS,infrastructure,Hosting,27163.69,"cloud infrastructure, % of MRR"
+2024-08,COGS,infrastructure,Third-party licences,16378.11,"carrier / EDI / mapping licences, % of MRR"
+2024-08,GA,corporate,"Facilities, insurance, professional fees",45856.97,fixed corporate overhead
+2024-08,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2024-08,RD,engineering,Personnel,192500.0,11 x engineering fully loaded
+2024-08,RD,engineering,R&D tooling,24470.16,"CI, observability, dev environments"
+2024-08,SM,ae,Personnel,75000.0,5 x ae fully loaded
+2024-08,SM,events,Marketing programmes,11700.0,ties to marketing_spend.csv
+2024-08,SM,inbound_content,Marketing programmes,13700.0,ties to marketing_spend.csv
+2024-08,SM,marketing,Marketing operations,13608.37,"martech stack, agency retainers"
+2024-08,SM,marketing,Personnel,42000.0,3 x marketing fully loaded
+2024-08,SM,outbound_sdr,Marketing programmes,7666.67,ties to marketing_spend.csv
+2024-08,SM,paid_search,Marketing programmes,25500.0,ties to marketing_spend.csv
+2024-08,SM,paid_social,Marketing programmes,10230.77,ties to marketing_spend.csv
+2024-08,SM,partner,Marketing programmes,7555.56,ties to marketing_spend.csv
+2024-08,SM,sales,Sales commission,9458.4,10% of new ACV + 5% of expansion ACV
+2024-08,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2024-08,SM,sdr,Personnel,33000.0,3 x sdr fully loaded
+2024-08,SM,sdr_manager,Personnel,16000.0,1 x sdr_manager fully loaded
+2024-09,COGS,cs_am,Personnel,60000.0,5 x cs_am fully loaded
+2024-09,COGS,infrastructure,Hosting,27892.72,"cloud infrastructure, % of MRR"
+2024-09,COGS,infrastructure,Third-party licences,16817.67,"carrier / EDI / mapping licences, % of MRR"
+2024-09,GA,corporate,"Facilities, insurance, professional fees",46430.18,fixed corporate overhead
+2024-09,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2024-09,RD,engineering,Personnel,192500.0,11 x engineering fully loaded
+2024-09,RD,engineering,R&D tooling,24812.74,"CI, observability, dev environments"
+2024-09,SM,ae,Personnel,75000.0,5 x ae fully loaded
+2024-09,SM,events,Marketing programmes,12300.0,ties to marketing_spend.csv
+2024-09,SM,inbound_content,Marketing programmes,14250.0,ties to marketing_spend.csv
+2024-09,SM,marketing,Marketing operations,13764.86,"martech stack, agency retainers"
+2024-09,SM,marketing,Personnel,42000.0,3 x marketing fully loaded
+2024-09,SM,outbound_sdr,Marketing programmes,8000.0,ties to marketing_spend.csv
+2024-09,SM,paid_search,Marketing programmes,26491.67,ties to marketing_spend.csv
+2024-09,SM,paid_social,Marketing programmes,10615.38,ties to marketing_spend.csv
+2024-09,SM,partner,Marketing programmes,7933.33,ties to marketing_spend.csv
+2024-09,SM,sales,Sales commission,17591.4,10% of new ACV + 5% of expansion ACV
+2024-09,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2024-09,SM,sdr,Personnel,44000.0,4 x sdr fully loaded
+2024-09,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2024-10,COGS,cs_am,Personnel,60000.0,5 x cs_am fully loaded
+2024-10,COGS,infrastructure,Hosting,28823.02,"cloud infrastructure, % of MRR"
+2024-10,COGS,infrastructure,Third-party licences,17378.59,"carrier / EDI / mapping licences, % of MRR"
+2024-10,GA,corporate,"Facilities, insurance, professional fees",47010.56,fixed corporate overhead
+2024-10,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2024-10,RD,engineering,Personnel,192500.0,11 x engineering fully loaded
+2024-10,RD,engineering,R&D tooling,25160.12,"CI, observability, dev environments"
+2024-10,SM,ae,Personnel,75000.0,5 x ae fully loaded
+2024-10,SM,events,Marketing programmes,12900.0,ties to marketing_spend.csv
+2024-10,SM,inbound_content,Marketing programmes,14800.0,ties to marketing_spend.csv
+2024-10,SM,marketing,Marketing operations,13923.16,"martech stack, agency retainers"
+2024-10,SM,marketing,Personnel,56000.0,4 x marketing fully loaded
+2024-10,SM,outbound_sdr,Marketing programmes,8333.33,ties to marketing_spend.csv
+2024-10,SM,paid_search,Marketing programmes,27483.33,ties to marketing_spend.csv
+2024-10,SM,paid_social,Marketing programmes,11000.0,ties to marketing_spend.csv
+2024-10,SM,partner,Marketing programmes,8311.11,ties to marketing_spend.csv
+2024-10,SM,sales,Sales commission,19785.0,10% of new ACV + 5% of expansion ACV
+2024-10,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2024-10,SM,sdr,Personnel,44000.0,4 x sdr fully loaded
+2024-10,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2024-11,COGS,cs_am,Personnel,60000.0,5 x cs_am fully loaded
+2024-11,COGS,infrastructure,Hosting,29502.28,"cloud infrastructure, % of MRR"
+2024-11,COGS,infrastructure,Third-party licences,17788.14,"carrier / EDI / mapping licences, % of MRR"
+2024-11,GA,corporate,"Facilities, insurance, professional fees",47598.19,fixed corporate overhead
+2024-11,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2024-11,RD,engineering,Personnel,192500.0,11 x engineering fully loaded
+2024-11,RD,engineering,R&D tooling,25512.36,"CI, observability, dev environments"
+2024-11,SM,ae,Personnel,75000.0,5 x ae fully loaded
+2024-11,SM,events,Marketing programmes,13500.0,ties to marketing_spend.csv
+2024-11,SM,inbound_content,Marketing programmes,15350.0,ties to marketing_spend.csv
+2024-11,SM,marketing,Marketing operations,14083.28,"martech stack, agency retainers"
+2024-11,SM,marketing,Personnel,56000.0,4 x marketing fully loaded
+2024-11,SM,outbound_sdr,Marketing programmes,8666.67,ties to marketing_spend.csv
+2024-11,SM,paid_search,Marketing programmes,28475.0,ties to marketing_spend.csv
+2024-11,SM,paid_social,Marketing programmes,18000.0,ties to marketing_spend.csv
+2024-11,SM,partner,Marketing programmes,8688.89,ties to marketing_spend.csv
+2024-11,SM,sales,Sales commission,13768.8,10% of new ACV + 5% of expansion ACV
+2024-11,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2024-11,SM,sdr,Personnel,44000.0,4 x sdr fully loaded
+2024-11,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2024-12,COGS,cs_am,Personnel,72000.0,6 x cs_am fully loaded
+2024-12,COGS,infrastructure,Hosting,29939.72,"cloud infrastructure, % of MRR"
+2024-12,COGS,infrastructure,Third-party licences,18051.89,"carrier / EDI / mapping licences, % of MRR"
+2024-12,GA,corporate,"Facilities, insurance, professional fees",48193.17,fixed corporate overhead
+2024-12,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2024-12,RD,engineering,Personnel,210000.0,12 x engineering fully loaded
+2024-12,RD,engineering,R&D tooling,25869.53,"CI, observability, dev environments"
+2024-12,SM,ae,Personnel,75000.0,5 x ae fully loaded
+2024-12,SM,events,Marketing programmes,14100.0,ties to marketing_spend.csv
+2024-12,SM,inbound_content,Marketing programmes,15900.0,ties to marketing_spend.csv
+2024-12,SM,marketing,Marketing operations,14245.23,"martech stack, agency retainers"
+2024-12,SM,marketing,Personnel,56000.0,4 x marketing fully loaded
+2024-12,SM,outbound_sdr,Marketing programmes,9000.0,ties to marketing_spend.csv
+2024-12,SM,paid_search,Marketing programmes,29466.67,ties to marketing_spend.csv
+2024-12,SM,paid_social,Marketing programmes,21200.0,ties to marketing_spend.csv
+2024-12,SM,partner,Marketing programmes,9066.67,ties to marketing_spend.csv
+2024-12,SM,sales,Sales commission,9151.2,10% of new ACV + 5% of expansion ACV
+2024-12,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2024-12,SM,sdr,Personnel,44000.0,4 x sdr fully loaded
+2024-12,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2025-01,COGS,cs_am,Personnel,72000.0,6 x cs_am fully loaded
+2025-01,COGS,infrastructure,Hosting,30983.79,"cloud infrastructure, % of MRR"
+2025-01,COGS,infrastructure,Third-party licences,18681.4,"carrier / EDI / mapping licences, % of MRR"
+2025-01,GA,corporate,"Facilities, insurance, professional fees",48795.58,fixed corporate overhead
+2025-01,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2025-01,RD,engineering,Personnel,210000.0,12 x engineering fully loaded
+2025-01,RD,engineering,R&D tooling,26231.71,"CI, observability, dev environments"
+2025-01,SM,ae,Personnel,75000.0,5 x ae fully loaded
+2025-01,SM,events,Marketing programmes,14700.0,ties to marketing_spend.csv
+2025-01,SM,inbound_content,Marketing programmes,16450.0,ties to marketing_spend.csv
+2025-01,SM,marketing,Marketing operations,14409.05,"martech stack, agency retainers"
+2025-01,SM,marketing,Personnel,56000.0,4 x marketing fully loaded
+2025-01,SM,outbound_sdr,Marketing programmes,9333.33,ties to marketing_spend.csv
+2025-01,SM,paid_search,Marketing programmes,30458.33,ties to marketing_spend.csv
+2025-01,SM,paid_social,Marketing programmes,24400.0,ties to marketing_spend.csv
+2025-01,SM,partner,Marketing programmes,9444.44,ties to marketing_spend.csv
+2025-01,SM,sales,Sales commission,17960.4,10% of new ACV + 5% of expansion ACV
+2025-01,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2025-01,SM,sdr,Personnel,44000.0,4 x sdr fully loaded
+2025-01,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2025-02,COGS,cs_am,Personnel,72000.0,6 x cs_am fully loaded
+2025-02,COGS,infrastructure,Hosting,32529.85,"cloud infrastructure, % of MRR"
+2025-02,COGS,infrastructure,Third-party licences,19613.58,"carrier / EDI / mapping licences, % of MRR"
+2025-02,GA,corporate,"Facilities, insurance, professional fees",49405.53,fixed corporate overhead
+2025-02,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2025-02,RD,engineering,Personnel,210000.0,12 x engineering fully loaded
+2025-02,RD,engineering,R&D tooling,26598.95,"CI, observability, dev environments"
+2025-02,SM,ae,Personnel,90000.0,6 x ae fully loaded
+2025-02,SM,events,Marketing programmes,15300.0,ties to marketing_spend.csv
+2025-02,SM,inbound_content,Marketing programmes,17000.0,ties to marketing_spend.csv
+2025-02,SM,marketing,Marketing operations,14574.76,"martech stack, agency retainers"
+2025-02,SM,marketing,Personnel,56000.0,4 x marketing fully loaded
+2025-02,SM,outbound_sdr,Marketing programmes,9666.67,ties to marketing_spend.csv
+2025-02,SM,paid_search,Marketing programmes,31450.0,ties to marketing_spend.csv
+2025-02,SM,paid_social,Marketing programmes,27600.0,ties to marketing_spend.csv
+2025-02,SM,partner,Marketing programmes,9822.22,ties to marketing_spend.csv
+2025-02,SM,sales,Sales commission,34275.06,10% of new ACV + 5% of expansion ACV
+2025-02,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2025-02,SM,sdr,Personnel,44000.0,4 x sdr fully loaded
+2025-02,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2025-03,COGS,cs_am,Personnel,72000.0,6 x cs_am fully loaded
+2025-03,COGS,infrastructure,Hosting,33896.32,"cloud infrastructure, % of MRR"
+2025-03,COGS,infrastructure,Third-party licences,20437.49,"carrier / EDI / mapping licences, % of MRR"
+2025-03,GA,corporate,"Facilities, insurance, professional fees",50023.1,fixed corporate overhead
+2025-03,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2025-03,RD,engineering,Personnel,210000.0,12 x engineering fully loaded
+2025-03,RD,engineering,R&D tooling,26971.34,"CI, observability, dev environments"
+2025-03,SM,ae,Personnel,90000.0,6 x ae fully loaded
+2025-03,SM,events,Marketing programmes,16008.33,ties to marketing_spend.csv
+2025-03,SM,inbound_content,Marketing programmes,17661.11,ties to marketing_spend.csv
+2025-03,SM,marketing,Marketing operations,14742.37,"martech stack, agency retainers"
+2025-03,SM,marketing,Personnel,56000.0,4 x marketing fully loaded
+2025-03,SM,outbound_sdr,Marketing programmes,10000.0,ties to marketing_spend.csv
+2025-03,SM,paid_search,Marketing programmes,32441.67,ties to marketing_spend.csv
+2025-03,SM,paid_social,Marketing programmes,30800.0,ties to marketing_spend.csv
+2025-03,SM,partner,Marketing programmes,10200.0,ties to marketing_spend.csv
+2025-03,SM,sales,Sales commission,27840.28,10% of new ACV + 5% of expansion ACV
+2025-03,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2025-03,SM,sdr,Personnel,44000.0,4 x sdr fully loaded
+2025-03,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2025-04,COGS,cs_am,Personnel,72000.0,6 x cs_am fully loaded
+2025-04,COGS,infrastructure,Hosting,34624.22,"cloud infrastructure, % of MRR"
+2025-04,COGS,infrastructure,Third-party licences,20876.37,"carrier / EDI / mapping licences, % of MRR"
+2025-04,GA,corporate,"Facilities, insurance, professional fees",50648.38,fixed corporate overhead
+2025-04,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2025-04,RD,engineering,Personnel,227500.0,13 x engineering fully loaded
+2025-04,RD,engineering,R&D tooling,27348.94,"CI, observability, dev environments"
+2025-04,SM,ae,Personnel,90000.0,6 x ae fully loaded
+2025-04,SM,events,Marketing programmes,16716.67,ties to marketing_spend.csv
+2025-04,SM,inbound_content,Marketing programmes,18322.22,ties to marketing_spend.csv
+2025-04,SM,marketing,Marketing operations,14911.9,"martech stack, agency retainers"
+2025-04,SM,marketing,Personnel,56000.0,4 x marketing fully loaded
+2025-04,SM,outbound_sdr,Marketing programmes,10333.33,ties to marketing_spend.csv
+2025-04,SM,paid_search,Marketing programmes,33433.33,ties to marketing_spend.csv
+2025-04,SM,paid_social,Marketing programmes,34000.0,ties to marketing_spend.csv
+2025-04,SM,partner,Marketing programmes,10800.0,ties to marketing_spend.csv
+2025-04,SM,sales,Sales commission,14381.24,10% of new ACV + 5% of expansion ACV
+2025-04,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2025-04,SM,sdr,Personnel,55000.0,5 x sdr fully loaded
+2025-04,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2025-05,COGS,cs_am,Personnel,72000.0,6 x cs_am fully loaded
+2025-05,COGS,infrastructure,Hosting,37976.93,"cloud infrastructure, % of MRR"
+2025-05,COGS,infrastructure,Third-party licences,22897.85,"carrier / EDI / mapping licences, % of MRR"
+2025-05,GA,corporate,"Facilities, insurance, professional fees",51281.49,fixed corporate overhead
+2025-05,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2025-05,RD,engineering,Personnel,227500.0,13 x engineering fully loaded
+2025-05,RD,engineering,R&D tooling,27731.82,"CI, observability, dev environments"
+2025-05,SM,ae,Personnel,90000.0,6 x ae fully loaded
+2025-05,SM,events,Marketing programmes,17425.0,ties to marketing_spend.csv
+2025-05,SM,inbound_content,Marketing programmes,18983.33,ties to marketing_spend.csv
+2025-05,SM,marketing,Marketing operations,15083.39,"martech stack, agency retainers"
+2025-05,SM,marketing,Personnel,56000.0,4 x marketing fully loaded
+2025-05,SM,outbound_sdr,Marketing programmes,10666.67,ties to marketing_spend.csv
+2025-05,SM,paid_search,Marketing programmes,34425.0,ties to marketing_spend.csv
+2025-05,SM,paid_social,Marketing programmes,37000.0,ties to marketing_spend.csv
+2025-05,SM,partner,Marketing programmes,11400.0,ties to marketing_spend.csv
+2025-05,SM,sales,Sales commission,65221.26,10% of new ACV + 5% of expansion ACV
+2025-05,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2025-05,SM,sdr,Personnel,55000.0,5 x sdr fully loaded
+2025-05,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2025-06,COGS,cs_am,Personnel,84000.0,7 x cs_am fully loaded
+2025-06,COGS,infrastructure,Hosting,39348.82,"cloud infrastructure, % of MRR"
+2025-06,COGS,infrastructure,Third-party licences,23725.02,"carrier / EDI / mapping licences, % of MRR"
+2025-06,GA,corporate,"Facilities, insurance, professional fees",51922.51,fixed corporate overhead
+2025-06,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2025-06,RD,engineering,Personnel,227500.0,13 x engineering fully loaded
+2025-06,RD,engineering,R&D tooling,28120.07,"CI, observability, dev environments"
+2025-06,SM,ae,Personnel,90000.0,6 x ae fully loaded
+2025-06,SM,events,Marketing programmes,18133.33,ties to marketing_spend.csv
+2025-06,SM,inbound_content,Marketing programmes,19644.44,ties to marketing_spend.csv
+2025-06,SM,marketing,Marketing operations,15256.85,"martech stack, agency retainers"
+2025-06,SM,marketing,Personnel,56000.0,4 x marketing fully loaded
+2025-06,SM,outbound_sdr,Marketing programmes,11000.0,ties to marketing_spend.csv
+2025-06,SM,paid_search,Marketing programmes,35416.67,ties to marketing_spend.csv
+2025-06,SM,paid_social,Marketing programmes,40000.0,ties to marketing_spend.csv
+2025-06,SM,partner,Marketing programmes,12000.0,ties to marketing_spend.csv
+2025-06,SM,sales,Sales commission,25191.85,10% of new ACV + 5% of expansion ACV
+2025-06,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2025-06,SM,sdr,Personnel,55000.0,5 x sdr fully loaded
+2025-06,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2025-07,COGS,cs_am,Personnel,84000.0,7 x cs_am fully loaded
+2025-07,COGS,infrastructure,Hosting,40350.52,"cloud infrastructure, % of MRR"
+2025-07,COGS,infrastructure,Third-party licences,24328.99,"carrier / EDI / mapping licences, % of MRR"
+2025-07,GA,corporate,"Facilities, insurance, professional fees",52571.54,fixed corporate overhead
+2025-07,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2025-07,RD,engineering,Personnel,227500.0,13 x engineering fully loaded
+2025-07,RD,engineering,R&D tooling,28513.75,"CI, observability, dev environments"
+2025-07,SM,ae,Personnel,90000.0,6 x ae fully loaded
+2025-07,SM,events,Marketing programmes,18841.67,ties to marketing_spend.csv
+2025-07,SM,inbound_content,Marketing programmes,20305.56,ties to marketing_spend.csv
+2025-07,SM,marketing,Marketing operations,15432.3,"martech stack, agency retainers"
+2025-07,SM,marketing,Personnel,56000.0,4 x marketing fully loaded
+2025-07,SM,outbound_sdr,Marketing programmes,11333.33,ties to marketing_spend.csv
+2025-07,SM,paid_search,Marketing programmes,36408.33,ties to marketing_spend.csv
+2025-07,SM,paid_social,Marketing programmes,43000.0,ties to marketing_spend.csv
+2025-07,SM,partner,Marketing programmes,12600.0,ties to marketing_spend.csv
+2025-07,SM,sales,Sales commission,25839.17,10% of new ACV + 5% of expansion ACV
+2025-07,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2025-07,SM,sdr,Personnel,66000.0,6 x sdr fully loaded
+2025-07,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2025-08,COGS,cs_am,Personnel,84000.0,7 x cs_am fully loaded
+2025-08,COGS,infrastructure,Hosting,41590.24,"cloud infrastructure, % of MRR"
+2025-08,COGS,infrastructure,Third-party licences,25076.47,"carrier / EDI / mapping licences, % of MRR"
+2025-08,GA,corporate,"Facilities, insurance, professional fees",53228.68,fixed corporate overhead
+2025-08,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2025-08,RD,engineering,Personnel,245000.0,14 x engineering fully loaded
+2025-08,RD,engineering,R&D tooling,28912.94,"CI, observability, dev environments"
+2025-08,SM,ae,Personnel,90000.0,6 x ae fully loaded
+2025-08,SM,events,Marketing programmes,19550.0,ties to marketing_spend.csv
+2025-08,SM,inbound_content,Marketing programmes,20966.67,ties to marketing_spend.csv
+2025-08,SM,marketing,Marketing operations,15609.78,"martech stack, agency retainers"
+2025-08,SM,marketing,Personnel,56000.0,4 x marketing fully loaded
+2025-08,SM,outbound_sdr,Marketing programmes,11666.67,ties to marketing_spend.csv
+2025-08,SM,paid_search,Marketing programmes,37400.0,ties to marketing_spend.csv
+2025-08,SM,paid_social,Marketing programmes,46000.0,ties to marketing_spend.csv
+2025-08,SM,partner,Marketing programmes,13200.0,ties to marketing_spend.csv
+2025-08,SM,sales,Sales commission,20341.93,10% of new ACV + 5% of expansion ACV
+2025-08,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2025-08,SM,sdr,Personnel,88000.0,8 x sdr fully loaded
+2025-08,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2025-09,COGS,cs_am,Personnel,84000.0,7 x cs_am fully loaded
+2025-09,COGS,infrastructure,Hosting,45425.49,"cloud infrastructure, % of MRR"
+2025-09,COGS,infrastructure,Third-party licences,27388.9,"carrier / EDI / mapping licences, % of MRR"
+2025-09,GA,corporate,"Facilities, insurance, professional fees",53894.04,fixed corporate overhead
+2025-09,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2025-09,RD,engineering,Personnel,245000.0,14 x engineering fully loaded
+2025-09,RD,engineering,R&D tooling,29317.72,"CI, observability, dev environments"
+2025-09,SM,ae,Personnel,90000.0,6 x ae fully loaded
+2025-09,SM,events,Marketing programmes,20258.33,ties to marketing_spend.csv
+2025-09,SM,inbound_content,Marketing programmes,21627.78,ties to marketing_spend.csv
+2025-09,SM,marketing,Marketing operations,15789.29,"martech stack, agency retainers"
+2025-09,SM,marketing,Personnel,56000.0,4 x marketing fully loaded
+2025-09,SM,outbound_sdr,Marketing programmes,12000.0,ties to marketing_spend.csv
+2025-09,SM,paid_search,Marketing programmes,38533.33,ties to marketing_spend.csv
+2025-09,SM,paid_social,Marketing programmes,49000.0,ties to marketing_spend.csv
+2025-09,SM,partner,Marketing programmes,13800.0,ties to marketing_spend.csv
+2025-09,SM,sales,Sales commission,69808.82,10% of new ACV + 5% of expansion ACV
+2025-09,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2025-09,SM,sdr,Personnel,99000.0,9 x sdr fully loaded
+2025-09,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2025-10,COGS,cs_am,Personnel,84000.0,7 x cs_am fully loaded
+2025-10,COGS,infrastructure,Hosting,46751.24,"cloud infrastructure, % of MRR"
+2025-10,COGS,infrastructure,Third-party licences,28188.25,"carrier / EDI / mapping licences, % of MRR"
+2025-10,GA,corporate,"Facilities, insurance, professional fees",54567.72,fixed corporate overhead
+2025-10,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2025-10,RD,engineering,Personnel,245000.0,14 x engineering fully loaded
+2025-10,RD,engineering,R&D tooling,29728.17,"CI, observability, dev environments"
+2025-10,SM,ae,Personnel,105000.0,7 x ae fully loaded
+2025-10,SM,events,Marketing programmes,20966.67,ties to marketing_spend.csv
+2025-10,SM,inbound_content,Marketing programmes,22288.89,ties to marketing_spend.csv
+2025-10,SM,marketing,Marketing operations,15970.86,"martech stack, agency retainers"
+2025-10,SM,marketing,Personnel,56000.0,4 x marketing fully loaded
+2025-10,SM,outbound_sdr,Marketing programmes,12636.36,ties to marketing_spend.csv
+2025-10,SM,paid_search,Marketing programmes,39666.67,ties to marketing_spend.csv
+2025-10,SM,paid_social,Marketing programmes,52000.0,ties to marketing_spend.csv
+2025-10,SM,partner,Marketing programmes,14400.0,ties to marketing_spend.csv
+2025-10,SM,sales,Sales commission,24515.51,10% of new ACV + 5% of expansion ACV
+2025-10,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2025-10,SM,sdr,Personnel,99000.0,9 x sdr fully loaded
+2025-10,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2025-11,COGS,cs_am,Personnel,96000.0,8 x cs_am fully loaded
+2025-11,COGS,infrastructure,Hosting,47715.16,"cloud infrastructure, % of MRR"
+2025-11,COGS,infrastructure,Third-party licences,28769.44,"carrier / EDI / mapping licences, % of MRR"
+2025-11,GA,corporate,"Facilities, insurance, professional fees",55249.81,fixed corporate overhead
+2025-11,GA,ga,Personnel,62000.0,4 x ga fully loaded
+2025-11,RD,engineering,Personnel,245000.0,14 x engineering fully loaded
+2025-11,RD,engineering,R&D tooling,30144.36,"CI, observability, dev environments"
+2025-11,SM,ae,Personnel,105000.0,7 x ae fully loaded
+2025-11,SM,events,Marketing programmes,21675.0,ties to marketing_spend.csv
+2025-11,SM,inbound_content,Marketing programmes,22950.0,ties to marketing_spend.csv
+2025-11,SM,marketing,Marketing operations,16154.53,"martech stack, agency retainers"
+2025-11,SM,marketing,Personnel,56000.0,4 x marketing fully loaded
+2025-11,SM,outbound_sdr,Marketing programmes,13272.73,ties to marketing_spend.csv
+2025-11,SM,paid_search,Marketing programmes,40800.0,ties to marketing_spend.csv
+2025-11,SM,paid_social,Marketing programmes,55000.0,ties to marketing_spend.csv
+2025-11,SM,partner,Marketing programmes,15000.0,ties to marketing_spend.csv
+2025-11,SM,sales,Sales commission,26126.59,10% of new ACV + 5% of expansion ACV
+2025-11,SM,sales_engineer,Personnel,33000.0,2 x sales_engineer fully loaded
+2025-11,SM,sdr,Personnel,99000.0,9 x sdr fully loaded
+2025-11,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2025-12,COGS,cs_am,Personnel,96000.0,8 x cs_am fully loaded
+2025-12,COGS,infrastructure,Hosting,50444.59,"cloud infrastructure, % of MRR"
+2025-12,COGS,infrastructure,Third-party licences,30415.12,"carrier / EDI / mapping licences, % of MRR"
+2025-12,GA,corporate,"Facilities, insurance, professional fees",55940.44,fixed corporate overhead
+2025-12,GA,ga,Personnel,77500.0,5 x ga fully loaded
+2025-12,RD,engineering,Personnel,262500.0,15 x engineering fully loaded
+2025-12,RD,engineering,R&D tooling,30566.39,"CI, observability, dev environments"
+2025-12,SM,ae,Personnel,105000.0,7 x ae fully loaded
+2025-12,SM,events,Marketing programmes,22383.33,ties to marketing_spend.csv
+2025-12,SM,inbound_content,Marketing programmes,23611.11,ties to marketing_spend.csv
+2025-12,SM,marketing,Marketing operations,16340.31,"martech stack, agency retainers"
+2025-12,SM,marketing,Personnel,70000.0,5 x marketing fully loaded
+2025-12,SM,outbound_sdr,Marketing programmes,13909.09,ties to marketing_spend.csv
+2025-12,SM,paid_search,Marketing programmes,41933.33,ties to marketing_spend.csv
+2025-12,SM,paid_social,Marketing programmes,58000.0,ties to marketing_spend.csv
+2025-12,SM,partner,Marketing programmes,15600.0,ties to marketing_spend.csv
+2025-12,SM,sales,Sales commission,48114.56,10% of new ACV + 5% of expansion ACV
+2025-12,SM,sales_engineer,Personnel,49500.0,3 x sales_engineer fully loaded
+2025-12,SM,sdr,Personnel,99000.0,9 x sdr fully loaded
+2025-12,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2026-01,COGS,cs_am,Personnel,96000.0,8 x cs_am fully loaded
+2026-01,COGS,infrastructure,Hosting,53794.91,"cloud infrastructure, % of MRR"
+2026-01,COGS,infrastructure,Third-party licences,32435.17,"carrier / EDI / mapping licences, % of MRR"
+2026-01,GA,corporate,"Facilities, insurance, professional fees",56639.69,fixed corporate overhead
+2026-01,GA,ga,Personnel,77500.0,5 x ga fully loaded
+2026-01,RD,engineering,Personnel,262500.0,15 x engineering fully loaded
+2026-01,RD,engineering,R&D tooling,30994.31,"CI, observability, dev environments"
+2026-01,SM,ae,Personnel,120000.0,8 x ae fully loaded
+2026-01,SM,events,Marketing programmes,23091.67,ties to marketing_spend.csv
+2026-01,SM,inbound_content,Marketing programmes,24272.22,ties to marketing_spend.csv
+2026-01,SM,marketing,Marketing operations,16528.22,"martech stack, agency retainers"
+2026-01,SM,marketing,Personnel,70000.0,5 x marketing fully loaded
+2026-01,SM,outbound_sdr,Marketing programmes,14545.45,ties to marketing_spend.csv
+2026-01,SM,paid_search,Marketing programmes,43066.67,ties to marketing_spend.csv
+2026-01,SM,paid_social,Marketing programmes,60500.0,ties to marketing_spend.csv
+2026-01,SM,partner,Marketing programmes,16200.0,ties to marketing_spend.csv
+2026-01,SM,sales,Sales commission,56404.27,10% of new ACV + 5% of expansion ACV
+2026-01,SM,sales_engineer,Personnel,49500.0,3 x sales_engineer fully loaded
+2026-01,SM,sdr,Personnel,99000.0,9 x sdr fully loaded
+2026-01,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2026-02,COGS,cs_am,Personnel,96000.0,8 x cs_am fully loaded
+2026-02,COGS,infrastructure,Hosting,57248.03,"cloud infrastructure, % of MRR"
+2026-02,COGS,infrastructure,Third-party licences,34517.2,"carrier / EDI / mapping licences, % of MRR"
+2026-02,GA,corporate,"Facilities, insurance, professional fees",57347.69,fixed corporate overhead
+2026-02,GA,ga,Personnel,77500.0,5 x ga fully loaded
+2026-02,RD,engineering,Personnel,262500.0,15 x engineering fully loaded
+2026-02,RD,engineering,R&D tooling,31428.23,"CI, observability, dev environments"
+2026-02,SM,ae,Personnel,120000.0,8 x ae fully loaded
+2026-02,SM,events,Marketing programmes,23800.0,ties to marketing_spend.csv
+2026-02,SM,inbound_content,Marketing programmes,24933.33,ties to marketing_spend.csv
+2026-02,SM,marketing,Marketing operations,16718.29,"martech stack, agency retainers"
+2026-02,SM,marketing,Personnel,70000.0,5 x marketing fully loaded
+2026-02,SM,outbound_sdr,Marketing programmes,15181.82,ties to marketing_spend.csv
+2026-02,SM,paid_search,Marketing programmes,44200.0,ties to marketing_spend.csv
+2026-02,SM,paid_social,Marketing programmes,63000.0,ties to marketing_spend.csv
+2026-02,SM,partner,Marketing programmes,16800.0,ties to marketing_spend.csv
+2026-02,SM,sales,Sales commission,67230.89,10% of new ACV + 5% of expansion ACV
+2026-02,SM,sales_engineer,Personnel,49500.0,3 x sales_engineer fully loaded
+2026-02,SM,sdr,Personnel,99000.0,9 x sdr fully loaded
+2026-02,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2026-03,COGS,cs_am,Personnel,96000.0,8 x cs_am fully loaded
+2026-03,COGS,infrastructure,Hosting,58421.66,"cloud infrastructure, % of MRR"
+2026-03,COGS,infrastructure,Third-party licences,35224.82,"carrier / EDI / mapping licences, % of MRR"
+2026-03,GA,corporate,"Facilities, insurance, professional fees",58064.53,fixed corporate overhead
+2026-03,GA,ga,Personnel,77500.0,5 x ga fully loaded
+2026-03,RD,engineering,Personnel,280000.0,16 x engineering fully loaded
+2026-03,RD,engineering,R&D tooling,31868.23,"CI, observability, dev environments"
+2026-03,SM,ae,Personnel,120000.0,8 x ae fully loaded
+2026-03,SM,events,Marketing programmes,24508.33,ties to marketing_spend.csv
+2026-03,SM,inbound_content,Marketing programmes,25594.44,ties to marketing_spend.csv
+2026-03,SM,marketing,Marketing operations,16910.55,"martech stack, agency retainers"
+2026-03,SM,marketing,Personnel,70000.0,5 x marketing fully loaded
+2026-03,SM,outbound_sdr,Marketing programmes,15818.18,ties to marketing_spend.csv
+2026-03,SM,paid_search,Marketing programmes,45333.33,ties to marketing_spend.csv
+2026-03,SM,paid_social,Marketing programmes,65500.0,ties to marketing_spend.csv
+2026-03,SM,partner,Marketing programmes,17400.0,ties to marketing_spend.csv
+2026-03,SM,sales,Sales commission,27218.03,10% of new ACV + 5% of expansion ACV
+2026-03,SM,sales_engineer,Personnel,49500.0,3 x sales_engineer fully loaded
+2026-03,SM,sdr,Personnel,99000.0,9 x sdr fully loaded
+2026-03,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2026-04,COGS,cs_am,Personnel,96000.0,8 x cs_am fully loaded
+2026-04,COGS,infrastructure,Hosting,60611.56,"cloud infrastructure, % of MRR"
+2026-04,COGS,infrastructure,Third-party licences,36545.2,"carrier / EDI / mapping licences, % of MRR"
+2026-04,GA,corporate,"Facilities, insurance, professional fees",58790.34,fixed corporate overhead
+2026-04,GA,ga,Personnel,77500.0,5 x ga fully loaded
+2026-04,RD,engineering,Personnel,280000.0,16 x engineering fully loaded
+2026-04,RD,engineering,R&D tooling,32314.39,"CI, observability, dev environments"
+2026-04,SM,ae,Personnel,120000.0,8 x ae fully loaded
+2026-04,SM,events,Marketing programmes,25216.67,ties to marketing_spend.csv
+2026-04,SM,inbound_content,Marketing programmes,26255.56,ties to marketing_spend.csv
+2026-04,SM,marketing,Marketing operations,17105.03,"martech stack, agency retainers"
+2026-04,SM,marketing,Personnel,70000.0,5 x marketing fully loaded
+2026-04,SM,outbound_sdr,Marketing programmes,16454.55,ties to marketing_spend.csv
+2026-04,SM,paid_search,Marketing programmes,46466.67,ties to marketing_spend.csv
+2026-04,SM,paid_social,Marketing programmes,68000.0,ties to marketing_spend.csv
+2026-04,SM,partner,Marketing programmes,18000.0,ties to marketing_spend.csv
+2026-04,SM,sales,Sales commission,46200.44,10% of new ACV + 5% of expansion ACV
+2026-04,SM,sales_engineer,Personnel,49500.0,3 x sales_engineer fully loaded
+2026-04,SM,sdr,Personnel,99000.0,9 x sdr fully loaded
+2026-04,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2026-05,COGS,cs_am,Personnel,96000.0,8 x cs_am fully loaded
+2026-05,COGS,infrastructure,Hosting,62941.35,"cloud infrastructure, % of MRR"
+2026-05,COGS,infrastructure,Third-party licences,37949.93,"carrier / EDI / mapping licences, % of MRR"
+2026-05,GA,corporate,"Facilities, insurance, professional fees",59525.22,fixed corporate overhead
+2026-05,GA,ga,Personnel,77500.0,5 x ga fully loaded
+2026-05,RD,engineering,Personnel,280000.0,16 x engineering fully loaded
+2026-05,RD,engineering,R&D tooling,32766.79,"CI, observability, dev environments"
+2026-05,SM,ae,Personnel,120000.0,8 x ae fully loaded
+2026-05,SM,events,Marketing programmes,25925.0,ties to marketing_spend.csv
+2026-05,SM,inbound_content,Marketing programmes,26916.67,ties to marketing_spend.csv
+2026-05,SM,marketing,Marketing operations,17301.73,"martech stack, agency retainers"
+2026-05,SM,marketing,Personnel,70000.0,5 x marketing fully loaded
+2026-05,SM,outbound_sdr,Marketing programmes,17090.91,ties to marketing_spend.csv
+2026-05,SM,paid_search,Marketing programmes,47600.0,ties to marketing_spend.csv
+2026-05,SM,paid_social,Marketing programmes,70500.0,ties to marketing_spend.csv
+2026-05,SM,partner,Marketing programmes,18600.0,ties to marketing_spend.csv
+2026-05,SM,sales,Sales commission,43285.55,10% of new ACV + 5% of expansion ACV
+2026-05,SM,sales_engineer,Personnel,49500.0,3 x sales_engineer fully loaded
+2026-05,SM,sdr,Personnel,99000.0,9 x sdr fully loaded
+2026-05,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2026-06,COGS,cs_am,Personnel,108000.0,9 x cs_am fully loaded
+2026-06,COGS,infrastructure,Hosting,65878.52,"cloud infrastructure, % of MRR"
+2026-06,COGS,infrastructure,Third-party licences,39720.87,"carrier / EDI / mapping licences, % of MRR"
+2026-06,GA,corporate,"Facilities, insurance, professional fees",60269.29,fixed corporate overhead
+2026-06,GA,ga,Personnel,77500.0,5 x ga fully loaded
+2026-06,RD,engineering,Personnel,280000.0,16 x engineering fully loaded
+2026-06,RD,engineering,R&D tooling,33225.52,"CI, observability, dev environments"
+2026-06,SM,ae,Personnel,120000.0,8 x ae fully loaded
+2026-06,SM,events,Marketing programmes,26633.33,ties to marketing_spend.csv
+2026-06,SM,inbound_content,Marketing programmes,27577.78,ties to marketing_spend.csv
+2026-06,SM,marketing,Marketing operations,17500.7,"martech stack, agency retainers"
+2026-06,SM,marketing,Personnel,70000.0,5 x marketing fully loaded
+2026-06,SM,outbound_sdr,Marketing programmes,17727.27,ties to marketing_spend.csv
+2026-06,SM,paid_search,Marketing programmes,48733.33,ties to marketing_spend.csv
+2026-06,SM,paid_social,Marketing programmes,73000.0,ties to marketing_spend.csv
+2026-06,SM,partner,Marketing programmes,19200.0,ties to marketing_spend.csv
+2026-06,SM,sales,Sales commission,56413.32,10% of new ACV + 5% of expansion ACV
+2026-06,SM,sales_engineer,Personnel,49500.0,3 x sales_engineer fully loaded
+2026-06,SM,sdr,Personnel,99000.0,9 x sdr fully loaded
+2026-06,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2026-07,COGS,cs_am,Personnel,108000.0,9 x cs_am fully loaded
+2026-07,COGS,infrastructure,Hosting,67808.36,"cloud infrastructure, % of MRR"
+2026-07,COGS,infrastructure,Third-party licences,40884.45,"carrier / EDI / mapping licences, % of MRR"
+2026-07,GA,corporate,"Facilities, insurance, professional fees",61022.65,fixed corporate overhead
+2026-07,GA,ga,Personnel,77500.0,5 x ga fully loaded
+2026-07,RD,engineering,Personnel,297500.0,17 x engineering fully loaded
+2026-07,RD,engineering,R&D tooling,33690.68,"CI, observability, dev environments"
+2026-07,SM,ae,Personnel,120000.0,8 x ae fully loaded
+2026-07,SM,events,Marketing programmes,27341.67,ties to marketing_spend.csv
+2026-07,SM,inbound_content,Marketing programmes,28238.89,ties to marketing_spend.csv
+2026-07,SM,marketing,Marketing operations,17701.96,"martech stack, agency retainers"
+2026-07,SM,marketing,Personnel,70000.0,5 x marketing fully loaded
+2026-07,SM,outbound_sdr,Marketing programmes,18363.64,ties to marketing_spend.csv
+2026-07,SM,paid_search,Marketing programmes,49866.67,ties to marketing_spend.csv
+2026-07,SM,paid_social,Marketing programmes,75500.0,ties to marketing_spend.csv
+2026-07,SM,partner,Marketing programmes,19800.0,ties to marketing_spend.csv
+2026-07,SM,sales,Sales commission,29634.53,10% of new ACV + 5% of expansion ACV
+2026-07,SM,sales_engineer,Personnel,49500.0,3 x sales_engineer fully loaded
+2026-07,SM,sdr,Personnel,99000.0,9 x sdr fully loaded
+2026-07,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
+2026-08,COGS,cs_am,Personnel,108000.0,9 x cs_am fully loaded
+2026-08,COGS,infrastructure,Hosting,70121.11,"cloud infrastructure, % of MRR"
+2026-08,COGS,infrastructure,Third-party licences,42278.9,"carrier / EDI / mapping licences, % of MRR"
+2026-08,GA,corporate,"Facilities, insurance, professional fees",61785.43,fixed corporate overhead
+2026-08,GA,ga,Personnel,77500.0,5 x ga fully loaded
+2026-08,RD,engineering,Personnel,297500.0,17 x engineering fully loaded
+2026-08,RD,engineering,R&D tooling,34162.35,"CI, observability, dev environments"
+2026-08,SM,ae,Personnel,120000.0,8 x ae fully loaded
+2026-08,SM,events,Marketing programmes,28050.0,ties to marketing_spend.csv
+2026-08,SM,inbound_content,Marketing programmes,28900.0,ties to marketing_spend.csv
+2026-08,SM,marketing,Marketing operations,17905.53,"martech stack, agency retainers"
+2026-08,SM,marketing,Personnel,70000.0,5 x marketing fully loaded
+2026-08,SM,outbound_sdr,Marketing programmes,19000.0,ties to marketing_spend.csv
+2026-08,SM,paid_search,Marketing programmes,51000.0,ties to marketing_spend.csv
+2026-08,SM,paid_social,Marketing programmes,78000.0,ties to marketing_spend.csv
+2026-08,SM,partner,Marketing programmes,20400.0,ties to marketing_spend.csv
+2026-08,SM,sales,Sales commission,41111.52,10% of new ACV + 5% of expansion ACV
+2026-08,SM,sales_engineer,Personnel,49500.0,3 x sales_engineer fully loaded
+2026-08,SM,sdr,Personnel,99000.0,9 x sdr fully loaded
+2026-08,SM,sdr_manager,Personnel,32000.0,2 x sdr_manager fully loaded
