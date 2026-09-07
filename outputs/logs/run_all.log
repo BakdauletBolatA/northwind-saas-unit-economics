@@ -1,5 +1,5 @@
 
-[1m=== 1/8  Generate synthetic data (seeded, deterministic) ===[0m
+[1m=== 1/9  Generate synthetic data (seeded, deterministic) ===[0m
 customers          : 826  (pre-window 452)
 billing rows       : 17,310
 ARR 2023-09       : $3,797,556
@@ -10,8 +10,8 @@ net burn 2026-08  : $-315,022
 legacy acv scale   : 0.5431
 defects            : {'duplicate_rows_injected': 157, 'credit_memo_rows_injected': 239, 'orphan_rows_injected': 12, 'negative_seat_rows_injected': 7, 'missing_acquisition_channel': 17, 'missing_segment': 11, 'missing_plan_code': 7}
 
-[1m=== 2/8  Build the SQLite star schema and ETL audit ===[0m
-ETL run 20260901T175924Z
+[1m=== 2/9  Build the SQLite star schema and ETL audit ===[0m
+ETL run 20260907T184129Z
   R01  Load raw billing extract                   in= 17,310 out= 17,310 affected=     0
   R02  Quarantine orphan billing rows             in= 17,310 out= 17,298 affected=    12
   R03  Separate credit memos from recurring       in= 17,298 out= 17,059 affected=   239
@@ -31,7 +31,7 @@ ETL run 20260901T175924Z
   tables: dim_channel, dim_customer, dim_date, dim_plan, dim_segment, dq_quarantine, etl_audit, fact_credit_memo, fact_headcount, fact_marketing_spend, fact_opex, fact_subscription_month, ref_assumptions, ref_events
   dim_customer=826  fact_subscription_month=17,181  quarantined=176
 
-[1m=== 3/8  Run the SQL library ===[0m
+[1m=== 3/9  Run the SQL library ===[0m
 Q01_executive_summary.sql                  ->    36 rows
 Q02_arr_bridge.sql                         ->    36 rows
 Q03_cohort_revenue_retention.sql           ->   698 rows
@@ -159,7 +159,7 @@ Enterprise     1759824.0       866844.0               0.0         -43560.0   -65
 
 All queries ran; both integrity gates passed.
 
-[1m=== 4/8  Forecast bake-off and 18-month cash model ===[0m
+[1m=== 4/9  Forecast bake-off and 18-month cash model ===[0m
 ==============================================================================
 PART 1  Forecast model selection — rolling-origin backtest
 ==============================================================================
@@ -267,13 +267,13 @@ Mid-Market mix the current team sells, does it still clear 18 months?
              0.58        65099            45671                11.2    PASS
              0.70        73106            45671                10.0    PASS
 
-[1m=== 5/8  Build the Excel model ===[0m
+[1m=== 5/9  Build the Excel model ===[0m
 wrote outputs/excel/northwind_unit_economics.xlsx
   sheets            : README, CONTROL, DATA_SCENARIOS, DATA_ACTUALS, DATA_SEGMENTS, DATA_CHANNELS, CALC_UNIT_ECON, CALC_FORECAST, OUT_SUMMARY, DATA_SQL_CHECK, CHECKS
   forecast rows     : 46..63
   reconciliation    : 24 checks against 35 reference values
 
-[1m=== 6/8  Validate (needs LibreOffice Calc: apt-get install -y libreoffice-calc) ===[0m
+[1m=== 6/9  Validate (needs LibreOffice Calc: apt-get install -y libreoffice-calc) ===[0m
 ==============================================================================
 VALIDATION
 ==============================================================================
@@ -336,7 +336,7 @@ gate                                                     name status
 ==============================================================================
 7/7 gates PASS
 
-[1m=== 7/8  Export the Power BI star ===[0m
+[1m=== 7/9  Export the Power BI star ===[0m
 dim_date                          54 rows   9 cols
 dim_customer                     826 rows  20 cols
 dim_channel                        7 rows   6 cols
@@ -353,11 +353,21 @@ etl_audit                         13 rows   9 cols
 12 tables -> outputs/powerbi
 Column names are the contract for docs/POWERBI_GUIDE.md — do not rename.
 
-[1m=== 8/8  Regenerate the data dictionary and cleaning rules ===[0m
+[1m=== 8/9  Regenerate the data dictionary and cleaning rules ===[0m
 wrote docs/CLEANING_RULES.md and docs/DATA_DICTIONARY.md
+
+[1m=== 9/9  Render the README charts ===[0m
+  cash-runway-by-scenario          light + dark
+  cac-payback-by-channel           light + dark
+  payback-by-channel-segment       light + dark
+  cohort-retention-quarterly       light + dark
+  arr-bridge-waterfall             light + dark
+
+5 charts x 2 modes -> docs/img
 
 [1mDone.[0m Deliverables:
   outputs/excel/northwind_unit_economics.xlsx
   outputs/tables/*.csv        (SQL results, backtest, scenarios, checks)
   outputs/powerbi/*.csv       (star-schema extracts)
   docs/CEO_MEMO.md            (the answer)
+  docs/img/*.png              (README charts, light and dark)

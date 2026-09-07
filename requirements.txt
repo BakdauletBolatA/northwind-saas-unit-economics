@@ -3,6 +3,7 @@ pandas>=2.0
 numpy>=1.24
 openpyxl>=3.1
 PyYAML>=6.0
+matplotlib>=3.7      # src/09_build_charts.py only
 
 # SQLite ships with the Python standard library.
 #

@@ -5,32 +5,36 @@ cd "$(dirname "$0")"
 
 step () { printf '\n\033[1m=== %s ===\033[0m\n' "$1"; }
 
-step "1/8  Generate synthetic data (seeded, deterministic)"
+step "1/9  Generate synthetic data (seeded, deterministic)"
 python3 src/01_generate_data.py
 
-step "2/8  Build the SQLite star schema and ETL audit"
+step "2/9  Build the SQLite star schema and ETL audit"
 python3 src/02_build_warehouse.py
 
-step "3/8  Run the SQL library"
+step "3/9  Run the SQL library"
 python3 src/03_run_sql_library.py
 
-step "4/8  Forecast bake-off and 18-month cash model"
+step "4/9  Forecast bake-off and 18-month cash model"
 python3 src/04_cashflow_model.py
 
-step "5/8  Build the Excel model"
+step "5/9  Build the Excel model"
 python3 src/05_build_excel_model.py
 
-step "6/8  Validate (needs LibreOffice Calc: apt-get install -y libreoffice-calc)"
+step "6/9  Validate (needs LibreOffice Calc: apt-get install -y libreoffice-calc)"
 python3 src/06_validate.py
 
-step "7/8  Export the Power BI star"
+step "7/9  Export the Power BI star"
 python3 src/07_export_powerbi.py
 
-step "8/8  Regenerate the data dictionary and cleaning rules"
+step "8/9  Regenerate the data dictionary and cleaning rules"
 python3 src/08_generate_docs.py
+
+step "9/9  Render the README charts"
+python3 src/09_build_charts.py
 
 printf '\n\033[1mDone.\033[0m Deliverables:\n'
 printf '  outputs/excel/northwind_unit_economics.xlsx\n'
 printf '  outputs/tables/*.csv        (SQL results, backtest, scenarios, checks)\n'
 printf '  outputs/powerbi/*.csv       (star-schema extracts)\n'
 printf '  docs/CEO_MEMO.md            (the answer)\n'
+printf '  docs/img/*.png              (README charts, light and dark)\n'

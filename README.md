@@ -21,6 +21,11 @@ The company has 18.2 months of cash. It cannot fund a 28-month payback. The
 selective option delivers *more* ARR than the full proposal for half the money,
 because it sells Enterprise deals that are 3.5x larger at the same cost to win.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/cash-runway-by-scenario-dark.png">
+  <img alt="Projected cash balance over 18 months under three scenarios. The sales proposal crosses zero in October 2027; the selective option ends above the base case." src="docs/img/cash-runway-by-scenario-light.png">
+</picture>
+
 **→ [Read the full memo](docs/CEO_MEMO.md)**
 
 ---
@@ -39,6 +44,18 @@ because it sells Enterprise deals that are 3.5x larger at the same cost to win.
 An outbound deal costs about the same to win whatever its size. 29 of 46 wins
 went into the segment where that cost takes forty months to return.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/payback-by-channel-segment-dark.png">
+  <img alt="CAC payback by channel and segment. Outbound SDR pays back in 12 months on Enterprise and 40 on Mid-Market." src="docs/img/payback-by-channel-segment-light.png">
+</picture>
+
+Blended to a single number per channel, only Partner clears the bar at all:
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/cac-payback-by-channel-dark.png">
+  <img alt="CAC payback by channel, trailing 12 months. Only Partner at 12.5 months clears the 18-month hurdle; Paid Social takes 68.5." src="docs/img/cac-payback-by-channel-light.png">
+</picture>
+
 **2. Paid Social returns 29 cents on the dollar.** It is the largest programme
 line at $75,500/month. Over twelve months it consumed $1.11m of fully allocated
 cost to buy $241,428 of new ARR at $6,706 a deal, churning at 6.34% per month —
@@ -49,6 +66,14 @@ from 91.4% to 64.8% after the agency switched to broad-reach bidding in November
 **3. Blended NRR of 104.7% hides a leaking segment.** Enterprise 121.1%,
 Mid-Market 104.4%, SMB **82.0%**. SMB is 14.6% of ARR, 48% of new logos, and
 pays back in 62 months.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/cohort-retention-quarterly-dark.png">
+  <img alt="Quarterly cohort revenue-retention triangle. Cohorts hold near 100% and the 2025 Q3 and 2026 Q1 cohorts expand past 110%." src="docs/img/cohort-retention-quarterly-light.png">
+</picture>
+
+Retention by cohort is healthy — the leak is concentrated in SMB and in one
+channel, not spread across the book.
 
 **4. SDR #10 through #18 are not worth what SDR #3 was.** When the team went 4 →
 9, meetings per fully-ramped rep fell from **12.50 to 9.49**. Extending that
@@ -64,6 +89,7 @@ config/assumptions.yml ─→ 01 generate ─→ 02 warehouse ─→ 03 SQL libr
                                                                          ├─→ 06 validate
                                           04 cash model ─→ 05 Excel ─────┘
                                                         ─→ 07 Power BI  ─→ 08 docs
+                                                        ─→ 09 charts
 ```
 
 | Step | Script | What it does |
@@ -76,6 +102,7 @@ config/assumptions.yml ─→ 01 generate ─→ 02 warehouse ─→ 03 SQL libr
 | 6 | `06_validate.py` | Seven gates: determinism, bridge, cohorts, audit, Excel recalculation, Excel-vs-SQL, scenario switch. |
 | 7 | `07_export_powerbi.py` | Star-schema extracts + [DAX guide](docs/POWERBI_GUIDE.md). |
 | 8 | `08_generate_docs.py` | Regenerates the [data dictionary](docs/DATA_DICTIONARY.md) and [cleaning rules](docs/CLEANING_RULES.md) from the warehouse. |
+| 9 | `09_build_charts.py` | Renders the charts above from the warehouse, light and dark, so they cannot drift from the analysis. |
 
 ### Choices worth arguing with
 
@@ -127,7 +154,14 @@ out not to matter: even at 100% overlap payback is 16.4 months and still clears.
 
 ## Verification
 
-Nothing here is asserted without a check. `python src/06_validate.py`:
+Nothing here is asserted without a check.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/arr-bridge-waterfall-dark.png">
+  <img alt="ARR bridge waterfall for the twelve months to August 2026, opening $7.34m to closing $12.37m, with a residual of $0.00." src="docs/img/arr-bridge-waterfall-light.png">
+</picture>
+
+`python src/06_validate.py`:
 
 | Gate | Result |
 |---|---|
@@ -153,7 +187,7 @@ git clone https://github.com/BakdauletBolatA/northwind-saas-unit-economics
 cd northwind-saas-unit-economics
 pip install -r requirements.txt
 apt-get install -y libreoffice-calc     # G5-G7 recalculate the workbook headlessly
-./run_all.sh                            # ~40 seconds end to end
+./run_all.sh                            # ~45 seconds end to end
 ```
 
 Everything is driven by `config/assumptions.yml`. Change a number there — a
@@ -169,6 +203,7 @@ fixed, so two runs of the generator produce byte-identical files.
 | `outputs/excel/northwind_unit_economics.xlsx` | Scenario model, live switch |
 | `outputs/tables/*.csv` | SQL results, backtest, scenarios, reconciliation |
 | `outputs/powerbi/*.csv` | Star-schema extracts |
+| `docs/img/*.png` | The charts above, light and dark |
 | `data/warehouse/northwind.db` | SQLite warehouse |
 
 ---
