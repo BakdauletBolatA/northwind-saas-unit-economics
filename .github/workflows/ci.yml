@@ -6,7 +6,7 @@ name: CI
 # разошлись с артефактами прогона.
 on:
   push:
-    branches: ["main"]
+    branches: ["analysis", "main"]
   pull_request:
   workflow_dispatch:
 
