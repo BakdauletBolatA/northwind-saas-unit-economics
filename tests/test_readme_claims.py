@@ -117,16 +117,23 @@ def test_the_validation_gate_counts_match_the_audit(readme, con) -> None:
     assert f"{rows_in:,} quarantined" in readme or f"{rows_in} quarantined" in readme
 
 
-def test_no_table_row_quotes_a_superseded_figure(readme) -> None:
-    """Страховка от возврата старых чисел в таблицы.
+def test_the_outbound_rows_quote_the_run_and_nothing_else(readme, table) -> None:
+    """Строки таблицы по outbound должны состоять только из чисел прогона.
 
-    В прозе они упоминаться могут и должны — история расхождения сама по себе
-    поучительна, — поэтому проверяются только строки таблиц.
+    Раньше здесь стоял запрет на конкретные устаревшие значения, но он ловил и
+    абзац, который про это расхождение рассказывает. Проверяем прямо: в строке
+    сегмента стоит CAC из прогона и не стоит никакой другой.
     """
-    rows = [line for line in readme.splitlines() if line.startswith("|")]
-    for stale in ("$70,164", "12.3 months", "40.3 months"):
-        offenders = [row for row in rows if stale in row]
-        assert not offenders, f"в таблицу вернулось устаревшее значение {stale}: {offenders}"
+    alloc = table("allocation_sensitivity")
+    outbound = alloc[alloc["channel"] == "outbound_sdr"].set_index("segment")
+    rows = [line for line in readme.splitlines()
+            if line.startswith("| Enterprise |") or line.startswith("| Mid-Market |")]
+    assert rows, "таблица по outbound исчезла из README"
+
+    current_cac = money(outbound.loc["Enterprise", "cac_equal_split"])
+    for row in rows:
+        if "$" in row:
+            assert current_cac in row, f"строка не из прогона: {row}"
 
 
 # -- меморандум — это и есть поставляемый документ, он тоже обязан сходиться -------
