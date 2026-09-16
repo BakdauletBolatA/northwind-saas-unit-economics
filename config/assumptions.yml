@@ -338,9 +338,16 @@ scenarios:
   selective:
     label: "Selective - 5-rep Enterprise pod, funded by retiring Paid Social"
     description: >
-      Points new capacity at the only slice of outbound that pays back inside
-      the runway (Enterprise, 12.3-month payback vs 40.3 for Mid-Market, Q08),
-      and funds it by switching off Paid Social. list_overlap = 0.40 because
+      Points new capacity at the best-paying slice of outbound (Enterprise)
+      and funds it by switching off Paid Social. NOTE THE BASIS: Enterprise
+      outbound pays back in 12.6 months when every deal in the channel carries
+      the same CAC, and in 19.4 months when the shared sales cost is allocated
+      on segment_sales_effort_index below - i.e. outside the board's 18-month
+      guardrail on this file's own assumption. src/10 prices both and finds the
+      flip at an Enterprise effort index of about 3.6 against the 4.0 assumed
+      here. Mid-Market pays back in 35-42 months on either basis, so the
+      targeting decision holds; the claim that the pod clears the guardrail
+      does not. list_overlap = 0.40 because
       the pod works a named Enterprise account list that the current team has
       barely touched - partial, not complete, independence. THIS IS THE
       WEAKEST ASSUMPTION IN THE ANALYSIS; src/04 reports the break-even value.

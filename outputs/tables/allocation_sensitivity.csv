@@ -1,0 +1,11 @@
+channel,segment,wins,avg_new_acv,monthly_gp_per_deal,cac_equal_split,cac_effort_wtd,payback_equal_split,payback_effort_wtd,verdict
+inbound_content,MidMarket,11,34560.0,2246.4,32118.0,43387.5,14.3,19.3,clears only on equal split
+inbound_content,SMB,10,7291.2,498.2,32118.0,19721.6,64.5,39.6,fails on both bases
+outbound_sdr,Enterprise,13,93486.5,5726.0,72219.0,110920.7,12.6,19.4,clears only on equal split
+outbound_sdr,MidMarket,29,26764.1,1739.7,72219.0,61006.4,41.5,35.1,fails on both bases
+outbound_sdr,SMB,4,8556.0,584.7,72219.0,27730.2,123.5,47.4,fails on both bases
+paid_search,MidMarket,16,27522.0,1788.9,21277.0,34697.0,11.9,19.4,clears only on equal split
+paid_search,SMB,39,7707.7,526.7,21277.0,15771.4,40.4,29.9,fails on both bases
+paid_social,MidMarket,4,19272.0,1252.7,30883.0,59949.4,24.7,47.9,fails on both bases
+paid_social,SMB,32,5135.6,350.9,30883.0,27249.7,88.0,77.6,fails on both bases
+partner,MidMarket,13,31842.5,2069.8,29880.0,29880.0,14.4,14.4,clears on both bases

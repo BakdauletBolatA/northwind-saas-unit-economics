@@ -96,15 +96,30 @@ mediocre. Split by segment, it is two different businesses:
 
 | Outbound SDR, last 12 months | Logos | Avg ACV | CAC | Payback |
 |---|---:|---:|---:|---:|
-| Enterprise | 13 | $93,486 | $70,164 | **12.3 months** |
-| Mid-Market | 29 | $26,764 | $70,164 | **40.3 months** |
-| SMB | 4 | $8,556 | $70,164 | 120 months |
+| Enterprise | 13 | $93,486 | $72,219 | **12.6 months** |
+| Mid-Market | 29 | $26,764 | $72,219 | **41.5 months** |
+| SMB | 4 | $8,556 | $72,219 | 123.5 months |
 
 An outbound deal costs roughly the same to win whatever its size. Twenty-nine of
 our forty-six outbound wins went into the segment where that cost takes forty
-months to come back. Under a harsher allocation that charges Enterprise four
-times the sales effort of an SMB deal, Enterprise outbound still pays back in
-18.8 months and stays the best slice.
+months to come back.
+
+**One caveat you should hear before you approve anything.** That table charges
+every outbound deal the same CAC. If instead we allocate shared sales cost on
+how much AE and Sales Engineer time a deal actually consumes — the ratio we use
+internally is 4:1 Enterprise to SMB — Enterprise outbound pays back in **19.4
+months, not 12.6, and misses your 18-month guardrail.** Mid-Market pays back in
+35.1 months on that basis, so the *targeting* call is unchanged: Enterprise is
+the best slice of outbound either way and Mid-Market is a bad buy either way.
+What changes is the claim that the pod clears the guardrail. It clears it only
+while an Enterprise deal costs less than about 3.6x an SMB deal in sales effort,
+and our own working assumption is 4x.
+
+I am not going to paper over that with a choice of allocation rule. The decision
+in front of you is: approve the pod as the best available use of $88.5k a month,
+knowing it sits just outside the guardrail on the stricter costing, or hold the
+spend until we have measured AE and SE hours per deal properly — which is a
+two-week exercise in the CRM, not a modelling problem.
 
 For completeness, Partner is our strongest channel — 12.5-month payback, LTV/CAC
 of 5.25 — but it produced only 16 logos on $19,800/month of spend and is capped

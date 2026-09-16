@@ -30,6 +30,35 @@ because it sells Enterprise deals that are 3.5x larger at the same cost to win.
 
 ---
 
+## What this repository demonstrates, and what it cannot
+
+Northwind Cloud is fictional and every number below comes from data this
+repository generates itself. The effects the analysis "finds" — the Paid Social
+lead-quality collapse, the SMB churn spike, the SDR saturation curve — are
+planted in `config/assumptions.yml` and simulated forward. **Nobody discovered
+anything about a real business here, and no finding below is evidence about the
+world.**
+
+What is demonstrable is everything between the data and the decision, and that
+is what the repository is for:
+
+- **the analysis recovers the planted effects from the data rather than reading
+  them out of the config** — `tests/` asserts this on every run, comparing each
+  measured figure against the parameter that produced it;
+- **the reconciliations hold** — the ARR bridge ties to the cent, the cohort
+  triangle foots to total MRR, the Excel workbook agrees with the warehouse
+  (seven gates in `src/06_validate.py`);
+- **the decision logic survives being argued with** — costs are allocated two
+  different defensible ways and the recommendation is reported under both, which
+  is how the headline below ended up carrying a caveat rather than a number.
+
+A generator that plants an effect and an analysis that finds it is a closed
+loop. It proves the machinery, not the conclusion, and the conclusions are
+written up as if they were real only because that is the form the deliverable
+takes.
+
+---
+
 ## What the analysis found
 
 **1. Outbound isn't one channel, it's two businesses.** Blended, it pays back in
@@ -37,12 +66,35 @@ because it sells Enterprise deals that are 3.5x larger at the same cost to win.
 
 | Outbound SDR, trailing 12m | Logos | Avg ACV | CAC | Payback |
 |---|---:|---:|---:|---:|
-| Enterprise | 13 | $93,486 | $70,164 | **12.3 months** |
-| Mid-Market | 29 | $26,764 | $70,164 | **40.3 months** |
-| SMB | 4 | $8,556 | $70,164 | 120 months |
+| Enterprise | 13 | $93,486 | $72,219 | **12.6 months** |
+| Mid-Market | 29 | $26,764 | $72,219 | **41.5 months** |
+| SMB | 4 | $8,556 | $72,219 | 123.5 months |
 
 An outbound deal costs about the same to win whatever its size. 29 of 46 wins
 went into the segment where that cost takes forty months to return.
+
+**That table charges every outbound deal the same CAC, and the recommendation
+does not survive the alternative.** An Enterprise deal consumes more AE and
+Sales Engineer time than an SMB one — `config/assumptions.yml` puts the ratio at
+4.0 against SMB's 1.0 — so allocating the shared sales cost on effort instead of
+headcount moves money onto exactly the deals the memo wants to buy more of:
+
+| Outbound SDR | Payback, equal split | Payback, effort-weighted | Board guardrail |
+|---|---:|---:|---|
+| Enterprise | 12.6 months | **19.4 months** | 18 months — **misses** |
+| Mid-Market | 41.5 months | 35.1 months | misses on both |
+| SMB | 123.5 months | 47.4 months | misses on both |
+
+The targeting decision holds either way: Enterprise is the best-paying slice of
+outbound on both bases, and Mid-Market is a bad buy on both. What does not hold
+is the claim that the pod pays back inside the board's guardrail. It clears 18
+months only while an Enterprise deal costs less than about **3.6x** an SMB deal
+in sales effort; this project's own assumption file says 4.0.
+
+`src/10_allocation_sensitivity.py` prices every channel x segment both ways and
+sweeps that ratio (`outputs/tables/allocation_sensitivity.csv`,
+`allocation_breakeven.csv`). Paid Search Mid-Market has the same shape: 11.9
+months on equal split, 19.4 effort-weighted.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/img/payback-by-channel-segment-dark.png">
@@ -98,11 +150,12 @@ config/assumptions.yml ─→ 01 generate ─→ 02 warehouse ─→ 03 SQL libr
 | 2 | `02_build_warehouse.py` | SQLite star schema. 13 numbered cleaning rules, full `etl_audit` trail, `dq_quarantine` for everything removed. |
 | 3 | `03_run_sql_library.py` | 12 analytical queries + 1 audit query. Two integrity gates abort the pipeline on failure. |
 | 4 | `04_cashflow_model.py` | Forecast bake-off, then an 18-month, 3-scenario cash and runway model with break-even sensitivities. |
-| 5 | `05_build_excel_model.py` | Formula-driven workbook with a live scenario switch. |
-| 6 | `06_validate.py` | Seven gates: determinism, bridge, cohorts, audit, Excel recalculation, Excel-vs-SQL, scenario switch. |
-| 7 | `07_export_powerbi.py` | Star-schema extracts + [DAX guide](docs/POWERBI_GUIDE.md). |
-| 8 | `08_generate_docs.py` | Regenerates the [data dictionary](docs/DATA_DICTIONARY.md) and [cleaning rules](docs/CLEANING_RULES.md) from the warehouse. |
-| 9 | `09_build_charts.py` | Renders the charts above from the warehouse, light and dark, so they cannot drift from the analysis. |
+| 5 | `10_allocation_sensitivity.py` | Prices every channel x segment on both cost-allocation bases and sweeps the effort index to find where the answer flips. |
+| 6 | `05_build_excel_model.py` | Formula-driven workbook with a live scenario switch. |
+| 7 | `06_validate.py` | Seven gates: determinism, bridge, cohorts, audit, Excel recalculation, Excel-vs-SQL, scenario switch. |
+| 8 | `07_export_powerbi.py` | Star-schema extracts + [DAX guide](docs/POWERBI_GUIDE.md). |
+| 9 | `08_generate_docs.py` | Regenerates the [data dictionary](docs/DATA_DICTIONARY.md) and [cleaning rules](docs/CLEANING_RULES.md) from the warehouse. |
+| 10 | `09_build_charts.py` | Renders the charts above from the warehouse, light and dark, so they cannot drift from the analysis. |
 
 ### Choices worth arguing with
 
@@ -142,13 +195,24 @@ has a documented mechanical cause. 18 extreme MRR movements carry
 `outlier_flag = 1` and stay in the history. Removing unexplained outliers is
 curve-fitting.
 
-### The weakest assumption
+### The two weakest assumptions
 
-The recommendation turns on the pod holding an Enterprise-weighted win mix. It
-fails the 18-month test below roughly **19% Enterprise share**; the current
+**The cost allocation rule, which I did not expect to be the weak one.** Every
+payback figure in this project depends on how the shared sales cost is split,
+and the honest answer is that the recommendation clears the board's guardrail on
+one defensible basis and misses it on the other (12.6 vs 19.4 months). Neither
+basis is a measurement: effort weighting rests on an assumed 4.0x index, and
+equal split rests on the assumption that deal size does not drive cost, which is
+plainly false. The flip happens at about 3.6x. A real version of this analysis
+would spend its next hour getting actual AE and SE hours per deal out of the
+CRM, because that single number decides the answer.
+
+**The pod holding an Enterprise-weighted win mix.** It fails the 18-month test
+below roughly **19% Enterprise share** on the equal-split basis; the current
 outbound team runs 28%. That is why it is a monitored condition of approval, not
 a footnote. Territory overlap — the assumption I expected to be fragile — turned
-out not to matter: even at 100% overlap payback is 16.4 months and still clears.
+out not to matter: even at 100% overlap payback is 16.4 months and still clears
+on that basis.
 
 ---
 
@@ -178,6 +242,14 @@ the reference value, so a PASS means "identical apart from display rounding" —
 not "close enough". A green recalculation only proves nothing is broken, which is
 why G6 and G7 exist separately.
 
+`pytest tests -q` adds three groups the gates do not cover:
+
+| Group | What it holds down |
+|---|---|
+| `test_recovery.py` | The analysis recovers each planted effect **from the data**: segment churn rates, deal sizes, the Paid Social collapse (measured 2.31x churn against 2.3x planted), the Enterprise expansion wave, the SMB price rise, the SDR saturation curve, the quarantined double-post, and the exclusion of the pre-window base from CAC. |
+| `test_readme_claims.py` | Every figure quoted in this README and in the memo is read back out of `outputs/tables/` and matched. This exists because the outbound table here quoted a CAC of $70,164 and a 12.3-month payback for weeks while the pipeline had been producing $72,219 and 12.6. |
+| `test_determinism.py` | A fresh run reproduces every committed table to a relative tolerance of 1e-6. Artefacts are written with ten significant digits rather than full float precision, because the sixteenth digit depends on the machine and turns "deterministic" into a coin flip. |
+
 ---
 
 ## Reproduce
@@ -188,6 +260,7 @@ cd northwind-saas-unit-economics
 pip install -r requirements.txt
 apt-get install -y libreoffice-calc     # G5-G7 recalculate the workbook headlessly
 ./run_all.sh                            # ~45 seconds end to end
+pytest tests -q                         # 54 checks: recovery, claims, determinism
 ```
 
 Everything is driven by `config/assumptions.yml`. Change a number there — a
@@ -202,6 +275,8 @@ fixed, so two runs of the generator produce byte-identical files.
 | `docs/CEO_MEMO.md` | The answer |
 | `outputs/excel/northwind_unit_economics.xlsx` | Scenario model, live switch |
 | `outputs/tables/*.csv` | SQL results, backtest, scenarios, reconciliation |
+| `outputs/tables/allocation_sensitivity.csv` | Every channel x segment priced on both cost-allocation bases |
+| `outputs/tables/allocation_breakeven.csv` | The effort-ratio sweep that decides the recommendation |
 | `outputs/powerbi/*.csv` | Star-schema extracts |
 | `docs/img/*.png` | The charts above, light and dark |
 | `data/warehouse/northwind.db` | SQLite warehouse |
@@ -227,5 +302,7 @@ missing attributes — which the ETL detects, handles and logs rather than being
 handed clean input.
 
 *Northwind Cloud is fictional and the data is synthetic, generated by this
-repository's own driver-based simulator; the method, the reconciliations and the
-reasoning are real.*
+repository's own driver-based simulator. See
+[what this demonstrates](#what-this-repository-demonstrates-and-what-it-cannot)
+at the top: the method, the reconciliations and the reasoning are the point;
+the findings are not evidence about any real company.*

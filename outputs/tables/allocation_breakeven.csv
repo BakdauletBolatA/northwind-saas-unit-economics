@@ -1,0 +1,10 @@
+enterprise_effort_index,outbound_enterprise_payback,outbound_midmarket_payback,clears_hurdle
+1.0,7.2,52.0,True
+1.5,10.0,48.1,True
+2.0,12.4,44.8,True
+2.5,14.5,41.9,True
+3.0,16.3,39.3,True
+3.5,17.9,37.1,True
+4.0,19.4,35.1,False
+4.5,20.7,33.3,False
+5.0,21.8,31.6,False

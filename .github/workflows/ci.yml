@@ -1,0 +1,40 @@
+name: CI
+
+# Полный прогон детерминирован (seed в config/assumptions.yml), поэтому CI
+# пересобирает всё с нуля и проверяет три вещи: пайплайн работает, анализ
+# восстанавливает заложенные в данные эффекты, README и меморандум не
+# разошлись с артефактами прогона.
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Зависимости
+        run: |
+          pip install -r requirements.txt pytest
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libreoffice-calc
+
+      - name: Полный прогон
+        run: ./run_all.sh
+
+      - name: Восстановление эффектов и сверка текста с артефактами
+        run: python -m pytest tests -q
+
+      - name: Текст не должен расходиться с прогоном
+        # Числа сверяются с допуском внутри pytest (tests/test_determinism.py),
+        # а README, меморандум и конфиг обязаны совпадать точно.
+        run: git diff --exit-code --stat -- README.md docs/CEO_MEMO.md config/

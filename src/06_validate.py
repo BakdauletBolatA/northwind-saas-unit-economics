@@ -65,6 +65,15 @@ def recalc(src: Path, workdir: Path) -> Path:
     profile = workdir / "loprofile"
     out = workdir / "out"
     out.mkdir(exist_ok=True)
+    if shutil.which("soffice") is None:
+        # Гейты G5-G7 пересчитывают книгу настоящим движком: без него их нельзя
+        # ни выполнить, ни честно объявить пройденными.
+        raise SystemExit(
+            "G5-G7 требуют LibreOffice Calc, а soffice не найден в PATH.\n"
+            "  Linux: sudo apt-get install -y libreoffice-calc\n"
+            "  macOS: brew install --cask libreoffice\n"
+            "Остальные шаги (1-5, 8-10) работают без него."
+        )
     cmd = ["soffice", f"-env:UserInstallation=file://{profile}", "--headless",
            "--norestore", "--convert-to", "xlsx", "--outdir", str(out), str(src)]
     r = subprocess.run(cmd, capture_output=True, text=True, timeout=420)

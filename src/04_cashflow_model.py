@@ -315,6 +315,18 @@ def build_scenario(name, scfg, cfg, obs, base_mrr, base_cost, months, cash0):
     return df, monthly_program_cost, booked_seg
 
 
+# Финансовые ряды считаются в float, а на диск должны ложиться воспроизводимо:
+# последний бит суммы зависит от версии BLAS и от машины, и без округления
+# «тот же прогон» даёт разные файлы. Режем до десяти ЗНАЧАЩИХ цифр, а не до
+# десятичных знаков: шум сидит в шестнадцатой цифре, а доли процента в этих
+# таблицах бывают порядка 1e-4, и фиксированная точность их бы огрубила.
+CSV_FLOAT = "%.10g"
+
+
+def write_csv(df, name: str, index: bool = False) -> None:
+    df.to_csv(OUT / name, index=index, float_format=CSV_FLOAT)
+
+
 def main() -> int:
     cfg = yaml.safe_load(open(ROOT / "config" / "assumptions.yml"))
     con = sqlite3.connect(DB)
@@ -342,12 +354,12 @@ def main() -> int:
     print("=" * 78)
     bt = backtest(hist)
     sc = score(bt)
-    bt.to_csv(OUT / "backtest_raw.csv", index=False)
-    sc.to_csv(OUT / "backtest_scores.csv", index=False)
+    write_csv(bt, "backtest_raw.csv")
+    write_csv(sc, "backtest_scores.csv")
     print(sc.to_string(index=False))
 
     byh = (bt.groupby(["method", "horizon"]).ape.mean().mul(100).unstack().round(2))
-    byh.to_csv(OUT / "backtest_mape_by_horizon.csv")
+    write_csv(byh, "backtest_mape_by_horizon.csv", index=True)
     print("\nMAPE % by horizon (both policies pooled):")
     print(byh.to_string())
 
@@ -402,7 +414,7 @@ def main() -> int:
         if base_frame is None:
             base_frame = df
         frames.append(df)
-        df.to_csv(OUT / f"cashflow_{name}.csv", index=False)
+        write_csv(df, f"cashflow_{name}.csv")
 
         neg = df[df.cash < 0]
         if not neg.empty:
@@ -427,14 +439,14 @@ def main() -> int:
             incremental_gp_month18=round(inc_gp_m18, 0)))
 
     allf = pd.concat(frames, ignore_index=True)
-    allf.to_csv(OUT / "cashflow_all_scenarios.csv", index=False)
+    write_csv(allf, "cashflow_all_scenarios.csv")
     summ = pd.DataFrame(summary)
-    summ.to_csv(OUT / "scenario_summary.csv", index=False)
+    write_csv(summ, "scenario_summary.csv")
     print("\nScenario summary:")
     print(summ.drop(columns=["label"]).to_string(index=False))
 
     piv = allf.pivot(index="month", columns="scenario", values="cash").round(0)
-    piv.to_csv(OUT / "scenario_cash_paths.csv")
+    write_csv(piv, "scenario_cash_paths.csv", index=True)
     print("\nCash balance by month ($):")
     print(piv.to_string())
 
@@ -473,7 +485,7 @@ def main() -> int:
             productivity_headroom_pct=round(100 * (meets / added) /
                                             (need_meets / added) - 100, 1)))
     sens = pd.DataFrame(rows)
-    sens.to_csv(OUT / "hiring_sensitivity.csv", index=False)
+    write_csv(sens, "hiring_sensitivity.csv")
     print(sens.to_string(index=False))
     print("\nRead the last column as: how far the new reps' productivity could")
     print("fall short of assumption before the 18-month payback test fails.")
@@ -499,7 +511,7 @@ def main() -> int:
                          cac_payback_months=round(pb, 1),
                          verdict="PASS" if pb <= 18 else "FAIL"))
     ov_df = pd.DataFrame(rows)
-    ov_df.to_csv(OUT / "sensitivity_territory_overlap.csv", index=False)
+    write_csv(ov_df, "sensitivity_territory_overlap.csv")
     print(ov_df.to_string(index=False))
 
     print("\nStress test B — Enterprise share of the pod's won mix.")
@@ -519,11 +531,22 @@ def main() -> int:
                          cac_payback_months=round(pb, 1),
                          verdict="PASS" if pb <= 18 else "FAIL"))
     mix_df = pd.DataFrame(rows)
-    mix_df.to_csv(OUT / "sensitivity_segment_mix.csv", index=False)
+    write_csv(mix_df, "sensitivity_segment_mix.csv")
     print(mix_df.to_string(index=False))
 
     alpha, beta = fit_holt(hist.mrr.to_numpy())
-    json.dump({
+
+    def stable(value):
+        """То же усечение, что и для CSV: файл не должен зависеть от машины."""
+        if isinstance(value, float):
+            return float(f"{value:.10g}")
+        if isinstance(value, dict):
+            return {k: stable(v) for k, v in value.items()}
+        if isinstance(value, (list, tuple)):
+            return [stable(v) for v in value]
+        return value
+
+    json.dump(stable({
         "observed": {k: (v if not isinstance(v, dict)
                          else {kk: float(vv) for kk, vv in v.items()})
                      for k, v in obs.items()},
@@ -533,7 +556,7 @@ def main() -> int:
         "cash_on_hand": cash0,
         "forecast_months": H,
         "base_mrr_path": [float(x) for x in base_mrr],
-    }, open(OUT / "forward_model_parameters.json", "w"), indent=2, default=float)
+    }), open(OUT / "forward_model_parameters.json", "w"), indent=2, default=float)
     con.close()
     return 0
 
